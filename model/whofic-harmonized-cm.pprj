@@ -1,4 +1,4 @@
-; Mon Sep 30 00:06:03 PDT 2019
+; Tue Oct 01 14:32:41 PDT 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -6,14 +6,14 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[whofic-harmonized-cm_ProjectKB_Class12098]
-		[whofic-harmonized-cm_ProjectKB_Class12099]
-		[whofic-harmonized-cm_ProjectKB_Class12100]
-		[whofic-harmonized-cm_ProjectKB_Class12101]
-		[whofic-harmonized-cm_ProjectKB_Class12102]
-		[whofic-harmonized-cm_ProjectKB_Class12103]
-		[whofic-harmonized-cm_ProjectKB_Class12104]
-		[whofic-harmonized-cm_ProjectKB_Class12105]))
+		[whofic-harmonized-cm_ProjectKB_Class4]
+		[whofic-harmonized-cm_ProjectKB_Class5]
+		[whofic-harmonized-cm_ProjectKB_Class6]
+		[whofic-harmonized-cm_ProjectKB_Class7]
+		[whofic-harmonized-cm_ProjectKB_Class8]
+		[whofic-harmonized-cm_ProjectKB_Class9]
+		[whofic-harmonized-cm_ProjectKB_Class10]
+		[whofic-harmonized-cm_ProjectKB_Class11]))
 
 ([CLSES_TAB] of  Widget
 
@@ -487,6 +487,9 @@
 ([KB_140180_Instance_9] of  Property_List
 )
 
+([KB_157081_Class3] of  Map
+)
+
 ([KB_221055_Instance_10] of  Widget
 
 	(height 0)
@@ -751,9 +754,9 @@
 ([KB_325529_Class0] of  Map
 
 	(entries
-		[whofic-harmonized-cm_ProjectKB_Class12106]
-		[whofic-harmonized-cm_ProjectKB_Class12107]
-		[whofic-harmonized-cm_ProjectKB_Class12108]))
+		[whofic-harmonized-cm_ProjectKB_Class12]
+		[whofic-harmonized-cm_ProjectKB_Class13]
+		[whofic-harmonized-cm_ProjectKB_Class14]))
 
 ([KB_325529_Class4] of  String
 
@@ -3340,9 +3343,6 @@
 	(boolean_value FALSE)
 	(name "ButtonDisplayed-Delete Instance"))
 
-([KB_918167_Class3] of  Map
-)
-
 ([KB_933314_Instance_11] of  Boolean
 
 	(boolean_value FALSE)
@@ -5356,7 +5356,6 @@
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
 		[STANDARD_CLASS_FORM_WIDGET]
-		[whofic-harmonized-cm_ProjectKB_Class11231]
 		[KB_868747_Instance_76]
 		[KB_313796_Instance_852]
 		[STANDARD_SLOT_FORM_WIDGET]
@@ -5365,7 +5364,6 @@
 		[KB_301165_Instance_856]
 		[KB_713803_Instance_780]
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
-		[whofic-harmonized-cm_ProjectKB_Class11360]
 		[whofic-harmonized-cm_ProjectKB_Class261]
 		[Instance_1005]
 		[PAL_FORM_WIDGET]
@@ -5374,6 +5372,7 @@
 		[whofic-harmonized-cm_ProjectKB_Class11889]
 		[KB_713803_Instance_477]
 		[KB_691299_Instance_398]
+		[whofic-harmonized-cm_ProjectKB_Class11360]
 		[KB_764103_Instance_545]
 		[KB_303942_Instance_68]
 		[whofic-harmonized-cm_ProjectKB_Class10395]
@@ -5674,12 +5673,10 @@
 	(property_list [XY_Instance_725])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
 
-([whofic-harmonized-cm_ProjectKB_Class10327] of  Widget
+([whofic-harmonized-cm_ProjectKB_Class10] of  String
 
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/DefiningAttributeValueShape")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10775])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
 
 ([whofic-harmonized-cm_ProjectKB_Class10395] of  Widget
 
@@ -6130,458 +6127,10 @@
 ([whofic-harmonized-cm_ProjectKB_Class10774] of  Property_List
 )
 
-([whofic-harmonized-cm_ProjectKB_Class10775] of  Property_List
+([whofic-harmonized-cm_ProjectKB_Class11] of  String
 
-	(name "class widget properties")
-	(properties
-		[whofic-harmonized-cm_ProjectKB_Class10776]
-		[whofic-harmonized-cm_ProjectKB_Class10778]
-		[whofic-harmonized-cm_ProjectKB_Class10779]
-		[whofic-harmonized-cm_ProjectKB_Class10780]
-		[whofic-harmonized-cm_ProjectKB_Class10795]
-		[whofic-harmonized-cm_ProjectKB_Class10798]
-		[whofic-harmonized-cm_ProjectKB_Class10800]
-		[whofic-harmonized-cm_ProjectKB_Class10801]
-		[whofic-harmonized-cm_ProjectKB_Class10803]
-		[whofic-harmonized-cm_ProjectKB_Class10806]
-		[whofic-harmonized-cm_ProjectKB_Class10808]
-		[whofic-harmonized-cm_ProjectKB_Class10810]
-		[whofic-harmonized-cm_ProjectKB_Class10812]
-		[whofic-harmonized-cm_ProjectKB_Class10814]
-		[whofic-harmonized-cm_ProjectKB_Class10816]
-		[whofic-harmonized-cm_ProjectKB_Class10818]
-		[whofic-harmonized-cm_ProjectKB_Class10820]
-		[whofic-harmonized-cm_ProjectKB_Class10822]
-		[whofic-harmonized-cm_ProjectKB_Class10824]
-		[whofic-harmonized-cm_ProjectKB_Class10826]
-		[whofic-harmonized-cm_ProjectKB_Class10828]
-		[whofic-harmonized-cm_ProjectKB_Class10830]
-		[whofic-harmonized-cm_ProjectKB_Class10832]
-		[whofic-harmonized-cm_ProjectKB_Class10834]
-		[whofic-harmonized-cm_ProjectKB_Class10836]
-		[whofic-harmonized-cm_ProjectKB_Class10838]))
-
-([whofic-harmonized-cm_ProjectKB_Class10776] of  Widget
-
-	(height 0)
-	(label "Constraints")
-	(name ":SLOT-CONSTRAINTS")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10777])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class10777] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10778] of  Widget
-
-	(name ":DIRECT-INSTANCES"))
-
-([whofic-harmonized-cm_ProjectKB_Class10779] of  Widget
-
-	(name ":DIRECT-SUBCLASSES"))
-
-([whofic-harmonized-cm_ProjectKB_Class10780] of  Widget
-
-	(height 500)
-	(label "Definition")
-	(name ":DIRECT-SUPERCLASSES")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10781])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.ClassAnnotationsAndDescriptionWidget")
-	(width 660)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class10781] of  Property_List
-
-	(properties [whofic-harmonized-cm_ProjectKB_Class10782]))
-
-([whofic-harmonized-cm_ProjectKB_Class10782] of  Widget
-
-	(height 360)
-	(is_hidden FALSE)
-	(label "Class Annotations")
-	(name "http://www.w3.org/2002/07/owl#equivalentClass")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10783])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 650)
-	(x 0)
-	(y 130))
-
-([whofic-harmonized-cm_ProjectKB_Class10783] of  Property_List
-
-	(properties
-		[whofic-harmonized-cm_ProjectKB_Class10784]
-		[whofic-harmonized-cm_ProjectKB_Class10788]))
-
-([whofic-harmonized-cm_ProjectKB_Class10784] of  Widget
-
-	(height 360)
-	(is_hidden FALSE)
-	(label "Logic View")
-	(name ":DIRECT-TEMPLATE-SLOTS")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10785])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 650)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class10785] of  Property_List
-
-	(properties
-		[whofic-harmonized-cm_ProjectKB_Class10786]
-		[whofic-harmonized-cm_ProjectKB_Class10787]))
-
-([whofic-harmonized-cm_ProjectKB_Class10786] of  Widget
-
-	(height 211)
-	(is_hidden FALSE)
-	(label "Conditions")
-	(name ":DIRECT-SUPERCLASSES")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 640)
-	(x 5)
-	(y 5))
-
-([whofic-harmonized-cm_ProjectKB_Class10787] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "Disjoints")
-	(name "http://www.w3.org/2002/07/owl#disjointWith")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 650)
-	(x 0)
-	(y 223))
-
-([whofic-harmonized-cm_ProjectKB_Class10788] of  Widget
-
-	(height -36)
-	(is_hidden FALSE)
-	(label "Properties View")
-	(name ":DIRECT-SUPERCLASSES")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10789])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width -14)
-	(x 7)
-	(y 28))
-
-([whofic-harmonized-cm_ProjectKB_Class10789] of  Property_List
-
-	(properties
-		[whofic-harmonized-cm_ProjectKB_Class10790]
-		[whofic-harmonized-cm_ProjectKB_Class10791]
-		[whofic-harmonized-cm_ProjectKB_Class10794]))
-
-([whofic-harmonized-cm_ProjectKB_Class10790] of  Widget
-
-	(is_hidden FALSE)
-	(label "Superclasses")
-	(name ":DIRECT-SUPERCLASSES")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([whofic-harmonized-cm_ProjectKB_Class10791] of  Widget
-
-	(is_hidden FALSE)
-	(label "Properties")
-	(name ":DIRECT-TEMPLATE-SLOTS")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10792])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([whofic-harmonized-cm_ProjectKB_Class10792] of  Property_List
-
-	(properties [whofic-harmonized-cm_ProjectKB_Class10793]))
-
-([whofic-harmonized-cm_ProjectKB_Class10793] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisplayRestrictions"))
-
-([whofic-harmonized-cm_ProjectKB_Class10794] of  Widget
-
-	(is_hidden FALSE)
-	(label "Disjoints")
-	(name "http://www.w3.org/2002/07/owl#disjointWith")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([whofic-harmonized-cm_ProjectKB_Class10795] of  Widget
-
-	(height 0)
-	(label "Name")
-	(name ":NAME")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10796])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class10796] of  Property_List
-
-	(properties [whofic-harmonized-cm_ProjectKB_Class10797]))
-
-([whofic-harmonized-cm_ProjectKB_Class10797] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([whofic-harmonized-cm_ProjectKB_Class10798] of  Widget
-
-	(height 0)
-	(label "Role")
-	(name ":ROLE")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10799])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class10799] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10800] of  Widget
-
-	(name ":DIRECT-TYPE"))
-
-([whofic-harmonized-cm_ProjectKB_Class10801] of  Widget
-
-	(height 0)
-	(label "OWL Properties")
-	(name ":DIRECT-TEMPLATE-SLOTS")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10802])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class10802] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10803] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[whofic-harmonized-cm_ProjectKB_Class10804]
-		[whofic-harmonized-cm_ProjectKB_Class10805]))
-
-([whofic-harmonized-cm_ProjectKB_Class10804] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<all>>"))
-
-([whofic-harmonized-cm_ProjectKB_Class10805] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([whofic-harmonized-cm_ProjectKB_Class10806] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":DOCUMENTATION")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10807])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class10807] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10808] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10809])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class10809] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10810] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10811]))
-
-([whofic-harmonized-cm_ProjectKB_Class10811] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10812] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10813]))
-
-([whofic-harmonized-cm_ProjectKB_Class10813] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10814] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10815]))
-
-([whofic-harmonized-cm_ProjectKB_Class10815] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10816] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10817]))
-
-([whofic-harmonized-cm_ProjectKB_Class10817] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10818] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10819]))
-
-([whofic-harmonized-cm_ProjectKB_Class10819] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10820] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#equivalentClass")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10821])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class10821] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10822] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#subClassOf")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10823])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class10823] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10824] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/fullySpecifiedName")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10825])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 0)
-	(y 620))
-
-([whofic-harmonized-cm_ProjectKB_Class10825] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10826] of  Widget
-
-	(height 300)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/synonym")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10827])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 400)
-	(y 500))
-
-([whofic-harmonized-cm_ProjectKB_Class10827] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10828] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/title")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10829])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 200)
-	(y 500))
-
-([whofic-harmonized-cm_ProjectKB_Class10829] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10830] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/foundationID")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10831])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 200)
-	(x 0)
-	(y 500))
-
-([whofic-harmonized-cm_ProjectKB_Class10831] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10832] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/externalDefinition")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10833])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 200)
-	(y 560))
-
-([whofic-harmonized-cm_ProjectKB_Class10833] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10834] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/definition")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10835])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 0)
-	(y 560))
-
-([whofic-harmonized-cm_ProjectKB_Class10835] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10836] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/longDefinition")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10837])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 0)
-	(y 680))
-
-([whofic-harmonized-cm_ProjectKB_Class10837] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class10838] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/externalReference")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class10839])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 200)
-	(y 680))
-
-([whofic-harmonized-cm_ProjectKB_Class10839] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11084] of  Property_List
-)
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
 
 ([whofic-harmonized-cm_ProjectKB_Class11156] of  Property_List
 
@@ -8929,538 +8478,6 @@
 ([whofic-harmonized-cm_ProjectKB_Class11688] of  Property_List
 )
 
-([whofic-harmonized-cm_ProjectKB_Class11689] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/ICDCategoryShape")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11692])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([whofic-harmonized-cm_ProjectKB_Class11692] of  Property_List
-
-	(name "class widget properties")
-	(properties
-		[whofic-harmonized-cm_ProjectKB_Class11693]
-		[whofic-harmonized-cm_ProjectKB_Class11695]
-		[whofic-harmonized-cm_ProjectKB_Class11696]
-		[whofic-harmonized-cm_ProjectKB_Class11697]
-		[whofic-harmonized-cm_ProjectKB_Class11712]
-		[whofic-harmonized-cm_ProjectKB_Class11715]
-		[whofic-harmonized-cm_ProjectKB_Class11717]
-		[whofic-harmonized-cm_ProjectKB_Class11718]
-		[whofic-harmonized-cm_ProjectKB_Class11720]
-		[whofic-harmonized-cm_ProjectKB_Class11723]
-		[whofic-harmonized-cm_ProjectKB_Class11725]
-		[whofic-harmonized-cm_ProjectKB_Class11727]
-		[whofic-harmonized-cm_ProjectKB_Class11729]
-		[whofic-harmonized-cm_ProjectKB_Class11731]
-		[whofic-harmonized-cm_ProjectKB_Class11733]
-		[whofic-harmonized-cm_ProjectKB_Class11735]
-		[whofic-harmonized-cm_ProjectKB_Class11737]
-		[whofic-harmonized-cm_ProjectKB_Class11739]
-		[whofic-harmonized-cm_ProjectKB_Class11741]
-		[whofic-harmonized-cm_ProjectKB_Class11743]
-		[whofic-harmonized-cm_ProjectKB_Class11745]
-		[whofic-harmonized-cm_ProjectKB_Class11747]
-		[whofic-harmonized-cm_ProjectKB_Class11749]
-		[whofic-harmonized-cm_ProjectKB_Class11751]
-		[whofic-harmonized-cm_ProjectKB_Class11753]
-		[whofic-harmonized-cm_ProjectKB_Class11755]
-		[whofic-harmonized-cm_ProjectKB_Class11757]
-		[whofic-harmonized-cm_ProjectKB_Class11759]
-		[whofic-harmonized-cm_ProjectKB_Class11761]
-		[whofic-harmonized-cm_ProjectKB_Class11763]
-		[whofic-harmonized-cm_ProjectKB_Class11765]))
-
-([whofic-harmonized-cm_ProjectKB_Class11693] of  Widget
-
-	(height 0)
-	(label "Constraints")
-	(name ":SLOT-CONSTRAINTS")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11694])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class11694] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11695] of  Widget
-
-	(name ":DIRECT-INSTANCES"))
-
-([whofic-harmonized-cm_ProjectKB_Class11696] of  Widget
-
-	(name ":DIRECT-SUBCLASSES"))
-
-([whofic-harmonized-cm_ProjectKB_Class11697] of  Widget
-
-	(height 500)
-	(label "Definition")
-	(name ":DIRECT-SUPERCLASSES")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11698])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.ClassAnnotationsAndDescriptionWidget")
-	(width 660)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class11698] of  Property_List
-
-	(properties [whofic-harmonized-cm_ProjectKB_Class11699]))
-
-([whofic-harmonized-cm_ProjectKB_Class11699] of  Widget
-
-	(height 367)
-	(is_hidden FALSE)
-	(label "Class Annotations")
-	(name "http://www.w3.org/2002/07/owl#equivalentClass")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11700])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 660)
-	(x 0)
-	(y 133))
-
-([whofic-harmonized-cm_ProjectKB_Class11700] of  Property_List
-
-	(properties
-		[whofic-harmonized-cm_ProjectKB_Class11701]
-		[whofic-harmonized-cm_ProjectKB_Class11705]))
-
-([whofic-harmonized-cm_ProjectKB_Class11701] of  Widget
-
-	(height 367)
-	(is_hidden FALSE)
-	(label "Logic View")
-	(name ":DIRECT-TEMPLATE-SLOTS")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11702])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 660)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class11702] of  Property_List
-
-	(properties
-		[whofic-harmonized-cm_ProjectKB_Class11703]
-		[whofic-harmonized-cm_ProjectKB_Class11704]))
-
-([whofic-harmonized-cm_ProjectKB_Class11703] of  Widget
-
-	(height 213)
-	(is_hidden FALSE)
-	(label "Conditions")
-	(name ":DIRECT-SUPERCLASSES")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 650)
-	(x 5)
-	(y 5))
-
-([whofic-harmonized-cm_ProjectKB_Class11704] of  Widget
-
-	(height 142)
-	(is_hidden FALSE)
-	(label "Disjoints")
-	(name "http://www.w3.org/2002/07/owl#disjointWith")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 660)
-	(x 0)
-	(y 225))
-
-([whofic-harmonized-cm_ProjectKB_Class11705] of  Widget
-
-	(height -27)
-	(is_hidden FALSE)
-	(label "Properties View")
-	(name ":DIRECT-SUPERCLASSES")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11706])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width -5)
-	(x 2)
-	(y 24))
-
-([whofic-harmonized-cm_ProjectKB_Class11706] of  Property_List
-
-	(properties
-		[whofic-harmonized-cm_ProjectKB_Class11707]
-		[whofic-harmonized-cm_ProjectKB_Class11708]
-		[whofic-harmonized-cm_ProjectKB_Class11711]))
-
-([whofic-harmonized-cm_ProjectKB_Class11707] of  Widget
-
-	(is_hidden FALSE)
-	(label "Superclasses")
-	(name ":DIRECT-SUPERCLASSES")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([whofic-harmonized-cm_ProjectKB_Class11708] of  Widget
-
-	(is_hidden FALSE)
-	(label "Properties")
-	(name ":DIRECT-TEMPLATE-SLOTS")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11709])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([whofic-harmonized-cm_ProjectKB_Class11709] of  Property_List
-
-	(properties [whofic-harmonized-cm_ProjectKB_Class11710]))
-
-([whofic-harmonized-cm_ProjectKB_Class11710] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisplayRestrictions"))
-
-([whofic-harmonized-cm_ProjectKB_Class11711] of  Widget
-
-	(is_hidden FALSE)
-	(label "Disjoints")
-	(name "http://www.w3.org/2002/07/owl#disjointWith")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([whofic-harmonized-cm_ProjectKB_Class11712] of  Widget
-
-	(height 0)
-	(label "Name")
-	(name ":NAME")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11713])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class11713] of  Property_List
-
-	(properties [whofic-harmonized-cm_ProjectKB_Class11714]))
-
-([whofic-harmonized-cm_ProjectKB_Class11714] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([whofic-harmonized-cm_ProjectKB_Class11715] of  Widget
-
-	(height 0)
-	(label "Role")
-	(name ":ROLE")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11716])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class11716] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11717] of  Widget
-
-	(name ":DIRECT-TYPE"))
-
-([whofic-harmonized-cm_ProjectKB_Class11718] of  Widget
-
-	(height 0)
-	(label "OWL Properties")
-	(name ":DIRECT-TEMPLATE-SLOTS")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11719])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class11719] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11720] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[whofic-harmonized-cm_ProjectKB_Class11721]
-		[whofic-harmonized-cm_ProjectKB_Class11722]))
-
-([whofic-harmonized-cm_ProjectKB_Class11721] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<all>>"))
-
-([whofic-harmonized-cm_ProjectKB_Class11722] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([whofic-harmonized-cm_ProjectKB_Class11723] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":DOCUMENTATION")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11724])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class11724] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11725] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11726])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class11726] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11727] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11728]))
-
-([whofic-harmonized-cm_ProjectKB_Class11728] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11729] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11730]))
-
-([whofic-harmonized-cm_ProjectKB_Class11730] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11731] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11732]))
-
-([whofic-harmonized-cm_ProjectKB_Class11732] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11733] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11734]))
-
-([whofic-harmonized-cm_ProjectKB_Class11734] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11735] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11736]))
-
-([whofic-harmonized-cm_ProjectKB_Class11736] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11737] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#equivalentClass")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11738])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class11738] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11739] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#subClassOf")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11740])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic-harmonized-cm_ProjectKB_Class11740] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11741] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/fullySpecifiedName")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11742])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 0)
-	(y 620))
-
-([whofic-harmonized-cm_ProjectKB_Class11742] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11743] of  Widget
-
-	(height 240)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/synonym")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11744])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 400)
-	(y 500))
-
-([whofic-harmonized-cm_ProjectKB_Class11744] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11745] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/title")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11746])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 200)
-	(y 500))
-
-([whofic-harmonized-cm_ProjectKB_Class11746] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11747] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/foundationID")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11748])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 200)
-	(x 0)
-	(y 500))
-
-([whofic-harmonized-cm_ProjectKB_Class11748] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11749] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/externalDefinition")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11750])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 200)
-	(y 620))
-
-([whofic-harmonized-cm_ProjectKB_Class11750] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11751] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/definition")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11752])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 0)
-	(y 560))
-
-([whofic-harmonized-cm_ProjectKB_Class11752] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11753] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/longDefinition")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11754])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 200)
-	(y 560))
-
-([whofic-harmonized-cm_ProjectKB_Class11754] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11755] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/narrower")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11756])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 400)
-	(y 740))
-
-([whofic-harmonized-cm_ProjectKB_Class11756] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11757] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/baseExclusion")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11758])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 0)
-	(y 740))
-
-([whofic-harmonized-cm_ProjectKB_Class11758] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11759] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/subclassBaseInclusion")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11760])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 400)
-	(y 860))
-
-([whofic-harmonized-cm_ProjectKB_Class11760] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11761] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/baseInclusion")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11762])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 0)
-	(y 860))
-
-([whofic-harmonized-cm_ProjectKB_Class11762] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11763] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/indexBaseInclusion")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11764])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 200)
-	(y 860))
-
-([whofic-harmonized-cm_ProjectKB_Class11764] of  Property_List
-)
-
-([whofic-harmonized-cm_ProjectKB_Class11765] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://who.int/whofic/baseIndex")
-	(property_list [whofic-harmonized-cm_ProjectKB_Class11766])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 200)
-	(y 740))
-
-([whofic-harmonized-cm_ProjectKB_Class11766] of  Property_List
-)
-
 ([whofic-harmonized-cm_ProjectKB_Class11845] of  Property_List
 )
 
@@ -9793,61 +8810,21 @@
 	(boolean_value TRUE)
 	(name "DisabledByUser"))
 
-([whofic-harmonized-cm_ProjectKB_Class12098] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([whofic-harmonized-cm_ProjectKB_Class12099] of  String
-
-	(name "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property")
-	(string_value "%3ANAME"))
-
-([whofic-harmonized-cm_ProjectKB_Class12100] of  String
-
-	(name "http://www.w3.org/2002/07/owl#Thing")
-	(string_value "%3ANAME"))
-
-([whofic-harmonized-cm_ProjectKB_Class12101] of  String
-
-	(name "http://www.w3.org/2000/01/rdf-schema#Class")
-	(string_value "%3ANAME"))
-
-([whofic-harmonized-cm_ProjectKB_Class12102] of  String
-
-	(name "http://who.int/whofic/TitleTerm")
-	(string_value "http%3A%2F%2Fwho.int%2Fwhofic%2Flabel"))
-
-([whofic-harmonized-cm_ProjectKB_Class12103] of  String
-
-	(name "http://www.w3.org/2002/07/owl#Class")
-	(string_value "%3ANAME"))
-
-([whofic-harmonized-cm_ProjectKB_Class12104] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([whofic-harmonized-cm_ProjectKB_Class12105] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([whofic-harmonized-cm_ProjectKB_Class12106] of  Map_Entry
+([whofic-harmonized-cm_ProjectKB_Class12] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([whofic-harmonized-cm_ProjectKB_Class12107] of  Map_Entry
+([whofic-harmonized-cm_ProjectKB_Class13] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([whofic-harmonized-cm_ProjectKB_Class12108] of  Map_Entry
+([whofic-harmonized-cm_ProjectKB_Class14] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
@@ -9860,6 +8837,36 @@
 	(name "http://who.int/whofic/ClassificationEntityShape")
 	(property_list [whofic-harmonized-cm_ProjectKB_Class10712])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
+
+([whofic-harmonized-cm_ProjectKB_Class4] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([whofic-harmonized-cm_ProjectKB_Class5] of  String
+
+	(name "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property")
+	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
+
+([whofic-harmonized-cm_ProjectKB_Class6] of  String
+
+	(name "http://www.w3.org/2002/07/owl#Thing")
+	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
+
+([whofic-harmonized-cm_ProjectKB_Class7] of  String
+
+	(name "http://www.w3.org/2000/01/rdf-schema#Class")
+	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
+
+([whofic-harmonized-cm_ProjectKB_Class8] of  String
+
+	(name "http://who.int/whofic/TitleTerm")
+	(string_value "http%3A%2F%2Fwho.int%2Fwhofic%2Flabel"))
+
+([whofic-harmonized-cm_ProjectKB_Class9] of  String
+
+	(name "http://www.w3.org/2002/07/owl#Class")
+	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
 
 ([whofic_foundation_cm_ProjectKB_Class1] of  Widget
 
