@@ -30,6 +30,16 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/ChemicalAgentReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/ActionMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/MedicationReferenceTerm"/>
     </owl:disjointWith>
@@ -57,16 +67,6 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/HistopathologyReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/ActionMetaClass"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/SpecificAnatomyReferenceTerm"/>
     </owl:disjointWith>
@@ -251,9 +251,19 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/ClassificationEntityShape">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf>
+      <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+      </rdf:Description>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/SpecificAnatomyReferenceTerm">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://who.int/whofic/TargetReferenceTerm"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://who.int/whofic/GenomicAndChromosomeAnomalyReferenceTerm"/>
+    </owl:disjointWith>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:allValuesFrom>
@@ -264,12 +274,6 @@
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://who.int/whofic/TargetReferenceTerm"/>
-    </rdfs:subClassOf>
-    <owl:disjointWith>
-      <owl:Class rdf:about="http://who.int/whofic/GenomicAndChromosomeAnomalyReferenceTerm"/>
-    </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/MeansReferenceTerm"/>
     </owl:disjointWith>
@@ -343,7 +347,7 @@
     <owl:disjointWith rdf:resource="http://who.int/whofic/LevelOfConsciousnessReferenceTerm"/>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/LinearizationAtEntitySpecification">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/InvestigationTerm">
     <rdfs:subClassOf>
@@ -394,6 +398,16 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/CourseReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/ChemicalAgentMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/FractureQualifierReferenceTerm"/>
     </owl:disjointWith>
@@ -427,16 +441,6 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TypeOfInjuryReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/ChemicalAgentMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/AssociatedWithReferenceTerm"/>
     </owl:disjointWith>
@@ -494,16 +498,6 @@
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ActionReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ChemicalAgentReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/SeverityMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TemporalPatternAndOnsetReferenceTerm"/>
     </owl:disjointWith>
@@ -540,6 +534,16 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TargetReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/SeverityMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/MorphologicallyAbnormalStructureTerm">
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/ClinicalDescriptionTerm"/>
@@ -770,12 +774,12 @@ This is the old inclusion term</rdfs:comment>
   <owl:Class rdf:about="http://who.int/whofic/PostcoordinationCourseScaleTerm">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/CourseReferenceTerm"/>
-        </owl:someValuesFrom>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="http://who.int/whofic/hasScaleValue"/>
         </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/CourseReferenceTerm"/>
+        </owl:someValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -960,6 +964,16 @@ This is the old inclusion term</rdfs:comment>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/MedicationReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/InfectiousAgentMetaClass"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/ExternalCauseDimensionReferenceTerm"/>
     </owl:disjointWith>
@@ -991,16 +1005,6 @@ This is the old inclusion term</rdfs:comment>
       <owl:Class rdf:about="http://who.int/whofic/ConsciousnessMeasureReferenceTerm"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SeverityReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/InfectiousAgentMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/AssociatedWithReferenceTerm"/>
     </owl:disjointWith>
@@ -1262,6 +1266,21 @@ This is the old inclusion term</rdfs:comment>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/TargetReferenceTerm">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="http://who.int/whofic/TargetMetaClass"/>
+              <owl:Class rdf:about="http://who.int/whofic/SpecificAnatomyMetaClass"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/InfectiousAgentReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/BurnQualifierReferenceTerm"/>
@@ -1315,21 +1334,6 @@ This is the old inclusion term</rdfs:comment>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TypeOfInjuryReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class>
-            <owl:unionOf rdf:parseType="Collection">
-              <owl:Class rdf:about="http://who.int/whofic/TargetMetaClass"/>
-              <owl:Class rdf:about="http://who.int/whofic/SpecificAnatomyMetaClass"/>
-            </owl:unionOf>
-          </owl:Class>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SpecificAnatomyReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/MedicationReferenceTerm"/>
@@ -1488,19 +1492,19 @@ This is the old inclusion term</rdfs:comment>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/MedicationReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://who.int/whofic/ConsciousnessMeasureMetaClass"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/InfectiousAgentReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/TargetReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/MeansReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="http://who.int/whofic/ConsciousnessMeasureMetaClass"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/BurnQualifierReferenceTerm"/>
     </owl:disjointWith>
@@ -1567,10 +1571,10 @@ This is the old inclusion term</rdfs:comment>
   <owl:Class rdf:about="http://who.int/whofic/PostcoordinationSeverityScaleTerm">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="http://who.int/whofic/SeverityReferenceTerm"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="http://who.int/whofic/hasScaleValue"/>
         </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://who.int/whofic/SeverityReferenceTerm"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1633,6 +1637,16 @@ This is the old inclusion term</rdfs:comment>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TimeInLifeReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/CourseMetaClass"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SeverityReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TypeOfInjuryReferenceTerm"/>
@@ -1662,16 +1676,6 @@ This is the old inclusion term</rdfs:comment>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/BurnQualifierReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/CourseMetaClass"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/CausalityReferenceTerm"/>
     </owl:disjointWith>
@@ -1725,16 +1729,6 @@ This is the old inclusion term</rdfs:comment>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/FractureQualifierReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/TimeInLifeMetaClass"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/MeansReferenceTerm"/>
     </owl:disjointWith>
@@ -1782,6 +1776,16 @@ This is the old inclusion term</rdfs:comment>
       <owl:Class rdf:about="http://who.int/whofic/ICDCategoryReferenceTerm"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/LevelOfConsciousnessReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/TimeInLifeMetaClass"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/InfectiousAgentReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/SerotypeReferenceTerm"/>
@@ -1978,16 +1982,6 @@ This is the old inclusion term</rdfs:comment>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/InfectiousAgentReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SeverityReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/MeansMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/FractureQualifierReferenceTerm"/>
     </owl:disjointWith>
@@ -1995,6 +1989,16 @@ This is the old inclusion term</rdfs:comment>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TopologyReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/MeansMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/MedicationReferenceTerm"/>
     </owl:disjointWith>
@@ -2119,11 +2123,11 @@ This is the old inclusion term</rdfs:comment>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</owl:hasValue>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="http://who.int/whofic/allowsCategorySpecificValueDefinition"/>
         </owl:onProperty>
-        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >false</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -2341,21 +2345,21 @@ This is the old inclusion term</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/TemporalPatternAndOnsetReferenceTerm">
     <owl:disjointWith rdf:resource="http://who.int/whofic/SpecificAnatomyReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/TemporalPatternAndOnsetMetaClass"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/SerotypeReferenceTerm"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/MeansReferenceTerm"/>
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/PostcoordinationValueReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/TemporalPatternAndOnsetMetaClass"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/FractureQualifierReferenceTerm"/>
     </owl:disjointWith>
@@ -2416,6 +2420,16 @@ This is the old inclusion term</rdfs:comment>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/MedicationReferenceTerm">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/MedicamentMetaClass"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/HistopathologyReferenceTerm"/>
     </owl:disjointWith>
@@ -2429,16 +2443,6 @@ This is the old inclusion term</rdfs:comment>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/BurnQualifierReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/MedicamentMetaClass"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/FractureSubtypeReferenceTerm"/>
     </owl:disjointWith>
@@ -2722,6 +2726,9 @@ This is the old inclusion term</rdfs:comment>
       <owl:Class rdf:about="http://who.int/whofic/FractureQualifierReferenceTerm"/>
     </owl:disjointWith>
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/PostcoordinationValueReferenceTerm"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://who.int/whofic/FractureSubtypeReferenceTerm"/>
+    </owl:disjointWith>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:allValuesFrom rdf:resource="http://who.int/whofic/BurnQualifierMetaClass"/>
@@ -2730,9 +2737,6 @@ This is the old inclusion term</rdfs:comment>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:disjointWith>
-      <owl:Class rdf:about="http://who.int/whofic/FractureSubtypeReferenceTerm"/>
-    </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/GenomicAndChromosomeAnomalyReferenceTerm"/>
     </owl:disjointWith>
@@ -2838,10 +2842,11 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
       <owl:Class rdf:about="http://who.int/whofic/SerotypeReferenceTerm"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/MedicationReferenceTerm"/>
+    <rdfs:subClassOf rdf:resource="http://who.int/whofic/PostcoordinationValueReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/DiagnosisConfirmedByReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf rdf:resource="http://who.int/whofic/PostcoordinationValueReferenceTerm"/>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/ChemicalAgentReferenceTerm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -2850,7 +2855,6 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
         <owl:someValuesFrom rdf:resource="http://who.int/whofic/ICECIMetaClass"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/ChemicalAgentReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/CourseReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/GenomicAndChromosomeAnomalyReferenceTerm"/>
@@ -2862,6 +2866,16 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/ICDCategoryReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/FractureQualifierMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TopologyReferenceTerm"/>
     </owl:disjointWith>
@@ -2882,16 +2896,6 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith rdf:resource="http://who.int/whofic/ConsciousnessMeasureReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/MedicationReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/InfectiousAgentReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/FractureQualifierMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/PostcoordinationValueReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/DiagnosisConfirmedByReferenceTerm"/>
@@ -2932,16 +2936,6 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
   <owl:Class rdf:about="http://who.int/whofic/GenomicAndChromosomeAnomalyReferenceTerm">
     <owl:disjointWith rdf:resource="http://who.int/whofic/TimeInLifeReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/BurnQualifierReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/GenomicAndChromosomeAnomalyMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/CourseReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/HistopathologyReferenceTerm"/>
@@ -2970,6 +2964,16 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
       <owl:Class rdf:about="http://who.int/whofic/CausalityReferenceTerm"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ExternalCauseDimensionReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/GenomicAndChromosomeAnomalyMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/InfectiousAgentReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/DiagnosisConfirmedByReferenceTerm"/>
@@ -3001,6 +3005,16 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/GenomicAndChromosomeAnomalyReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/TargetReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/SerotypeMetaClass"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ConsciousnessMeasureReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/CourseReferenceTerm"/>
     <owl:disjointWith>
@@ -3037,22 +3051,14 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
       <owl:Class rdf:about="http://who.int/whofic/AssociatedWithReferenceTerm"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/InfectiousAgentReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/SerotypeMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/BurnQualifierReferenceTerm"/>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/ICDCategoryReferenceTerm">
     <owl:disjointWith rdf:resource="http://who.int/whofic/ExternalCauseDimensionReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/FractureQualifierReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SeverityReferenceTerm"/>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/ActionReferenceTerm"/>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/TemporalPatternAndOnsetReferenceTerm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:allValuesFrom rdf:resource="http://who.int/whofic/Section"/>
@@ -3061,8 +3067,6 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/ActionReferenceTerm"/>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/TemporalPatternAndOnsetReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/TimeInLifeReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SpecificAnatomyReferenceTerm"/>
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/PostcoordinationValueReferenceTerm"/>
@@ -3198,6 +3202,7 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith rdf:resource="http://who.int/whofic/InfectiousAgentReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ConsciousnessMeasureReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SpecificAnatomyReferenceTerm"/>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/LevelOfConsciousnessReferenceTerm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:allValuesFrom>
@@ -3208,7 +3213,6 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/LevelOfConsciousnessReferenceTerm"/>
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/PostcoordinationValueReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/MedicationReferenceTerm"/>
     <owl:disjointWith>
@@ -3357,9 +3361,6 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
   <owl:Class rdf:about="http://who.int/whofic/PostcoordinationScaleTerm">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/hasScaleValue"/>
-        </owl:onProperty>
         <owl:allValuesFrom>
           <owl:Class>
             <owl:unionOf rdf:parseType="Collection">
@@ -3369,6 +3370,9 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
             </owl:unionOf>
           </owl:Class>
         </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/hasScaleValue"/>
+        </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/Term"/>
@@ -3452,20 +3456,20 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith rdf:resource="http://who.int/whofic/TimeInLifeMetaClass"/>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/TypeOfInjuryReferenceTerm">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="http://who.int/whofic/TypeOfInjuryMetaClass"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/CausalityReferenceTerm"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SerotypeReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/GenomicAndChromosomeAnomalyReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ChemicalAgentReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://who.int/whofic/TypeOfInjuryMetaClass"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/CourseReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/BurnQualifierReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SpecificAnatomyReferenceTerm"/>
@@ -3546,11 +3550,6 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith rdf:resource="http://who.int/whofic/InfectiousAgentReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/MeansReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/GenomicAndChromosomeAnomalyReferenceTerm"/>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/FractureSubtypeReferenceTerm"/>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/TimeInLifeReferenceTerm"/>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/LevelOfConsciousnessReferenceTerm"/>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/ChemicalAgentReferenceTerm"/>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/MedicationReferenceTerm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -3559,6 +3558,11 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
         <owl:allValuesFrom rdf:resource="http://who.int/whofic/TopologyMetaClass"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/FractureSubtypeReferenceTerm"/>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/TimeInLifeReferenceTerm"/>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/LevelOfConsciousnessReferenceTerm"/>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/ChemicalAgentReferenceTerm"/>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/MedicationReferenceTerm"/>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/InfectiousAgentMetaClass">
     <owl:disjointWith rdf:resource="http://who.int/whofic/SpecificAnatomyMetaClass"/>
@@ -3687,20 +3691,20 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith rdf:resource="http://who.int/whofic/HistopathologyReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/LevelOfConsciousnessReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/InfectiousAgentReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://who.int/whofic/CausalityMetaClass"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/PostcoordinationValueReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/TypeOfInjuryReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ICDCategoryReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/TemporalPatternAndOnsetReferenceTerm"/>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/ChemicalAgentReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SpecificAnatomyReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="http://who.int/whofic/CausalityMetaClass"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/ChemicalAgentReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/GenomicAndChromosomeAnomalyReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SerotypeReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/FractureSubtypeReferenceTerm"/>
@@ -3922,6 +3926,9 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
   </owl:Class>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/externalDefinition">
     <rdfs:range rdf:resource="http://who.int/whofic/ExternalDefinitionTerm"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://who.int/whofic/whoficObjectProperty"/>
+    </rdfs:subPropertyOf>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -4036,6 +4043,9 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/linearization">
     <rdfs:range rdf:resource="http://who.int/whofic/LinearizationSpecification"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://who.int/whofic/linearizationObjectProperty"/>
+    </rdfs:subPropertyOf>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -4061,6 +4071,9 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
     <owl:inverseOf rdf:resource="http://who.int/whofic/externalDefinition"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/ExternalDefinitionTerm"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://who.int/whofic/termProperty"/>
+    </rdfs:subPropertyOf>
     <rdfs:range rdf:resource="http://who.int/whofic/DefinitionSection"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/sportsActivityDescriptor">
@@ -4111,6 +4124,7 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
     <rdfs:domain rdf:resource="http://who.int/whofic/ICDPostcoordinationSection"/>
     <rdfs:range rdf:resource="http://who.int/whofic/TimeInLifeReferenceTerm"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://who.int/whofic/ICFObjectProperty"/>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/fractureOpenOrClosed">
     <rdfs:subPropertyOf>
       <owl:ObjectProperty rdf:about="http://who.int/whofic/fractureQualifier"/>
@@ -4178,7 +4192,8 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
   <owl:ObjectProperty rdf:about="http://who.int/whofic/title">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >ICDtitle</rdfs:label>
+    >Title</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/whoficObjectProperty"/>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -4205,7 +4220,7 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
   <owl:ObjectProperty rdf:about="http://who.int/whofic/hasAction">
     <rdfs:domain rdf:resource="http://who.int/whofic/ICHIPostcoordinationSection"/>
     <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="http://who.int/whofic/postcoordinationAxis"/>
+      <owl:ObjectProperty rdf:about="http://who.int/whofic/ICDPostcoordinationAxis"/>
     </rdfs:subPropertyOf>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/selfCareImpact">
@@ -4216,6 +4231,9 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
   <owl:ObjectProperty rdf:about="http://who.int/whofic/signsAndSymptoms">
     <rdfs:domain rdf:resource="http://who.int/whofic/ClinicalDescriptionSection"/>
     <rdfs:range rdf:resource="http://who.int/whofic/SignsAndSymptomsTerm"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://who.int/whofic/ICDObjectProperty"/>
+    </rdfs:subPropertyOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >signsAndSymptoms</rdfs:label>
   </owl:ObjectProperty>
@@ -4245,10 +4263,10 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
     </rdfs:subPropertyOf>
     <rdfs:domain rdf:resource="http://who.int/whofic/ICDPostcoordinationSection"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://who.int/whofic/ICHIProperty"/>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/etiologyType">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >etiologyType</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/CausalMechanismAndRiskFactorsSection"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -4259,9 +4277,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     <rdfs:range rdf:resource="http://who.int/whofic/EtiologyTypeTerm"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/hasDomain">
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="http://who.int/whofic/ICFproperty"/>
-    </rdfs:subPropertyOf>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICFObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/typeOfLegalIntervention">
     <rdfs:subPropertyOf>
@@ -4275,6 +4291,9 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
         </owl:unionOf>
       </owl:Class>
     </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://who.int/whofic/agent">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/externalCauseDimensionDescriptor">
     <rdfs:subPropertyOf>
@@ -4293,6 +4312,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     >preferred</rdfs:label>
     <rdfs:range rdf:resource="http://who.int/whofic/ICD10NotesTerm"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/fractureQualifier">
     <rdfs:subPropertyOf>
@@ -4325,7 +4345,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/histopathology">
     <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="http://who.int/whofic/postcoordinationAxis"/>
+      <owl:ObjectProperty rdf:about="http://who.int/whofic/ICDPostcoordinationAxis"/>
     </rdfs:subPropertyOf>
     <rdfs:domain rdf:resource="http://who.int/whofic/ICDPostcoordinationSection"/>
     <rdfs:range rdf:resource="http://who.int/whofic/HistopathologyReferenceTerm"/>
@@ -4364,6 +4384,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
       <owl:ObjectProperty rdf:about="http://who.int/whofic/hasQualifier"/>
     </rdfs:subPropertyOf>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://who.int/whofic/deprecatedObjectProperty"/>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/serotype">
     <rdfs:range rdf:resource="http://who.int/whofic/SerotypeReferenceTerm"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/ICDPostcoordinationSection"/>
@@ -4372,7 +4393,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     </rdfs:subPropertyOf>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/hasQualifier">
-    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICFproperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICFObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/linearizationView">
     <rdfs:domain>
@@ -4384,6 +4405,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/linearizationObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/LinearizationView"/>
   </owl:ObjectProperty>
@@ -4413,6 +4435,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >base exclusion</rdfs:label>
     <rdfs:range rdf:resource="http://who.int/whofic/BaseExclusionTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/whoficObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/selectedMobilityImpact">
     <rdfs:domain rdf:resource="http://who.int/whofic/FunctionalImpactSection"/>
@@ -4437,6 +4460,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/whoficObjectProperty"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >base inclusion</rdfs:label>
     <rdfs:range>
@@ -4469,6 +4493,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/clamlReferences">
     <rdfs:domain rdf:resource="http://who.int/whofic/Term"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/termProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/ClamlReference"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/laterality">
@@ -4495,6 +4520,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     <rdfs:range rdf:resource="http://who.int/whofic/FractureSubtypeReferenceTerm"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/temporalProperties">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/TemporalPropertiesTerm"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/ClinicalDescriptionSection"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -4528,6 +4554,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/historicLinearization">
     <rdfs:domain rdf:resource="http://who.int/whofic/LinearizationSection"/>
     <rdfs:range rdf:resource="http://who.int/whofic/HistoricLinearizationSpecification"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/hasEnvironment">
     <rdfs:range rdf:resource="http://who.int/whofic/EnvironmentReferenceTerm"/>
@@ -4537,6 +4564,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/riskFactor">
     <rdfs:domain rdf:resource="http://who.int/whofic/CausalMechanismAndRiskFactorsSection"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/RiskFactorTerm"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >riskFactor</rdfs:label>
@@ -4560,6 +4588,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/unspecifiedResidualTitle">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/linearizationObjectProperty"/>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -4591,9 +4620,9 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/rootCodedTerm">
     <rdfs:range rdf:resource="http://who.int/whofic/CodedTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/deprecatedObjectProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/Linearization"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://who.int/whofic/LinearizationProperty"/>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/interpersonalRelationsImpact">
     <rdfs:subPropertyOf>
       <owl:ObjectProperty rdf:about="http://who.int/whofic/functionalImpact"/>
@@ -4605,6 +4634,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     <rdfs:domain rdf:resource="http://who.int/whofic/TermSection"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >legay inclusion</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/deprecatedObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/hasGCSScore">
     <rdfs:range rdf:resource="http://who.int/whofic/GCSScoreReferenceTerm"/>
@@ -4614,16 +4644,25 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     </rdfs:subPropertyOf>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/lifeCycle">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/SpecificConditionSection"/>
     <rdfs:range rdf:resource="http://who.int/whofic/LifeCycleConditionTerm"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/icdRefCode">
     <rdfs:domain rdf:resource="http://who.int/whofic/ClamlReference"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/editorialStatus">
     <rdfs:range rdf:resource="http://who.int/whofic/EditorialStatusValueSet"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://who.int/whofic/icatObjectProperty"/>
+    </rdfs:subPropertyOf>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://who.int/whofic/ICDPostcoordinationAxis">
+    <rdfs:range rdf:resource="http://who.int/whofic/PostcoordinationValueReferenceTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/bodySystem">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -4632,6 +4671,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >bodySystem</rdfs:label>
     <rdfs:domain rdf:resource="http://who.int/whofic/ClinicalDescriptionSection"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/childLifeCycle">
     <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/lifeCycle"/>
@@ -4640,9 +4680,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/diagnosisConfirmedBy">
     <rdfs:range rdf:resource="http://who.int/whofic/DiagnosisConfirmedByReferenceTerm"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/ICDPostcoordinationSection"/>
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="http://who.int/whofic/postcoordinationAxis"/>
-    </rdfs:subPropertyOf>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDPostcoordinationAxis"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/occupationalDescriptor">
     <rdfs:range>
@@ -4709,6 +4747,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     >Migrate to genomicAndChromosomalAnomaly?</rdfs:comment>
     <rdfs:domain rdf:resource="http://who.int/whofic/CausalMechanismAndRiskFactorsSection"/>
     <rdfs:range rdf:resource="http://who.int/whofic/GenomicLinkageTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >genomicLinkage</rdfs:label>
   </owl:ObjectProperty>
@@ -4720,6 +4759,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/externalReference">
     <rdfs:domain rdf:resource="http://who.int/whofic/ExternalReferenceSection"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/whoficObjectProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/ExternalReferenceTerm"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >externalReference</rdfs:label>
@@ -4738,15 +4778,11 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     </rdfs:subPropertyOf>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/consciousnessMeasure">
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="http://who.int/whofic/postcoordinationAxis"/>
-    </rdfs:subPropertyOf>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDPostcoordinationAxis"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/hasManifestation">
     <rdfs:domain rdf:resource="http://who.int/whofic/ICDPostcoordinationSection"/>
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="http://who.int/whofic/postcoordinationAxis"/>
-    </rdfs:subPropertyOf>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDPostcoordinationAxis"/>
     <rdfs:range rdf:resource="http://who.int/whofic/ManifestingConditionReferenceTerm"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/otherChildrenAndYouthImpact">
@@ -4775,6 +4811,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/hasQualifier"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/allowedPostcoordinationAxes">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/whoficObjectProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/PostcoordinationSection"/>
     <rdfs:range rdf:resource="http://who.int/whofic/LinearizationPostcoordinationAxesSpecification"/>
   </owl:ObjectProperty>
@@ -4791,20 +4828,22 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
       <owl:ObjectProperty rdf:about="http://who.int/whofic/placeOfOccurrenceDescriptor"/>
     </rdfs:subPropertyOf>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://who.int/whofic/morbidityLinearization"/>
+  <owl:ObjectProperty rdf:about="http://who.int/whofic/morbidityLinearization">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/hasICDCategory">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/Section"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/CodedTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/deprecatedObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/biologicalIndicator">
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="http://who.int/whofic/postcoordinationAxis"/>
-    </rdfs:subPropertyOf>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDPostcoordinationAxis"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedCategory">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Note: The range if this property should not be ICDCategory, but rather a metaclass of ICDCategory, such as Section.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/termProperty"/>
     <rdfs:range>
       <ICCategoryShape rdf:about="http://who.int/whofic/ICDCategory">
         <rdfs:subClassOf>
@@ -4830,7 +4869,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
             <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICCategory"/>
             <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
             <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >Codable Category</rdfs:label>
+            >Codable Entity</rdfs:label>
           </ICCategoryShape>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4855,9 +4894,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     <rdfs:domain rdf:resource="http://who.int/whofic/InternalReferenceTerm"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/etiology">
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="http://who.int/whofic/postcoordinationAxis"/>
-    </rdfs:subPropertyOf>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDPostcoordinationAxis"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/hasTechnique">
     <rdfs:range rdf:resource="http://who.int/whofic/TechniqueReferenceTerm"/>
@@ -4885,6 +4922,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/literatureReference">
     <rdfs:domain rdf:resource="http://who.int/whofic/ClinicalDescriptionTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/LiteratureReference"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/selectedSelfCareImpact">
@@ -4894,6 +4932,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/riskFactorModifier">
     <rdfs:domain rdf:resource="http://who.int/whofic/RiskFactorTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/RiskFactorQualifier"/>
   </owl:ObjectProperty>
@@ -4902,11 +4941,10 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     >specifies the severity scale associated with an ICD category</rdfs:comment>
     <rdfs:range rdf:resource="http://who.int/whofic/SeverityScaleTerm"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/ClinicalDescriptionSection"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/injuryQualifier">
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="http://who.int/whofic/postcoordinationAxis"/>
-    </rdfs:subPropertyOf>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDPostcoordinationAxis"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/fullySpecifiedName">
     <rdfs:domain>
@@ -4918,6 +4956,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
       </owl:Class>
     </rdfs:domain>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/whoficObjectProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/FullySpecifiedName"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/transportDimension">
@@ -4959,6 +4998,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     <rdfs:domain rdf:resource="http://who.int/whofic/TemporalPropertiesTerm"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/TemporalPropertyValueSet"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/causalFactor">
     <rdfs:range rdf:resource="http://who.int/whofic/CausalFactorTerm"/>
@@ -4968,6 +5008,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     </rdfs:subPropertyOf>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/termProperty"/>
     <rdfs:range>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -5000,6 +5041,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     </rdfs:range>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/introduction">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >introduction</rdfs:label>
     <rdfs:domain rdf:resource="http://who.int/whofic/ICD10NotesAndHintsSection"/>
@@ -5019,19 +5061,27 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
       </owl:Class>
     </rdfs:range>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://who.int/whofic/mortalityLinearization"/>
+  <owl:ObjectProperty rdf:about="http://who.int/whofic/mortalityLinearization">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/selectedInterpersonalRelationsImpact">
     <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/interpersonalRelationsImpact"/>
     <rdfs:range rdf:resource="http://who.int/whofic/SelectedInterpersonalRelationsImpact"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/FunctionalImpactSection"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://who.int/whofic/primaryCareLinearization"/>
-  <owl:ObjectProperty rdf:about="http://who.int/whofic/morbiditySubclasses"/>
+  <owl:ObjectProperty rdf:about="http://who.int/whofic/primaryCareLinearization">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://who.int/whofic/morbiditySubclasses">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/editorialStatusCausalMechanism">
     <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/editorialStatus"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://who.int/whofic/hasComponent"/>
+  <owl:ObjectProperty rdf:about="http://who.int/whofic/hasComponent">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICFObjectProperty"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/infectiousAgent">
     <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/etiology"/>
     <rdfs:range rdf:resource="http://who.int/whofic/InfectiousAgentReferenceTerm"/>
@@ -5044,6 +5094,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     <rdfs:domain rdf:resource="http://who.int/whofic/SeverityScaleTerm"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >severity term</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/termProperty"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A severity term and its description</rdfs:comment>
   </owl:ObjectProperty>
@@ -5078,10 +5129,12 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/relevantEntity">
     <rdfs:range rdf:resource="http://who.int/whofic/ICECIMetaClass"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/ICECIMetaClass"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/preferredLong">
     <rdfs:range rdf:resource="http://who.int/whofic/ICD10NotesTerm"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/ICD10NotesAndHintsSection"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDPostcoordinationAxis"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >preferredLong</rdfs:label>
   </owl:ObjectProperty>
@@ -5108,6 +5161,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/deprecatedObjectProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/Section"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The list of ICD categories that correspond to an exclusion or inclusion  term</rdfs:comment>
@@ -5115,6 +5169,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/codingNote">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Linearization specific coding note.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/linearizationObjectProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/LinearizationSpecification"/>
     <rdfs:range rdf:resource="http://who.int/whofic/CodingNoteTerm"/>
   </owl:ObjectProperty>
@@ -5139,6 +5194,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >definition</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/whoficObjectProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/DefinitionTerm"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/economicActivity">
@@ -5152,6 +5208,9 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     </rdfs:range>
     <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/occupationalDescriptor"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://who.int/whofic/mechanism">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/requiredPostcoordinationAxisProperty">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The value of this property is a subproperty of the OWL icd:postcoordinationAxis property.
@@ -5163,8 +5222,8 @@ This is a subproperty of allowedPostcoordinationAxisProperty, because all requir
     </rdfs:subPropertyOf>
     <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://who.int/whofic/ICDProperty"/>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/indexTermType">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/deprecatedObjectProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/IndexTermType"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -5175,11 +5234,13 @@ This is a subproperty of allowedPostcoordinationAxisProperty, because all requir
 The postocoordination axis represented by the value of this property is an allowed postcoordination axis for a given entity and a given linearization.</rdfs:comment>
     <rdfs:domain rdf:resource="http://who.int/whofic/LinearizationPostcoordinationAxesSpecification"/>
     <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/linearizationObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/orderedChild">
     <rdfs:range rdf:resource="http://who.int/whofic/DefinitionSection"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/ChildOrder"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/icatObjectProperty"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Used in the sibling ordering index. Instances of ChildOrder use this property to keep a reference to a child.</rdfs:comment>
   </owl:ObjectProperty>
@@ -5187,6 +5248,7 @@ The postocoordination axis represented by the value of this property is an allow
     <rdfs:range rdf:resource="http://who.int/whofic/CodedTerm"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/CodedTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/deprecatedObjectProperty"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Note by Alan Rector about why using Broader/Narrower:
 
@@ -5220,13 +5282,12 @@ things true of members of a broader class are also true of the narrower class.</
     <rdfs:range rdf:resource="http://who.int/whofic/FunctionalImpactTerm"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >functionalImpact</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/FunctionalImpactSection"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/hasMeans">
     <rdfs:domain rdf:resource="http://who.int/whofic/ICHIPostcoordinationSection"/>
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="http://who.int/whofic/postcoordinationAxis"/>
-    </rdfs:subPropertyOf>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDPostcoordinationAxis"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/otherCommunicationImpact">
     <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/communicationImpact"/>
@@ -5242,10 +5303,12 @@ things true of members of a broader class are also true of the narrower class.</
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/whoficObjectProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/BaseIndexTerm"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/assignedTAG">
     <rdfs:range rdf:resource="http://who.int/whofic/TAG"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/icatObjectProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/DefinitionSection"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >assigned TAGs to a category</rdfs:comment>
@@ -5256,6 +5319,7 @@ things true of members of a broader class are also true of the narrower class.</
   <owl:ObjectProperty rdf:about="http://who.int/whofic/diagnosticCriteria">
     <rdfs:domain rdf:resource="http://who.int/whofic/DiagnosticCriteriaSection"/>
     <rdfs:range rdf:resource="http://who.int/whofic/DiagnosticCriteriaTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/hasPupilReactionScore">
     <rdfs:subPropertyOf>
@@ -5270,12 +5334,14 @@ things true of members of a broader class are also true of the narrower class.</
     <rdfs:range rdf:resource="http://who.int/whofic/SelectedCommunicationImpact"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/treatment">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/TreatmentSection"/>
     <rdfs:range rdf:resource="http://who.int/whofic/TreatmentTerm"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/longDefinition">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/DefinitionTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/whoficObjectProperty"/>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -5295,7 +5361,9 @@ things true of members of a broader class are also true of the narrower class.</
     <rdfs:range rdf:resource="http://who.int/whofic/BaseIndexTerm"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/CodedTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/deprecatedObjectProperty"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://who.int/whofic/ICHIObjectProperty"/>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/intent">
     <rdfs:domain rdf:resource="http://who.int/whofic/ExternalCauseSection"/>
     <rdfs:subPropertyOf>
@@ -5332,19 +5400,19 @@ things true of members of a broader class are also true of the narrower class.</
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/linearizationObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://who.int/whofic/postcoordinationAxis">
-    <rdfs:range rdf:resource="http://who.int/whofic/PostcoordinationValueReferenceTerm"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/hasScaleValue">
     <rdfs:domain rdf:resource="http://who.int/whofic/PostcoordinationScaleTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/PostcoordinationValueReferenceTerm"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/referenceSource">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >PMID, ISBN, URL, or other sources of information</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/ReferenceSource"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/LiteratureReference"/>
   </owl:ObjectProperty>
@@ -5358,11 +5426,13 @@ things true of members of a broader class are also true of the narrower class.</
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >used to set the display status for a category (green, yellow, red) that indicated how ready is the TAG to get feedbacl from the community</rdfs:comment>
     <rdfs:range rdf:resource="http://who.int/whofic/DisplayStatusValueSet"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/icatObjectProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/Section"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/linearizationParent">
     <rdfs:domain rdf:resource="http://who.int/whofic/LinearizationSpecification"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/linearizationObjectProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/Section"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/regional">
@@ -5372,11 +5442,13 @@ things true of members of a broader class are also true of the narrower class.</
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/precoordinationSuperclass">
     <rdfs:range rdf:resource="http://who.int/whofic/Section"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/linearizationObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/PostcoordinationSection"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/hasType">
     <rdfs:domain rdf:resource="http://who.int/whofic/DefinitionSection"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/Type"/>
   </owl:ObjectProperty>
@@ -5397,6 +5469,7 @@ things true of members of a broader class are also true of the narrower class.</
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >This property can be used to create external references to ICD-10 categories (available in BioPortal) that correspond to the new External Causes and Injuries categories.</rdfs:comment>
     <rdfs:domain rdf:resource="http://who.int/whofic/ExternalCauseSection"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >icd10Reference</rdfs:label>
     <rdfs:range rdf:resource="http://who.int/whofic/ICD10ReferenceTerm"/>
@@ -5406,14 +5479,16 @@ things true of members of a broader class are also true of the narrower class.</
     <rdfs:range rdf:resource="http://who.int/whofic/InvestigationTerm"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >investigations</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/biologicalSex">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/SpecificConditionSection"/>
     <rdfs:range rdf:resource="http://who.int/whofic/BiologicalSexConditionTerm"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/hasSeverity">
     <rdfs:range rdf:resource="http://who.int/whofic/SeverityReferenceTerm"/>
-    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/postcoordinationAxis"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDPostcoordinationAxis"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/ICDPostcoordinationSection"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   </owl:ObjectProperty>
@@ -5438,6 +5513,7 @@ things true of members of a broader class are also true of the narrower class.</
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/deprecatedObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/typeOfSportOrExerciseActivity">
     <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/sportsActivityDescriptor"/>
@@ -5453,13 +5529,14 @@ things true of members of a broader class are also true of the narrower class.</
   <owl:ObjectProperty rdf:about="http://who.int/whofic/hasCausingCondition">
     <rdfs:domain rdf:resource="http://who.int/whofic/ICDPostcoordinationSection"/>
     <rdfs:range rdf:resource="http://who.int/whofic/CausingConditionReferenceTerm"/>
-    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/postcoordinationAxis"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDPostcoordinationAxis"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/lifeActivitiesImpact">
     <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/functionalImpact"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/codingHint">
     <rdfs:range rdf:resource="http://who.int/whofic/ICD10NotesTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/ICD10NotesAndHintsSection"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >ICD-10 coding hint as specified by the ClaML "coding-hint" rubric.</rdfs:comment>
@@ -5467,9 +5544,11 @@ things true of members of a broader class are also true of the narrower class.</
     >codingHint</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/temporality">
-    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/postcoordinationAxis"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDPostcoordinationAxis"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://who.int/whofic/morbidityParent"/>
+  <owl:ObjectProperty rdf:about="http://who.int/whofic/morbidityParent">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/householdActivitiesImpact">
     <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/lifeActivitiesImpact"/>
   </owl:ObjectProperty>
@@ -5507,11 +5586,12 @@ things true of members of a broader class are also true of the narrower class.</
     <rdfs:domain rdf:resource="http://who.int/whofic/ExternalCauseSection"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/anatomy">
-    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/postcoordinationAxis"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDPostcoordinationAxis"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/temporalModifier">
     <rdfs:domain rdf:resource="http://who.int/whofic/ClinicalDescriptionSection"/>
     <rdfs:range rdf:resource="http://who.int/whofic/TemporalModifierTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/selectedLifeManagementActivitiesImpact">
@@ -5528,7 +5608,7 @@ things true of members of a broader class are also true of the narrower class.</
   <owl:ObjectProperty rdf:about="http://who.int/whofic/externalCauseDimension">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Since we made externalCauseDimension a post-coordination axis (it is now a subproperty of postcoordinationAxis), its correct new range should be ExternalCauseDimensionTerm, not ExternalCauseTerm. We kept ExternalCauseTerm (at least temporarily) for backwards compatibility purposes, and we did not set ExternalCauseDimensionTerm as range, because this property can never be used directly for post-coordination, only its sub-properties, and conform to our convention we set the range only for those properties (mostly leave properties) that can be used directly in post-ccordination.</rdfs:comment>
-    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/postcoordinationAxis"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDPostcoordinationAxis"/>
     <rdfs:range rdf:resource="http://who.int/whofic/ExternalCauseTerm"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/phaseOfActivity">
@@ -5547,12 +5627,13 @@ things true of members of a broader class are also true of the narrower class.</
     >bodyPart</rdfs:label>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Should be migrated to specificAnatomy property</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/ClinicalDescriptionSection"/>
     <rdfs:range rdf:resource="http://who.int/whofic/BodyPartTerm"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/associatedWith">
     <rdfs:domain rdf:resource="http://who.int/whofic/ICDPostcoordinationSection"/>
-    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/postcoordinationAxis"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDPostcoordinationAxis"/>
     <rdfs:range rdf:resource="http://who.int/whofic/AssociatedWithReferenceTerm"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/understandingImpact">
@@ -5574,21 +5655,25 @@ things true of members of a broader class are also true of the narrower class.</
     </rdfs:range>
     <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/violenceDescriptor"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://who.int/whofic/remark"/>
+  <owl:ObjectProperty rdf:about="http://who.int/whofic/remark">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICFObjectProperty"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/hasTarget">
     <rdfs:range rdf:resource="http://who.int/whofic/TargetReferenceTerm"/>
-    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/postcoordinationAxis"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDPostcoordinationAxis"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/ICHIPostcoordinationSection"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/severity">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Added for backward compaitbility</rdfs:comment>
     <rdfs:range rdf:resource="http://who.int/whofic/SeverityTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/ClinicalDescriptionSection"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/morphologicallyAbnormalStructure">
     <rdfs:range rdf:resource="http://who.int/whofic/MorphologicallyAbnormalStructureTerm"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/ClinicalDescriptionSection"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/exclusionType">
     <rdfs:domain>
@@ -5602,6 +5687,7 @@ things true of members of a broader class are also true of the narrower class.</
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >exclusionType</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/whoficObjectProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/ExclusionTermType"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/narrower">
@@ -5634,6 +5720,7 @@ things true of members of a broader class are also true of the narrower class.</
   <owl:ObjectProperty rdf:about="http://who.int/whofic/note">
     <rdfs:range rdf:resource="http://who.int/whofic/ICD10NotesTerm"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/ICD10NotesAndHintsSection"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >note</rdfs:label>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -5647,6 +5734,7 @@ things true of members of a broader class are also true of the narrower class.</
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >This property is used for storing the sibling ordering index. It links a diseases class to instances of ChildOrder.</rdfs:comment>
     <rdfs:domain rdf:resource="http://who.int/whofic/DefinitionSection"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/icatObjectProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/ChildOrder"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/typeOfHome">
@@ -5693,6 +5781,7 @@ things true of members of a broader class are also true of the narrower class.</
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/evidenceLevel">
     <rdfs:domain rdf:resource="http://who.int/whofic/ClinicalDescriptionTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/EvidenceLevel"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/editorialStatusDiagnosticCriteria">
@@ -5714,6 +5803,7 @@ things true of members of a broader class are also true of the narrower class.</
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://who.int/whofic/exhaustivePartition">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/linearizationObjectProperty"/>
     <rdfs:range rdf:resource="http://who.int/whofic/ICDCategory"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/LinearizationSection"/>
   </owl:ObjectProperty>
@@ -5749,10 +5839,21 @@ things true of members of a broader class are also true of the narrower class.</
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Intended to be used for specifying the kind of category: chapter, block or single category.</rdfs:comment>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="http://who.int/whofic/CodedTerm"/>
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="http://who.int/whofic/WHOFICDatatypeProperty"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://who.int/whofic/CodedTerm"/>
+          <owl:Class rdf:about="http://who.int/whofic/ClassificationEntityShape"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/allowsCategorySpecificValueDefinition">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -5770,17 +5871,24 @@ things true of members of a broader class are also true of the narrower class.</
     >temporalQualifier</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="http://who.int/whofic/ICDDatatypeProperty"/>
+    </rdfs:subPropertyOf>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/diagnosticCriteriaText">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDDatatypeProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/DiagnosticCriteriaTerm"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/unspecifiedTypeComment">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Unspecified: When this box is checked, the iCAT user will be required to comment on why it is unspecifie</rdfs:comment>
     <rdfs:domain rdf:resource="http://who.int/whofic/DefinitionSection"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
   </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://who.int/whofic/ICHIDatatypeProperty"/>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/ontologyId">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/ReferenceTerm"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -5789,16 +5897,22 @@ things true of members of a broader class are also true of the narrower class.</
     >ontologyId</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://who.int/whofic/deprecatedDatatypeProperty"/>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/publicId">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="http://who.int/whofic/iCATDatatypeProperty"/>
+    </rdfs:subPropertyOf>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/source">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/LanguageTerm"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://bioportal.bioontology.org#ontologyLabel">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/deprecatedDatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain>
       <owl:Class>
@@ -5826,16 +5940,19 @@ things true of members of a broader class are also true of the narrower class.</
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/linearizationSortingLabel">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/iCATDatatypeProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/LinearizationSpecification"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/exclusion_type">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Added for backward compatibility</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/citation">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >citation</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -5861,11 +5978,13 @@ things true of members of a broader class are also true of the narrower class.</
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/level">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >level</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/SeverityTerm"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
@@ -5873,6 +5992,7 @@ things true of members of a broader class are also true of the narrower class.</
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >This is the BioPortal short term id, e.g. "12345" or  "p1:Pizza"</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/deprecatedDatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/BioportalReferenceTerm"/>
   </owl:DatatypeProperty>
@@ -5880,7 +6000,9 @@ things true of members of a broader class are also true of the narrower class.</
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
   </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://who.int/whofic/obsoleteDatatypeProperty"/>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/clamlKind">
     <rdfs:domain rdf:resource="http://who.int/whofic/DefinitionSection"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -5893,15 +6015,18 @@ things true of members of a broader class are also true of the narrower class.</
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Use as Underlying cause code, legal restrictions (country specific), etc.
 Administrative information like "may be coded as underlying cause", "may be used for morbidity coding", "rare disease" and others.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/deprecatedDatatypeProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/orderedChildIndex">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/iCATDatatypeProperty"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >This property is used in the sibling ordering index. Instances of ChildOrder use it to store the integer index of a child.</rdfs:comment>
     <rdfs:domain rdf:resource="http://who.int/whofic/ChildOrder"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/ageRangeIsGenerallyTrue">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDDatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/TemporalPropertiesTerm"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -5911,6 +6036,7 @@ Administrative information like "may be coded as underlying cause", "may be used
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/isAuxiliaryAxisChild">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/LinearizationSpecification"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >When there are multiple children in the foundation, some of which are checked in the linearization and some are not, we generally place the terms under the unchecked children as index entries of the ‘other residual’. In certain situation, however, the terms under the unchecked children need to be placed under the 'unspecified' residuals.
@@ -5933,6 +6059,7 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Every category can have Subset adaptation and special view flags. This allows to group selected codes to a Subset that can be extracted for further use, e.g. to generate ICD-11-Mental Health or ICD-11-Mortality</rdfs:comment>
     <rdfs:domain rdf:resource="http://who.int/whofic/CodedTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/obsoleteDatatypeProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/url">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -5940,6 +6067,7 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >url</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain>
       <owl:Class>
@@ -5952,16 +6080,19 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     </rdfs:domain>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#isTemplate">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/referenceID">
     <rdfs:domain rdf:resource="http://who.int/whofic/LiteratureReference"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/iCATDatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/ageRangeIsDefinitional">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDDatatypeProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/TemporalPropertiesTerm"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
   </owl:DatatypeProperty>
@@ -5977,6 +6108,7 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/foundationID">
@@ -5995,14 +6127,17 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     >id</rdfs:label>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >This is the id of a category or term in the Foundation</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/sortingLabel">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/iCATDatatypeProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/DefinitionSection"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/isGrouping">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/LinearizationSpecification"/>
@@ -6016,13 +6151,17 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     >Represents an alternative label for a given language term. 
 This is especially useful for representing different alternative transliterations using latin-based alphabets of language terms written with non-latin characters.
 For example, a Chinese title term having a label written with Chinese characters could get a pinyin transliteration as an alternative label, to allow easier pronounciation to wider audiences.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/exclusionNotes">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
   </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://who.int/whofic/ICFDatatypeProperty"/>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/suppressOtherSpecifiedResiduals">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/definitionType">
@@ -6036,6 +6175,7 @@ For example, a Chinese title term having a label written with Chinese characters
         </owl:oneOf>
       </owl:DataRange>
     </rdfs:range>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/inclusionType">
     <rdfs:range>
@@ -6053,18 +6193,21 @@ For example, a Chinese title term having a label written with Chinese characters
     </rdfs:range>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/InclusionTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >inclusionType</rdfs:label>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/language">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >lanugage</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/LanguageTerm"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/description">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -6085,27 +6228,34 @@ For example, a Chinese title term having a label written with Chinese characters
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/code">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >ICDcode</rdfs:label>
+    >code</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >ICD-10 code</rdfs:comment>
+    >code in a classification</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/DefinitionSection"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/inclusionNotes">
     <rdfs:domain rdf:resource="http://who.int/whofic/BaseInclusionTerm"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/comment">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >comment</rdfs:label>
     <rdfs:domain rdf:resource="http://who.int/whofic/ReferenceTerm"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/severityScaleName">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDDatatypeProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/SeverityScaleTerm"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://who.int/whofic/termDatatypeProperty">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/sortingCode">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -6113,6 +6263,7 @@ For example, a Chinese title term having a label written with Chinese characters
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/LinearizationView"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/iCATDatatypeProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://bioportal.bioontology.org#ontologyId">
     <rdfs:domain>
@@ -6125,33 +6276,39 @@ For example, a Chinese title term having a label written with Chinese characters
       </owl:Class>
     </rdfs:domain>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/deprecatedDatatypeProperty"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >This is the BioPortal ontology id, e.g., "40403"</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/diagnosticCriteriaRule">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDDatatypeProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/DiagnosticCriteriaTerm"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/isIncludedInLinearization">
     <rdfs:domain rdf:resource="http://who.int/whofic/LinearizationSpecification"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >True if the ICD category is included in the linearization</rdfs:comment>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/summary">
     <rdfs:domain rdf:resource="http://who.int/whofic/LiteratureReference"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/isObsolete">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:domain rdf:resource="http://who.int/whofic/DefinitionSection"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/sequenceNumber">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/iCATDatatypeProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -6173,6 +6330,7 @@ For example, a Chinese title term having a label written with Chinese characters
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://who.int/whofic/label">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/WHOFICDatatypeProperty"/>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -6189,12 +6347,14 @@ For example, a Chinese title term having a label written with Chinese characters
   </owl:DatatypeProperty>
   <owl:FunctionalProperty rdf:about="http://who.int/whofic/iceciCode">
     <rdfs:domain rdf:resource="http://who.int/whofic/ICECIMetaClass"/>
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDDatatypeProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >ICECI v1.2 code</rdfs:comment>
   </owl:FunctionalProperty>
   <owl:FunctionalProperty rdf:about="http://who.int/whofic/hasScale">
+    <rdfs:subPropertyOf rdf:resource="http://who.int/whofic/ICDObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:FunctionalProperty>
   <SelectedMobilityImpact rdf:about="http://who.int/whofic/FunctionalImpactTerm_d445">
@@ -6261,30 +6421,21 @@ For example, a Chinese title term having a label written with Chinese characters
     <rdfs:subClassOf>
       <ExtensionEntityShape rdf:about="http://who.int/whofic/FacilitatorQualifier">
         <rdfs:subClassOf>
-          <ExtensionEntityShape rdf:about="http://who.int/whofic/ICFExtensionCode">
+          <ClassificationEntityShape rdf:about="http://who.int/whofic/DefiningQualifier">
+            <rdfs:subClassOf rdf:resource="http://who.int/whofic/ClassificationEntity"/>
+            <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+          </ClassificationEntityShape>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+          <ClassificationEntityShape rdf:about="http://who.int/whofic/Qualifier">
             <rdfs:subClassOf>
-              <ExtensionEntityShape rdf:about="http://who.int/whofic/ExtensionEntity">
+              <ClassificationEntityShape rdf:about="http://who.int/whofic/ICFEntity">
                 <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                >Extension Entity</rdfs:label>
-                <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                >Root class for extension codes</rdfs:comment>
                 <rdfs:subClassOf rdf:resource="http://who.int/whofic/ClassificationEntity"/>
-              </ExtensionEntityShape>
-            </rdfs:subClassOf>
-            <rdfs:subClassOf>
-              <ClassificationEntityShape rdf:about="http://who.int/whofic/Qualifier">
-                <rdfs:subClassOf>
-                  <ClassificationEntityShape rdf:about="http://who.int/whofic/ICFEntity">
-                    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-                    <rdfs:subClassOf rdf:resource="http://who.int/whofic/ClassificationEntity"/>
-                  </ClassificationEntityShape>
-                </rdfs:subClassOf>
-                <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
               </ClassificationEntityShape>
             </rdfs:subClassOf>
             <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-          </ExtensionEntityShape>
+          </ClassificationEntityShape>
         </rdfs:subClassOf>
         <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
       </ExtensionEntityShape>
@@ -6324,7 +6475,8 @@ For example, a Chinese title term having a label written with Chinese characters
     <rdfs:subClassOf>
       <ExtensionEntityShape rdf:about="http://who.int/whofic/BarrierQualifier">
         <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-        <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICFExtensionCode"/>
+        <rdfs:subClassOf rdf:resource="http://who.int/whofic/DefiningQualifier"/>
+        <rdfs:subClassOf rdf:resource="http://who.int/whofic/Qualifier"/>
       </ExtensionEntityShape>
     </rdfs:subClassOf>
   </ExtensionEntityShape>
@@ -6388,18 +6540,13 @@ For example, a Chinese title term having a label written with Chinese characters
     <rdfs:subClassOf>
       <ClassificationEntityShape rdf:about="http://who.int/whofic/ImpairmentExtentQualifier">
         <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-        <rdfs:subClassOf>
-          <ClassificationEntityShape rdf:about="http://who.int/whofic/DefiningAttributeValue">
-            <rdfs:subClassOf rdf:resource="http://who.int/whofic/ClassificationEntity"/>
-            <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-          </ClassificationEntityShape>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://who.int/whofic/DefiningQualifier"/>
         <rdfs:subClassOf rdf:resource="http://who.int/whofic/Qualifier"/>
       </ClassificationEntityShape>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <ClassificationEntityShape rdf:about="http://who.int/whofic/CapacityPerformanceQualifier">
-        <rdfs:subClassOf rdf:resource="http://who.int/whofic/DefiningAttributeValue"/>
+        <rdfs:subClassOf rdf:resource="http://who.int/whofic/DefiningQualifier"/>
         <rdfs:subClassOf rdf:resource="http://who.int/whofic/Qualifier"/>
         <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
       </ClassificationEntityShape>
@@ -6442,6 +6589,24 @@ For example, a Chinese title term having a label written with Chinese characters
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Extension Codes</rdfs:label>
   </FoundationComponentView>
+  <ExtensionEntityShape rdf:about="http://who.int/whofic/ImpairmentLocationQualifier">
+    <rdfs:subClassOf rdf:resource="http://who.int/whofic/Qualifier"/>
+    <rdfs:subClassOf>
+      <ExtensionEntityShape rdf:about="http://who.int/whofic/ICFExtensionCode">
+        <rdfs:subClassOf>
+          <ExtensionEntityShape rdf:about="http://who.int/whofic/ExtensionEntity">
+            <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Extension Code</rdfs:label>
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Root class for extension codes</rdfs:comment>
+            <rdfs:subClassOf rdf:resource="http://who.int/whofic/ClassificationEntity"/>
+          </ExtensionEntityShape>
+        </rdfs:subClassOf>
+        <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+      </ExtensionEntityShape>
+    </rdfs:subClassOf>
+  </ExtensionEntityShape>
   <ICD11LinearizationView rdf:about="http://who.int/whofic/Specialty_Adaptation_Occupational_Health">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Spec. Lin: Occupational Health</rdfs:label>
@@ -6672,6 +6837,193 @@ For example, a Chinese title term having a label written with Chinese characters
     <bp:ontologyLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >International Classification of Functioning, Disability and Health (ICF)</bp:ontologyLabel>
   </SelectedMobilityImpact>
+  <ICCategoryShape rdf:about="http://who.int/whofic/ImpairedAandPPerformance">
+    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+    <rdfs:subClassOf>
+      <ICCategoryShape rdf:about="http://who.int/whofic/ActivityAndParticipationPerformance">
+        <owl:disjointWith>
+          <ICCategoryShape rdf:about="http://who.int/whofic/ActivityAndParticipationCapacityWOAssistance">
+            <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+            <owl:disjointWith rdf:resource="http://who.int/whofic/ActivityAndParticipationPerformance"/>
+            <owl:equivalentClass>
+              <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                  <ICCategoryShape rdf:about="http://who.int/whofic/ActivityAndParticipationSituation">
+                    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+                    <owl:equivalentClass>
+                      <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                          <LinearizationAtEntitySpecification rdf:about="http://who.int/whofic/SingDomainFunctioningSituation">
+                            <owl:equivalentClass>
+                              <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                  <ICCategoryShape rdf:about="http://who.int/whofic/FunctioningSituation">
+                                    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+                                    <owl:disjointWith>
+                                      <ICCategoryShape rdf:about="http://who.int/whofic/BodyStructure">
+                                        <rdfs:subClassOf>
+                                          <ICCategoryShape rdf:about="http://who.int/whofic/StructuralComponent">
+                                            <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICCategory"/>
+                                            <rdfs:comment rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            >These are categories that help to define codable categories</rdfs:comment>
+                                            <rdfs:label rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            >Structural Component Entity</rdfs:label>
+                                            <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+                                          </ICCategoryShape>
+                                        </rdfs:subClassOf>
+                                        <rdfs:subClassOf rdf:resource="http://who.int/whofic/DomainConcept"/>
+                                        <rdfs:subClassOf>
+                                          <ICCategoryShape rdf:about="http://who.int/whofic/ICFCategory">
+                                            <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+                                            <rdfs:comment rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            >ICF's core categories are its codable categories (health state) and structural components (domains), body structure and function, activities and participation, and environmental factors.</rdfs:comment>
+                                            <rdfs:label rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            >ICF Category</rdfs:label>
+                                            <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICCategory"/>
+                                            <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICFEntity"/>
+                                          </ICCategoryShape>
+                                        </rdfs:subClassOf>
+                                        <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+                                        <owl:disjointWith>
+                                          <ICCategoryShape rdf:about="http://who.int/whofic/EnvironmentalFactor">
+                                            <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICFCategory"/>
+                                            <rdfs:subClassOf rdf:resource="http://who.int/whofic/DomainConcept"/>
+                                            <rdfs:subClassOf rdf:resource="http://who.int/whofic/StructuralComponent"/>
+                                            <owl:disjointWith rdf:resource="http://who.int/whofic/FunctioningSituation"/>
+                                            <owl:disjointWith rdf:resource="http://who.int/whofic/BodyStructure"/>
+                                            <owl:disjointWith>
+                                              <ICCategoryShape rdf:about="http://who.int/whofic/BodyFunction">
+                                                <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICFCategory"/>
+                                                <rdfs:subClassOf rdf:resource="http://who.int/whofic/StructuralComponent"/>
+                                                <rdfs:subClassOf rdf:resource="http://who.int/whofic/DomainConcept"/>
+                                                <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+                                                <owl:disjointWith rdf:resource="http://who.int/whofic/BodyStructure"/>
+                                                <owl:disjointWith rdf:resource="http://who.int/whofic/FunctioningSituation"/>
+                                                <owl:disjointWith rdf:resource="http://who.int/whofic/EnvironmentalFactor"/>
+                                                <owl:disjointWith>
+                                                  <ICCategoryShape rdf:about="http://who.int/whofic/ActivityAndParticipation">
+                                                    <rdfs:subClassOf rdf:resource="http://who.int/whofic/StructuralComponent"/>
+                                                    <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICFCategory"/>
+                                                    <rdfs:subClassOf rdf:resource="http://who.int/whofic/DomainConcept"/>
+                                                    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+                                                    <owl:disjointWith rdf:resource="http://who.int/whofic/BodyFunction"/>
+                                                    <owl:disjointWith rdf:resource="http://who.int/whofic/EnvironmentalFactor"/>
+                                                    <owl:disjointWith rdf:resource="http://who.int/whofic/FunctioningSituation"/>
+                                                    <owl:disjointWith rdf:resource="http://who.int/whofic/BodyStructure"/>
+                                                  </ICCategoryShape>
+                                                </owl:disjointWith>
+                                              </ICCategoryShape>
+                                            </owl:disjointWith>
+                                            <owl:disjointWith rdf:resource="http://who.int/whofic/ActivityAndParticipation"/>
+                                            <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+                                          </ICCategoryShape>
+                                        </owl:disjointWith>
+                                        <owl:disjointWith rdf:resource="http://who.int/whofic/FunctioningSituation"/>
+                                        <owl:disjointWith rdf:resource="http://who.int/whofic/BodyFunction"/>
+                                        <owl:disjointWith rdf:resource="http://who.int/whofic/ActivityAndParticipation"/>
+                                      </ICCategoryShape>
+                                    </owl:disjointWith>
+                                    <owl:disjointWith rdf:resource="http://who.int/whofic/EnvironmentalFactor"/>
+                                    <owl:disjointWith rdf:resource="http://who.int/whofic/ActivityAndParticipation"/>
+                                    <owl:disjointWith rdf:resource="http://who.int/whofic/BodyFunction"/>
+                                    <rdfs:subClassOf rdf:resource="http://who.int/whofic/CodableEntity"/>
+                                    <rdfs:subClassOf rdf:resource="http://who.int/whofic/DomainConcept"/>
+                                    <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICFCategory"/>
+                                  </ICCategoryShape>
+                                  <owl:Restriction>
+                                    <owl:onProperty rdf:resource="http://who.int/whofic/hasQualifier"/>
+                                    <owl:someValuesFrom rdf:resource="http://who.int/whofic/DefiningQualifier"/>
+                                  </owl:Restriction>
+                                  <owl:Restriction>
+                                    <owl:someValuesFrom>
+                                      <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                          <ClassificationEntityShape rdf:about="http://who.int/whofic/ICFEntity"/>
+                                          <ICCategoryShape rdf:about="http://who.int/whofic/StructuralComponent"/>
+                                        </owl:intersectionOf>
+                                      </owl:Class>
+                                    </owl:someValuesFrom>
+                                    <owl:onProperty rdf:resource="http://who.int/whofic/hasDomain"/>
+                                  </owl:Restriction>
+                                </owl:intersectionOf>
+                              </owl:Class>
+                            </owl:equivalentClass>
+                            <rdf:type rdf:resource="http://who.int/whofic/ICCategoryShape"/>
+                          </LinearizationAtEntitySpecification>
+                          <owl:Restriction>
+                            <owl:onProperty rdf:resource="http://who.int/whofic/hasDomain"/>
+                            <owl:someValuesFrom rdf:resource="http://who.int/whofic/ActivityAndParticipation"/>
+                          </owl:Restriction>
+                          <owl:Restriction>
+                            <owl:someValuesFrom rdf:resource="http://who.int/whofic/CapacityPerformanceQualifier"/>
+                            <owl:onProperty rdf:resource="http://who.int/whofic/hasQualifier"/>
+                          </owl:Restriction>
+                        </owl:intersectionOf>
+                      </owl:Class>
+                    </owl:equivalentClass>
+                    <owl:disjointWith>
+                      <ICCategoryShape rdf:about="http://who.int/whofic/BodyFunctionLevel">
+                        <owl:disjointWith>
+                          <ICCategoryShape rdf:about="http://who.int/whofic/BodyStructureSituation">
+                            <owl:equivalentClass>
+                              <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                  <LinearizationAtEntitySpecification rdf:about="http://who.int/whofic/SingDomainFunctioningSituation"/>
+                                  <owl:Restriction>
+                                    <owl:someValuesFrom rdf:resource="http://who.int/whofic/BodyStructure"/>
+                                    <owl:onProperty rdf:resource="http://who.int/whofic/hasDomain"/>
+                                  </owl:Restriction>
+                                  <owl:Restriction>
+                                    <owl:someValuesFrom rdf:resource="http://who.int/whofic/ImpairmentExtentQualifier"/>
+                                    <owl:onProperty rdf:resource="http://who.int/whofic/hasImpairmentExtent"/>
+                                  </owl:Restriction>
+                                </owl:intersectionOf>
+                              </owl:Class>
+                            </owl:equivalentClass>
+                            <owl:disjointWith rdf:resource="http://who.int/whofic/BodyFunctionLevel"/>
+                            <owl:disjointWith rdf:resource="http://who.int/whofic/ActivityAndParticipationSituation"/>
+                            <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+                          </ICCategoryShape>
+                        </owl:disjointWith>
+                        <owl:disjointWith rdf:resource="http://who.int/whofic/ActivityAndParticipationSituation"/>
+                        <owl:equivalentClass>
+                          <owl:Class>
+                            <owl:intersectionOf rdf:parseType="Collection">
+                              <LinearizationAtEntitySpecification rdf:about="http://who.int/whofic/SingDomainFunctioningSituation"/>
+                              <owl:Restriction>
+                                <owl:someValuesFrom rdf:resource="http://who.int/whofic/BodyFunction"/>
+                                <owl:onProperty rdf:resource="http://who.int/whofic/hasDomain"/>
+                              </owl:Restriction>
+                              <owl:Restriction>
+                                <owl:someValuesFrom rdf:resource="http://who.int/whofic/ImpairmentExtentQualifier"/>
+                                <owl:onProperty rdf:resource="http://who.int/whofic/hasImpairmentExtent"/>
+                              </owl:Restriction>
+                            </owl:intersectionOf>
+                          </owl:Class>
+                        </owl:equivalentClass>
+                        <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+                      </ICCategoryShape>
+                    </owl:disjointWith>
+                    <owl:disjointWith rdf:resource="http://who.int/whofic/BodyStructureSituation"/>
+                  </ICCategoryShape>
+                  <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://who.int/whofic/hasCapacityWithoutAssistance"/>
+                    <owl:someValuesFrom rdf:resource="http://who.int/whofic/CapacityPerformanceQualifier"/>
+                  </owl:Restriction>
+                </owl:intersectionOf>
+              </owl:Class>
+            </owl:equivalentClass>
+          </ICCategoryShape>
+        </owl:disjointWith>
+        <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+        <rdfs:subClassOf rdf:resource="http://who.int/whofic/ActivityAndParticipationSituation"/>
+      </ICCategoryShape>
+    </rdfs:subClassOf>
+  </ICCategoryShape>
   <SelectedSocialParticipationImpact rdf:about="http://who.int/whofic/FunctionalImpactTerm_d950">
     <bp:shortTermId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >d950</bp:shortTermId>
@@ -6864,6 +7216,10 @@ For example, a Chinese title term having a label written with Chinese characters
     <bp:ontologyLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >International Classification of Functioning, Disability and Health (ICF)</bp:ontologyLabel>
   </SelectedCommunicationImpact>
+  <ICCategoryShape rdf:about="http://who.int/whofic/UnlimitedAandPPerformance">
+    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+    <rdfs:subClassOf rdf:resource="http://who.int/whofic/ActivityAndParticipationPerformance"/>
+  </ICCategoryShape>
   <EtiologyTypeTerm rdf:about="http://who.int/whofic/Iatrogenic">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Iatrogenic</rdfs:label>
@@ -6900,6 +7256,23 @@ For example, a Chinese title term having a label written with Chinese characters
     <bp:ontologyLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >International Classification of Functioning, Disability and Health (ICF)</bp:ontologyLabel>
   </SelectedSocialParticipationImpact>
+  <ICCategoryShape rdf:about="http://who.int/whofic/id_000002">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >EnvironmentalFactorFacilitatorRole</rdfs:label>
+    <rdfs:subClassOf>
+      <ICCategoryShape rdf:about="http://who.int/whofic/id_000001">
+        <rdfs:subClassOf>
+          <ICCategoryShape rdf:about="http://who.int/whofic/EnvironmentalFactorRole">
+            <rdfs:subClassOf rdf:resource="http://who.int/whofic/CodableEntity"/>
+            <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICFCategory"/>
+            <rdfs:subClassOf rdf:resource="http://who.int/whofic/DomainConcept"/>
+          </ICCategoryShape>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >SingleDomainEnvironmentalFactorRole</rdfs:label>
+      </ICCategoryShape>
+    </rdfs:subClassOf>
+  </ICCategoryShape>
   <ClassificationEntityShape rdf:about="http://who.int/whofic/MildDifficulty">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >1 Mild Difficulty</rdfs:label>
@@ -7006,6 +7379,11 @@ For example, a Chinese title term having a label written with Chinese characters
     <bp:shortTermId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >d470</bp:shortTermId>
   </SelectedMobilityImpact>
+  <ICCategoryShape rdf:about="http://who.int/whofic/id_000003">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >EnvironmentalFactorBarrierRole</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://who.int/whofic/id_000001"/>
+  </ICCategoryShape>
   <ExtensionEntityShape rdf:about="http://who.int/whofic/MildBarrier">
     <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/BarrierQualifier"/>
@@ -7077,6 +7455,11 @@ For example, a Chinese title term having a label written with Chinese characters
     <bp:ontologyLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >International Classification of Functioning, Disability and Health (ICF)</bp:ontologyLabel>
   </SelectedSelfCareImpact>
+  <ICCategoryShape rdf:about="http://who.int/whofic/id_000000">
+    <rdfs:subClassOf rdf:resource="http://who.int/whofic/EnvironmentalFactorRole"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CompositeEnvironmentalFactorRole</rdfs:label>
+  </ICCategoryShape>
   <SelectedMobilityImpact rdf:about="http://who.int/whofic/FunctionalImpactTerm_d475">
     <ontologyId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >International Classification of Functioning, Disability and Health (ICF)</ontologyId>
@@ -7117,6 +7500,17 @@ For example, a Chinese title term having a label written with Chinese characters
     <bp:ontologyId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >40865</bp:ontologyId>
   </SelectedInterpersonalRelationsImpact>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/NoDifficulty-0"/>
+      <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/MildDifficulty-1"/>
+      <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/ModerateDifficulty-2"/>
+      <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/SevereDifficulty-3"/>
+      <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/CompleteDifficulty-4"/>
+      <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/NotSpecified-8"/>
+      <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/NotApplicable-9"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
   <ICD10TabulationListView rdf:about="http://who.int/whofic/Tabulation_List_M2">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Tab. List 2: General Mortality - Selected</rdfs:label>
@@ -7135,6 +7529,9 @@ For example, a Chinese title term having a label written with Chinese characters
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >3 Severe Difficulty</rdfs:label>
   </ClassificationEntityShape>
+  <owl:AnnotationProperty rdf:about="http://who.int/whofic/checkAnnotationRepresentationProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:AnnotationProperty>
   <ICD10TabulationListView rdf:about="http://who.int/whofic/Tabulation_List_M4">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Tab. List 4: Infant and Child Mortality - Selected</rdfs:label>
@@ -7207,6 +7604,25 @@ For example, a Chinese title term having a label written with Chinese characters
     <url rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >http://bioportal.bioontology.org/visconcepts/40865/?id=d430</url>
   </SelectedMobilityImpact>
+  <ICCategoryShape rdf:about="http://who.int/whofic/CompositeFunctioningSituation">
+    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <ICCategoryShape rdf:about="http://who.int/whofic/FunctioningSituation"/>
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://who.int/whofic/SingDomainFunctioningSituation"/>
+            <owl:onProperty rdf:resource="http://who.int/whofic/hasComponent"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</owl:minCardinality>
+            <owl:onProperty rdf:resource="http://who.int/whofic/hasComponent"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </ICCategoryShape>
   <BiologicalSexConditionTerm rdf:about="http://who.int/whofic/MaleSCTerm">
     <url rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >http://bioportal.bioontology.org/visconcepts/42122/?id=248153007</url>
@@ -7367,192 +7783,13 @@ For example, a Chinese title term having a label written with Chinese characters
     <bp:ontologyId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >40865</bp:ontologyId>
   </SelectedSelfCareImpact>
-  <ICCategoryShape rdf:about="http://who.int/whofic/ComplexHealthState">
-    <owl:equivalentClass>
-      <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-          <ICCategoryShape rdf:about="http://who.int/whofic/HealthState">
-            <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-            <owl:disjointWith>
-              <ICCategoryShape rdf:about="http://who.int/whofic/BodyStructure">
-                <rdfs:subClassOf>
-                  <ICCategoryShape rdf:about="http://who.int/whofic/StructuralComponent">
-                    <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICCategory"/>
-                    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                    >These are categories that help to define codable categories</rdfs:comment>
-                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                    >Structural Component Entity</rdfs:label>
-                    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-                  </ICCategoryShape>
-                </rdfs:subClassOf>
-                <rdfs:subClassOf rdf:resource="http://who.int/whofic/DomainConcept"/>
-                <rdfs:subClassOf>
-                  <ICCategoryShape rdf:about="http://who.int/whofic/ICFCategory">
-                    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-                    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                    >ICF's core categories are its codable categories (health state) and structural components (domains), body structure and function, activities and participation, and environmental factors.</rdfs:comment>
-                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                    >ICF Category</rdfs:label>
-                    <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICCategory"/>
-                    <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICFEntity"/>
-                  </ICCategoryShape>
-                </rdfs:subClassOf>
-                <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-                <owl:disjointWith>
-                  <ICCategoryShape rdf:about="http://who.int/whofic/EnvironmentalFactor">
-                    <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICFCategory"/>
-                    <rdfs:subClassOf rdf:resource="http://who.int/whofic/DomainConcept"/>
-                    <rdfs:subClassOf rdf:resource="http://who.int/whofic/StructuralComponent"/>
-                    <owl:disjointWith rdf:resource="http://who.int/whofic/HealthState"/>
-                    <owl:disjointWith rdf:resource="http://who.int/whofic/BodyStructure"/>
-                    <owl:disjointWith>
-                      <ICCategoryShape rdf:about="http://who.int/whofic/BodyFunction">
-                        <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICFCategory"/>
-                        <rdfs:subClassOf rdf:resource="http://who.int/whofic/StructuralComponent"/>
-                        <rdfs:subClassOf rdf:resource="http://who.int/whofic/DomainConcept"/>
-                        <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-                        <owl:disjointWith rdf:resource="http://who.int/whofic/BodyStructure"/>
-                        <owl:disjointWith rdf:resource="http://who.int/whofic/HealthState"/>
-                        <owl:disjointWith rdf:resource="http://who.int/whofic/EnvironmentalFactor"/>
-                        <owl:disjointWith>
-                          <ICCategoryShape rdf:about="http://who.int/whofic/ActivityAndParticipation">
-                            <rdfs:subClassOf rdf:resource="http://who.int/whofic/StructuralComponent"/>
-                            <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICFCategory"/>
-                            <rdfs:subClassOf rdf:resource="http://who.int/whofic/DomainConcept"/>
-                            <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-                            <owl:disjointWith rdf:resource="http://who.int/whofic/BodyFunction"/>
-                            <owl:disjointWith rdf:resource="http://who.int/whofic/EnvironmentalFactor"/>
-                            <owl:disjointWith rdf:resource="http://who.int/whofic/HealthState"/>
-                            <owl:disjointWith rdf:resource="http://who.int/whofic/BodyStructure"/>
-                          </ICCategoryShape>
-                        </owl:disjointWith>
-                      </ICCategoryShape>
-                    </owl:disjointWith>
-                    <owl:disjointWith rdf:resource="http://who.int/whofic/ActivityAndParticipation"/>
-                    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-                  </ICCategoryShape>
-                </owl:disjointWith>
-                <owl:disjointWith rdf:resource="http://who.int/whofic/HealthState"/>
-                <owl:disjointWith rdf:resource="http://who.int/whofic/BodyFunction"/>
-                <owl:disjointWith rdf:resource="http://who.int/whofic/ActivityAndParticipation"/>
-              </ICCategoryShape>
-            </owl:disjointWith>
-            <owl:disjointWith rdf:resource="http://who.int/whofic/EnvironmentalFactor"/>
-            <owl:disjointWith rdf:resource="http://who.int/whofic/ActivityAndParticipation"/>
-            <owl:disjointWith rdf:resource="http://who.int/whofic/BodyFunction"/>
-            <rdfs:subClassOf rdf:resource="http://who.int/whofic/CodableEntity"/>
-            <rdfs:subClassOf rdf:resource="http://who.int/whofic/DomainConcept"/>
-            <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICFCategory"/>
-          </ICCategoryShape>
-          <owl:Restriction>
-            <owl:someValuesFrom>
-              <LinearizationAtEntitySpecification rdf:about="http://who.int/whofic/SimpleHealthState">
-                <rdf:type rdf:resource="http://who.int/whofic/ICCategoryShape"/>
-                <rdfs:subClassOf rdf:resource="http://who.int/whofic/DomainConcept"/>
-                <owl:equivalentClass>
-                  <owl:Class>
-                    <owl:intersectionOf rdf:parseType="Collection">
-                      <ICCategoryShape rdf:about="http://who.int/whofic/HealthState"/>
-                      <owl:Restriction>
-                        <owl:someValuesFrom rdf:resource="http://who.int/whofic/DefiningAttributeValue"/>
-                        <owl:onProperty rdf:resource="http://who.int/whofic/hasQualifier"/>
-                      </owl:Restriction>
-                      <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://who.int/whofic/hasDomain"/>
-                        <owl:someValuesFrom>
-                          <owl:Class>
-                            <owl:intersectionOf rdf:parseType="Collection">
-                              <ClassificationEntityShape rdf:about="http://who.int/whofic/ICFEntity"/>
-                              <ICCategoryShape rdf:about="http://who.int/whofic/StructuralComponent"/>
-                            </owl:intersectionOf>
-                          </owl:Class>
-                        </owl:someValuesFrom>
-                      </owl:Restriction>
-                    </owl:intersectionOf>
-                  </owl:Class>
-                </owl:equivalentClass>
-              </LinearizationAtEntitySpecification>
-            </owl:someValuesFrom>
-            <owl:onProperty rdf:resource="http://who.int/whofic/hasComponent"/>
-          </owl:Restriction>
-          <owl:Restriction>
-            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-            >2</owl:minCardinality>
-            <owl:onProperty rdf:resource="http://who.int/whofic/hasComponent"/>
-          </owl:Restriction>
-        </owl:intersectionOf>
-      </owl:Class>
-    </owl:equivalentClass>
-    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-  </ICCategoryShape>
   <ICCategoryShape rdf:about="http://who.int/whofic/ImpairedBodyFunction">
     <foundationID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >http://who.int/whofic/ImpairedBodyFunction</foundationID>
     <owl:equivalentClass>
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
-          <ICCategoryShape rdf:about="http://who.int/whofic/BodyFunctionState">
-            <owl:equivalentClass>
-              <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                  <LinearizationAtEntitySpecification rdf:about="http://who.int/whofic/SimpleHealthState"/>
-                  <owl:Restriction>
-                    <owl:someValuesFrom rdf:resource="http://who.int/whofic/BodyFunction"/>
-                    <owl:onProperty rdf:resource="http://who.int/whofic/hasDomain"/>
-                  </owl:Restriction>
-                  <owl:Restriction>
-                    <owl:onProperty rdf:resource="http://who.int/whofic/hasImpairmentExtent"/>
-                    <owl:someValuesFrom rdf:resource="http://who.int/whofic/ImpairmentExtentQualifier"/>
-                  </owl:Restriction>
-                </owl:intersectionOf>
-              </owl:Class>
-            </owl:equivalentClass>
-            <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-            <owl:disjointWith>
-              <ICCategoryShape rdf:about="http://who.int/whofic/BodyStructureState">
-                <owl:equivalentClass>
-                  <owl:Class>
-                    <owl:intersectionOf rdf:parseType="Collection">
-                      <LinearizationAtEntitySpecification rdf:about="http://who.int/whofic/SimpleHealthState"/>
-                      <owl:Restriction>
-                        <owl:someValuesFrom rdf:resource="http://who.int/whofic/BodyStructure"/>
-                        <owl:onProperty rdf:resource="http://who.int/whofic/hasDomain"/>
-                      </owl:Restriction>
-                      <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://who.int/whofic/hasImpairmentExtent"/>
-                        <owl:someValuesFrom rdf:resource="http://who.int/whofic/ImpairmentExtentQualifier"/>
-                      </owl:Restriction>
-                    </owl:intersectionOf>
-                  </owl:Class>
-                </owl:equivalentClass>
-                <owl:disjointWith rdf:resource="http://who.int/whofic/BodyFunctionState"/>
-                <owl:disjointWith>
-                  <ICCategoryShape rdf:about="http://who.int/whofic/ActivityAndParticipationState">
-                    <owl:disjointWith rdf:resource="http://who.int/whofic/BodyFunctionState"/>
-                    <owl:disjointWith rdf:resource="http://who.int/whofic/BodyStructureState"/>
-                    <owl:equivalentClass>
-                      <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                          <LinearizationAtEntitySpecification rdf:about="http://who.int/whofic/SimpleHealthState"/>
-                          <owl:Restriction>
-                            <owl:someValuesFrom rdf:resource="http://who.int/whofic/ActivityAndParticipation"/>
-                            <owl:onProperty rdf:resource="http://who.int/whofic/hasDomain"/>
-                          </owl:Restriction>
-                          <owl:Restriction>
-                            <owl:onProperty rdf:resource="http://who.int/whofic/hasQualifier"/>
-                            <owl:someValuesFrom rdf:resource="http://who.int/whofic/CapacityPerformanceQualifier"/>
-                          </owl:Restriction>
-                        </owl:intersectionOf>
-                      </owl:Class>
-                    </owl:equivalentClass>
-                    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-                  </ICCategoryShape>
-                </owl:disjointWith>
-                <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-              </ICCategoryShape>
-            </owl:disjointWith>
-            <owl:disjointWith rdf:resource="http://who.int/whofic/ActivityAndParticipationState"/>
-          </ICCategoryShape>
+          <ICCategoryShape rdf:about="http://who.int/whofic/BodyFunctionLevel"/>
           <owl:Restriction>
             <owl:someValuesFrom>
               <owl:Class>
@@ -7699,6 +7936,27 @@ For example, a Chinese title term having a label written with Chinese characters
     <bp:shortTermId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >d850</bp:shortTermId>
   </SelectedWorkAndEconomicLifeActivitiesImpact>
+  <ICCategoryShape rdf:about="http://who.int/whofic/UnimpairedAandPCapacityWOAssistance">
+    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://who.int/whofic/hasCapacityWithoutAssistance"/>
+            <owl:someValuesFrom>
+              <ClassificationEntityShape rdf:about="http://who.int/whofic/NoDifficulty">
+                <rdfs:subClassOf rdf:resource="http://who.int/whofic/CapacityPerformanceQualifier"/>
+                <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >0 No Difficulty</rdfs:label>
+              </ClassificationEntityShape>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+          <ICCategoryShape rdf:about="http://who.int/whofic/ActivityAndParticipationCapacityWOAssistance"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </ICCategoryShape>
   <MotherLifeCycleConditionTerm rdf:about="http://who.int/whofic/BirthSCTerm">
     <bp:ontologyId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >42122</bp:ontologyId>
@@ -7872,6 +8130,10 @@ For example, a Chinese title term having a label written with Chinese characters
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/BarrierQualifier"/>
     <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
   </ExtensionEntityShape>
+  <ClassificationEntityShape rdf:about="http://who.int/whofic/ImpairmentNatureQualifier">
+    <rdfs:subClassOf rdf:resource="http://who.int/whofic/Qualifier"/>
+    <rdfs:subClassOf rdf:resource="http://who.int/whofic/DefiningQualifier"/>
+  </ClassificationEntityShape>
   <SelectedSocialParticipationImpact rdf:about="http://who.int/whofic/FunctionalImpactTerm_d920">
     <url rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >http://bioportal.bioontology.org/visconcepts/40865/?id=d920</url>
@@ -7955,6 +8217,31 @@ For example, a Chinese title term having a label written with Chinese characters
     <ontologyId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >International Classification of Functioning, Disability and Health (ICF)</ontologyId>
   </SelectedMobilityImpact>
+  <ICCategoryShape rdf:about="http://who.int/whofic/ImpairedAandPCapacityWOAssistance">
+    <foundationID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://who.int/whofic/LimitedAandPCapacity</foundationID>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <ICCategoryShape rdf:about="http://who.int/whofic/ActivityAndParticipationCapacityWOAssistance"/>
+          <owl:Restriction>
+            <owl:someValuesFrom>
+              <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                  <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/MildDifficulty-1"/>
+                  <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/ModerateDifficulty-2"/>
+                  <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/SevereDifficulty-3"/>
+                  <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/CompleteDifficulty-4"/>
+                </owl:oneOf>
+              </owl:Class>
+            </owl:someValuesFrom>
+            <owl:onProperty rdf:resource="http://who.int/whofic/hasCapacityWithoutAssistance"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
+  </ICCategoryShape>
   <ICCategoryShape rdf:about="http://who.int/whofic/UnImpairedBodyFunction">
     <title>
       <TitleTerm rdf:about="http://who.int/whofic/TitleTerm_18">
@@ -7965,7 +8252,7 @@ For example, a Chinese title term having a label written with Chinese characters
     <owl:equivalentClass>
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
-          <ICCategoryShape rdf:about="http://who.int/whofic/BodyFunctionState"/>
+          <ICCategoryShape rdf:about="http://who.int/whofic/BodyFunctionLevel"/>
           <owl:Restriction>
             <owl:onProperty rdf:resource="http://who.int/whofic/hasImpairmentExtent"/>
             <owl:someValuesFrom>
@@ -8026,17 +8313,6 @@ For example, a Chinese title term having a label written with Chinese characters
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Specialty Linearization: Rare Diseases</rdfs:comment>
   </ICD11LinearizationView>
-  <owl:AllDifferent>
-    <owl:distinctMembers rdf:parseType="Collection">
-      <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/NoDifficulty-0"/>
-      <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/MildDifficulty-1"/>
-      <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/ModerateDifficulty-2"/>
-      <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/SevereDifficulty-3"/>
-      <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/CompleteDifficulty-4"/>
-      <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/NotSpecified-8"/>
-      <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/NotApplicable-9"/>
-    </owl:distinctMembers>
-  </owl:AllDifferent>
   <SelectedInterpersonalRelationsImpact rdf:about="http://who.int/whofic/FunctionalImpactTerm_d740_d750">
     <termId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >http://who.int/icf#d740_d750</termId>
@@ -8208,27 +8484,6 @@ For example, a Chinese title term having a label written with Chinese characters
     <sortingCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >07</sortingCode>
   </ICD11LinearizationView>
-  <ICCategoryShape rdf:about="http://who.int/whofic/ActivityAndParticipationCapacity">
-    <owl:disjointWith>
-      <ICCategoryShape rdf:about="http://who.int/whofic/ActivityAndParticipationPerformance">
-        <owl:disjointWith rdf:resource="http://who.int/whofic/ActivityAndParticipationCapacity"/>
-        <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-        <rdfs:subClassOf rdf:resource="http://who.int/whofic/ActivityAndParticipationState"/>
-      </ICCategoryShape>
-    </owl:disjointWith>
-    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-    <owl:equivalentClass>
-      <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-          <ICCategoryShape rdf:about="http://who.int/whofic/ActivityAndParticipationState"/>
-          <owl:Restriction>
-            <owl:someValuesFrom rdf:resource="http://who.int/whofic/CapacityPerformanceQualifier"/>
-            <owl:onProperty rdf:resource="http://who.int/whofic/hasCapacityWithoutAssistance"/>
-          </owl:Restriction>
-        </owl:intersectionOf>
-      </owl:Class>
-    </owl:equivalentClass>
-  </ICCategoryShape>
   <ICCategoryShape rdf:about="http://who.int/whofic/Means">
     <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
     <owl:disjointWith>
@@ -8239,6 +8494,7 @@ For example, a Chinese title term having a label written with Chinese characters
             <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >ICHI Category</rdfs:label>
             <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICCategory"/>
+            <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICHIEntity"/>
             <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >The core categories of ICHI consist of codable category (health interventions) and the it structural components (action, target, means)</rdfs:comment>
             <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
@@ -8277,84 +8533,6 @@ For example, a Chinese title term having a label written with Chinese characters
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/ICHICategory"/>
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/StructuralComponent"/>
   </ICCategoryShape>
-  <ICCategoryShape rdf:about="http://who.int/whofic/LimitedAandPCapacityWithEF-Hindrance">
-    <owl:equivalentClass>
-      <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-          <owl:Restriction>
-            <owl:someValuesFrom rdf:resource="http://who.int/whofic/EnvironmentalFactor"/>
-            <owl:onProperty rdf:resource="http://who.int/whofic/isFacilitatedBy"/>
-          </owl:Restriction>
-          <ICCategoryShape rdf:about="http://who.int/whofic/LimitedAandPCapacity">
-            <foundationID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >http://who.int/whofic/LimitedAandPCapacity</foundationID>
-            <owl:equivalentClass>
-              <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                  <ICCategoryShape rdf:about="http://who.int/whofic/ActivityAndParticipationCapacity"/>
-                  <owl:Restriction>
-                    <owl:someValuesFrom>
-                      <owl:Class>
-                        <owl:oneOf rdf:parseType="Collection">
-                          <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/MildDifficulty-1"/>
-                          <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/ModerateDifficulty-2"/>
-                          <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/SevereDifficulty-3"/>
-                          <CapacityPerformanceQualifier rdf:about="http://who.int/whofic/CompleteDifficulty-4"/>
-                        </owl:oneOf>
-                      </owl:Class>
-                    </owl:someValuesFrom>
-                    <owl:onProperty rdf:resource="http://who.int/whofic/hasCapacityWithoutAssistance"/>
-                  </owl:Restriction>
-                </owl:intersectionOf>
-              </owl:Class>
-            </owl:equivalentClass>
-            <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-          </ICCategoryShape>
-        </owl:intersectionOf>
-      </owl:Class>
-    </owl:equivalentClass>
-    <owl:disjointWith>
-      <ICCategoryShape rdf:about="http://who.int/whofic/LimitedAandPCapacityWithEF-Facilitation">
-        <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-        <owl:equivalentClass>
-          <owl:Class>
-            <owl:intersectionOf rdf:parseType="Collection">
-              <owl:Restriction>
-                <owl:onProperty rdf:resource="http://who.int/whofic/isFacilitatedBy"/>
-                <owl:someValuesFrom rdf:resource="http://who.int/whofic/EnvironmentalFactor"/>
-              </owl:Restriction>
-              <ICCategoryShape rdf:about="http://who.int/whofic/LimitedAandPCapacity"/>
-            </owl:intersectionOf>
-          </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Limited Activity and Participation Capacity Facilitated by Environmental Factor</rdfs:label>
-        <owl:disjointWith rdf:resource="http://who.int/whofic/LimitedAandPCapacityWithEF-Hindrance"/>
-      </ICCategoryShape>
-    </owl:disjointWith>
-    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-  </ICCategoryShape>
-  <ICCategoryShape rdf:about="http://who.int/whofic/LimitedAandPPerformanceWithEF">
-    <rdfs:subClassOf>
-      <ICCategoryShape rdf:about="http://who.int/whofic/LimitedAandPPerformance">
-        <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-        <rdfs:subClassOf rdf:resource="http://who.int/whofic/ActivityAndParticipationPerformance"/>
-      </ICCategoryShape>
-    </rdfs:subClassOf>
-    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-    <owl:disjointWith>
-      <ICCategoryShape rdf:about="http://who.int/whofic/UnlimitedAandPPerformanceWithEF">
-        <rdfs:subClassOf>
-          <ICCategoryShape rdf:about="http://who.int/whofic/UnlimitedAandPPerformance">
-            <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-            <rdfs:subClassOf rdf:resource="http://who.int/whofic/ActivityAndParticipationPerformance"/>
-          </ICCategoryShape>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://who.int/whofic/LimitedAandPPerformanceWithEF"/>
-        <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-      </ICCategoryShape>
-    </owl:disjointWith>
-  </ICCategoryShape>
   <ICCategoryShape rdf:about="http://who.int/whofic/UnimpairedBodyStructure">
     <owl:disjointWith>
       <LinearizationAtEntitySpecification rdf:about="http://who.int/whofic/ImpairedBodyStructure">
@@ -8362,7 +8540,7 @@ For example, a Chinese title term having a label written with Chinese characters
         <owl:equivalentClass>
           <owl:Class>
             <owl:intersectionOf rdf:parseType="Collection">
-              <ICCategoryShape rdf:about="http://who.int/whofic/BodyStructureState"/>
+              <ICCategoryShape rdf:about="http://who.int/whofic/BodyStructureSituation"/>
               <owl:Restriction>
                 <owl:onProperty rdf:resource="http://who.int/whofic/hasImpairmentExtent"/>
                 <owl:someValuesFrom>
@@ -8388,59 +8566,14 @@ For example, a Chinese title term having a label written with Chinese characters
     <owl:equivalentClass>
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
-          <ICCategoryShape rdf:about="http://who.int/whofic/BodyStructureState"/>
+          <ICCategoryShape rdf:about="http://who.int/whofic/BodyStructureSituation"/>
           <owl:Restriction>
-            <owl:someValuesFrom rdf:resource="http://who.int/whofic/NoProblem"/>
             <owl:onProperty rdf:resource="http://who.int/whofic/hasImpairmentExtent"/>
+            <owl:someValuesFrom rdf:resource="http://who.int/whofic/NoProblem"/>
           </owl:Restriction>
         </owl:intersectionOf>
       </owl:Class>
     </owl:equivalentClass>
-    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-  </ICCategoryShape>
-  <ICCategoryShape rdf:about="http://who.int/whofic/UnlimitedAandPCapacityWithEF-Hindrance">
-    <rdfs:subClassOf>
-      <ICCategoryShape rdf:about="http://who.int/whofic/UnlimitedAandPCapacity">
-        <owl:equivalentClass>
-          <owl:Class>
-            <owl:intersectionOf rdf:parseType="Collection">
-              <owl:Restriction>
-                <owl:onProperty rdf:resource="http://who.int/whofic/hasCapacityWithoutAssistance"/>
-                <owl:someValuesFrom>
-                  <ClassificationEntityShape rdf:about="http://who.int/whofic/NoDifficulty">
-                    <rdfs:subClassOf rdf:resource="http://who.int/whofic/CapacityPerformanceQualifier"/>
-                    <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                    >0 No Difficulty</rdfs:label>
-                  </ClassificationEntityShape>
-                </owl:someValuesFrom>
-              </owl:Restriction>
-              <ICCategoryShape rdf:about="http://who.int/whofic/ActivityAndParticipationCapacity"/>
-            </owl:intersectionOf>
-          </owl:Class>
-        </owl:equivalentClass>
-        <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-      </ICCategoryShape>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty rdf:resource="http://who.int/whofic/isHinderedBy"/>
-        <owl:someValuesFrom rdf:resource="http://who.int/whofic/EnvironmentalFactor"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <owl:disjointWith>
-      <ICCategoryShape rdf:about="http://who.int/whofic/UnlimitedAandPCapacityWithEF-Facilitation">
-        <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
-        <owl:disjointWith rdf:resource="http://who.int/whofic/UnlimitedAandPCapacityWithEF-Hindrance"/>
-        <rdfs:subClassOf rdf:resource="http://who.int/whofic/UnlimitedAandPCapacity"/>
-        <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:onProperty rdf:resource="http://who.int/whofic/isFacilitatedBy"/>
-            <owl:someValuesFrom rdf:resource="http://who.int/whofic/EnvironmentalFactor"/>
-          </owl:Restriction>
-        </rdfs:subClassOf>
-      </ICCategoryShape>
-    </owl:disjointWith>
     <rdf:type rdf:resource="http://who.int/whofic/LinearizationAtEntitySpecification"/>
   </ICCategoryShape>
 </rdf:RDF>
