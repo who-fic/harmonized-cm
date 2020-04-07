@@ -78,6 +78,16 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/MeansReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/ActionMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/SerotypeReferenceTerm"/>
     </owl:disjointWith>
@@ -93,16 +103,6 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/GenomicAndChromosomeAnomalyReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/ActionMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/DurationOfComaReferenceTerm">
     <rdfs:subClassOf>
@@ -264,16 +264,6 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TargetReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/SpecificAnatomyMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TypeOfInjuryReferenceTerm"/>
     </owl:disjointWith>
@@ -292,6 +282,16 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/CourseReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/SpecificAnatomyMetaClass"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/InfectiousAgentReferenceTerm"/>
     </owl:disjointWith>
@@ -388,6 +388,16 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/GenomicAndChromosomeAnomalyReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/ChemicalAgentMetaClass"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/MedicationReferenceTerm"/>
     </owl:disjointWith>
@@ -409,16 +419,6 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TypeOfInjuryReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/ChemicalAgentMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/AssociatedWithReferenceTerm"/>
     </owl:disjointWith>
@@ -469,6 +469,16 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TopologyReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/SeverityMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/ICDCategoryReferenceTerm"/>
     </owl:disjointWith>
@@ -483,16 +493,6 @@
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ActionReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ChemicalAgentReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/SeverityMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TemporalPatternAndOnsetReferenceTerm"/>
     </owl:disjointWith>
@@ -964,16 +964,6 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/AssociatedWithReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/InfectiousAgentMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/HistopathologyReferenceTerm"/>
     </owl:disjointWith>
@@ -986,6 +976,16 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TargetReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/InfectiousAgentMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/SerotypeReferenceTerm"/>
     </owl:disjointWith>
@@ -1272,6 +1272,21 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/CausalityReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="http://who.int/whofic/TargetMetaClass"/>
+              <owl:Class rdf:about="http://who.int/whofic/SpecificAnatomyMetaClass"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TemporalPatternAndOnsetReferenceTerm"/>
     </owl:disjointWith>
@@ -1285,21 +1300,6 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TypeOfInjuryReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class>
-            <owl:unionOf rdf:parseType="Collection">
-              <owl:Class rdf:about="http://who.int/whofic/TargetMetaClass"/>
-              <owl:Class rdf:about="http://who.int/whofic/SpecificAnatomyMetaClass"/>
-            </owl:unionOf>
-          </owl:Class>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/MedicationReferenceTerm"/>
     </owl:disjointWith>
@@ -1469,14 +1469,6 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/BurnQualifierReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="http://who.int/whofic/ConsciousnessMeasureMetaClass"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SpecificAnatomyReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/AssociatedWithReferenceTerm"/>
@@ -1488,6 +1480,14 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/GenomicAndChromosomeAnomalyReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://who.int/whofic/ConsciousnessMeasureMetaClass"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/FractureOpenOrClosedReferenceTerm">
     <rdfs:subClassOf>
@@ -1559,10 +1559,10 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://who.int/whofic/SeverityReferenceTerm"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="http://who.int/whofic/hasScaleValue"/>
         </owl:onProperty>
-        <owl:someValuesFrom rdf:resource="http://who.int/whofic/SeverityReferenceTerm"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1614,6 +1614,16 @@
       <owl:Class rdf:about="http://who.int/whofic/TimeInLifeReferenceTerm"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SeverityReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/CourseMetaClass"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TypeOfInjuryReferenceTerm"/>
     </owl:disjointWith>
@@ -1650,23 +1660,13 @@
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ConsciousnessMeasureReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/TargetReferenceTerm"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="http://who.int/whofic/MeansReferenceTerm"/>
-    </owl:disjointWith>
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/PostcoordinationValueReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/DiagnosisConfirmedByReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/CourseMetaClass"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://who.int/whofic/MeansReferenceTerm"/>
+    </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/AssociatedWithReferenceTerm"/>
     </owl:disjointWith>
@@ -1730,6 +1730,16 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/BurnQualifierReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/TimeInLifeMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TopologyReferenceTerm"/>
     </owl:disjointWith>
@@ -1753,16 +1763,6 @@
       <owl:Class rdf:about="http://who.int/whofic/ICDCategoryReferenceTerm"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/LevelOfConsciousnessReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/TimeInLifeMetaClass"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/InfectiousAgentReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/SerotypeReferenceTerm"/>
@@ -1957,21 +1957,21 @@
       <owl:Class rdf:about="http://who.int/whofic/ExternalCauseDimensionReferenceTerm"/>
     </owl:disjointWith>
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/PostcoordinationValueReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/MeansMetaClass"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/TargetReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/SerotypeReferenceTerm"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/InfectiousAgentReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/MeansMetaClass"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SeverityReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/FractureQualifierReferenceTerm"/>
@@ -2093,12 +2093,12 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/TemporalPatternAndOnsetReferenceTerm"/>
-        </owl:someValuesFrom>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="http://who.int/whofic/hasScaleValue"/>
         </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/TemporalPatternAndOnsetReferenceTerm"/>
+        </owl:someValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2328,6 +2328,16 @@
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SeverityReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ChemicalAgentReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/TemporalPatternAndOnsetMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/TargetReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/MedicationReferenceTerm"/>
@@ -2355,16 +2365,6 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TypeOfInjuryReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/TemporalPatternAndOnsetMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/CourseReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ActionReferenceTerm"/>
   </owl:Class>
@@ -2379,6 +2379,16 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/MedicationReferenceTerm">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/MedicamentMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/HistopathologyReferenceTerm"/>
     </owl:disjointWith>
@@ -2405,16 +2415,6 @@
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/FractureQualifierReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/MedicamentMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/TimeInLifeReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SeverityReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/MeansReferenceTerm"/>
@@ -2660,12 +2660,6 @@
     <owl:disjointWith rdf:resource="http://who.int/whofic/SeverityReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/CourseReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/TimeInLifeReferenceTerm"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="http://who.int/whofic/TopologyReferenceTerm"/>
-    </owl:disjointWith>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/ActionReferenceTerm"/>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/ConsciousnessMeasureReferenceTerm"/>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/SpecificAnatomyReferenceTerm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:allValuesFrom rdf:resource="http://who.int/whofic/BurnQualifierMetaClass"/>
@@ -2674,6 +2668,12 @@
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://who.int/whofic/TopologyReferenceTerm"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/ActionReferenceTerm"/>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/ConsciousnessMeasureReferenceTerm"/>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/SpecificAnatomyReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ChemicalAgentReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/AssociatedWithReferenceTerm"/>
@@ -2772,14 +2772,6 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
       <owl:Class rdf:about="http://who.int/whofic/ICDCategoryReferenceTerm"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SpecificAnatomyReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:someValuesFrom rdf:resource="http://who.int/whofic/ICECIMetaClass"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/FractureQualifierReferenceTerm"/>
     </owl:disjointWith>
@@ -2806,6 +2798,14 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith rdf:resource="http://who.int/whofic/ConsciousnessMeasureReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/MedicationReferenceTerm"/>
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/PostcoordinationValueReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://who.int/whofic/ICECIMetaClass"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/DiagnosisConfirmedByReferenceTerm"/>
     </owl:disjointWith>
@@ -2831,16 +2831,6 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/HistopathologyReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/FractureQualifierMetaClass"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ExternalCauseDimensionReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ActionReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SpecificAnatomyReferenceTerm"/>
@@ -2851,6 +2841,16 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith rdf:resource="http://who.int/whofic/ConsciousnessMeasureReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/MedicationReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/InfectiousAgentReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/FractureQualifierMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/PostcoordinationValueReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/DiagnosisConfirmedByReferenceTerm"/>
@@ -2889,16 +2889,6 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/GenomicAndChromosomeAnomalyReferenceTerm">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/GenomicAndChromosomeAnomalyMetaClass"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/TimeInLifeReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/BurnQualifierReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/CourseReferenceTerm"/>
@@ -2918,6 +2908,16 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/FractureSubtypeReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/GenomicAndChromosomeAnomalyMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ActionReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/AssociatedWithReferenceTerm"/>
@@ -2962,16 +2962,6 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith rdf:resource="http://who.int/whofic/TargetReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ConsciousnessMeasureReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/CourseReferenceTerm"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="http://who.int/whofic/ICDCategoryReferenceTerm"/>
-    </owl:disjointWith>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/LevelOfConsciousnessReferenceTerm"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="http://who.int/whofic/HistopathologyReferenceTerm"/>
-    </owl:disjointWith>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/FractureQualifierReferenceTerm"/>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/ExternalCauseDimensionReferenceTerm"/>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/ActionReferenceTerm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -2982,6 +2972,16 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
         </owl:allValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://who.int/whofic/ICDCategoryReferenceTerm"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/LevelOfConsciousnessReferenceTerm"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://who.int/whofic/HistopathologyReferenceTerm"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/FractureQualifierReferenceTerm"/>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/ExternalCauseDimensionReferenceTerm"/>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/ActionReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SeverityReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/FractureSubtypeReferenceTerm"/>
@@ -3027,6 +3027,14 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/DiagnosisConfirmedByReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://who.int/whofic/SpecificContentShape"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TypeOfInjuryReferenceTerm"/>
     </owl:disjointWith>
@@ -3042,14 +3050,6 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/HistopathologyReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="http://who.int/whofic/SpecificContentShape"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/CourseMetaClass">
     <owl:disjointWith rdf:resource="http://who.int/whofic/ConsciousnessMeasureMetaClass"/>
@@ -3130,6 +3130,16 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith rdf:resource="http://who.int/whofic/ICDCategoryReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/InfectiousAgentReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ConsciousnessMeasureReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://who.int/whofic/HistopathologyMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SpecificAnatomyReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/LevelOfConsciousnessReferenceTerm"/>
     <rdfs:subClassOf rdf:resource="http://who.int/whofic/PostcoordinationValueReferenceTerm"/>
@@ -3144,16 +3154,6 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TopologyReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="http://who.int/whofic/HistopathologyMetaClass"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="http://who.int/whofic/TypeOfInjuryReferenceTerm"/>
     </owl:disjointWith>
@@ -3411,10 +3411,10 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith rdf:resource="http://who.int/whofic/TemporalPatternAndOnsetReferenceTerm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://who.int/whofic/TypeOfInjuryMetaClass"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
         </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="http://who.int/whofic/TypeOfInjuryMetaClass"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/LevelOfConsciousnessReferenceTerm"/>
@@ -3455,6 +3455,14 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/TopologyReferenceTerm">
     <owl:disjointWith rdf:resource="http://who.int/whofic/ExternalCauseDimensionReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://who.int/whofic/TopologyMetaClass"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/ActionReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/TemporalPatternAndOnsetReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/AssociatedWithReferenceTerm"/>
@@ -3479,14 +3487,6 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith rdf:resource="http://who.int/whofic/HistopathologyReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/MeansReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/GenomicAndChromosomeAnomalyReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="http://who.int/whofic/TopologyMetaClass"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="http://who.int/whofic/FractureSubtypeReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/TimeInLifeReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/LevelOfConsciousnessReferenceTerm"/>
@@ -3628,16 +3628,16 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith rdf:resource="http://who.int/whofic/ChemicalAgentReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/GenomicAndChromosomeAnomalyReferenceTerm"/>
     <owl:disjointWith rdf:resource="http://who.int/whofic/SerotypeReferenceTerm"/>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/FractureSubtypeReferenceTerm"/>
+    <owl:disjointWith rdf:resource="http://who.int/whofic/FractureQualifierReferenceTerm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="http://who.int/whofic/CausalityMetaClass"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="http://who.int/whofic/referencedValue"/>
         </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://who.int/whofic/CausalityMetaClass"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/FractureSubtypeReferenceTerm"/>
-    <owl:disjointWith rdf:resource="http://who.int/whofic/FractureQualifierReferenceTerm"/>
   </owl:Class>
   <owl:Class rdf:about="http://who.int/whofic/FullySpecifiedName">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -7103,6 +7103,17 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >ICD-10 WHO Mortality Tabulation List 3: Infant and child mortality - condensed</rdfs:comment>
   </ICD10TabulationListView>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <CapacityQualifier rdf:about="http://who.int/whofic/NoDifficulty-0"/>
+      <CapacityQualifier rdf:about="http://who.int/whofic/MildDifficulty-1"/>
+      <CapacityQualifier rdf:about="http://who.int/whofic/ModerateDifficulty-2"/>
+      <CapacityQualifier rdf:about="http://who.int/whofic/SevereDifficulty-3"/>
+      <CapacityQualifier rdf:about="http://who.int/whofic/CompleteDifficulty-4"/>
+      <CapacityQualifier rdf:about="http://who.int/whofic/NotSpecified-8"/>
+      <CapacityQualifier rdf:about="http://who.int/whofic/NotApplicable-9"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
   <SelectedInterpersonalRelationsImpact rdf:about="http://who.int/whofic/FunctionalImpactTerm_d7702">
     <termId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >http://who.int/icf#d7702</termId>
@@ -7278,28 +7289,22 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
             <rdfs:subClassOf rdf:resource="http://who.int/whofic/CodableEntity"/>
           </ICFCategoryShape>
           <owl:Restriction>
+            <owl:onProperty rdf:resource="http://who.int/whofic/hasComponent"/>
             <owl:someValuesFrom>
               <ICFPostcoordinationSection rdf:about="http://who.int/whofic/SingDomainFunctioningSituation">
                 <owl:equivalentClass>
                   <owl:Class>
                     <owl:intersectionOf rdf:parseType="Resource">
-                      <rdf:first rdf:resource="http://who.int/whofic/FunctioningSituation"/>
                       <rdf:rest rdf:parseType="Resource">
-                        <rdf:first>
-                          <owl:Restriction>
-                            <owl:someValuesFrom rdf:resource="http://who.int/whofic/DefiningQualifier"/>
-                            <owl:onProperty rdf:resource="http://who.int/whofic/hasQualifier"/>
-                          </owl:Restriction>
-                        </rdf:first>
                         <rdf:rest rdf:parseType="Resource">
                           <rdf:rest>
                             <rdf:List>
                               <rdf:first>
                                 <owl:Restriction>
+                                  <owl:onProperty rdf:resource="http://who.int/whofic/hasDomain"/>
                                   <owl:maxCardinality rdf:datatype=
                                   "http://www.w3.org/2001/XMLSchema#int"
                                   >1</owl:maxCardinality>
-                                  <owl:onProperty rdf:resource="http://who.int/whofic/hasDomain"/>
                                 </owl:Restriction>
                               </rdf:first>
                               <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -7307,6 +7312,7 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
                           </rdf:rest>
                           <rdf:first>
                             <owl:Restriction>
+                              <owl:onProperty rdf:resource="http://who.int/whofic/hasDomain"/>
                               <owl:someValuesFrom>
                                 <owl:Class>
                                   <owl:intersectionOf rdf:parseType="Collection">
@@ -7315,23 +7321,28 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
                                   </owl:intersectionOf>
                                 </owl:Class>
                               </owl:someValuesFrom>
-                              <owl:onProperty rdf:resource="http://who.int/whofic/hasDomain"/>
                             </owl:Restriction>
                           </rdf:first>
                         </rdf:rest>
+                        <rdf:first>
+                          <owl:Restriction>
+                            <owl:someValuesFrom rdf:resource="http://who.int/whofic/DefiningQualifier"/>
+                            <owl:onProperty rdf:resource="http://who.int/whofic/hasQualifier"/>
+                          </owl:Restriction>
+                        </rdf:first>
                       </rdf:rest>
+                      <rdf:first rdf:resource="http://who.int/whofic/FunctioningSituation"/>
                     </owl:intersectionOf>
                   </owl:Class>
                 </owl:equivalentClass>
                 <rdf:type rdf:resource="http://who.int/whofic/ICFCategoryShape"/>
               </ICFPostcoordinationSection>
             </owl:someValuesFrom>
-            <owl:onProperty rdf:resource="http://who.int/whofic/hasComponent"/>
           </owl:Restriction>
           <owl:Restriction>
+            <owl:onProperty rdf:resource="http://who.int/whofic/hasComponent"/>
             <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
             >2</owl:minCardinality>
-            <owl:onProperty rdf:resource="http://who.int/whofic/hasComponent"/>
           </owl:Restriction>
         </owl:intersectionOf>
       </owl:Class>
@@ -7565,17 +7576,6 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
     <bp:ontologyLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >International Classification of Functioning, Disability and Health (ICF)</bp:ontologyLabel>
   </SelectedSocialParticipationImpact>
-  <owl:AllDifferent>
-    <owl:distinctMembers rdf:parseType="Collection">
-      <CapacityQualifier rdf:about="http://who.int/whofic/NoDifficulty-0"/>
-      <CapacityQualifier rdf:about="http://who.int/whofic/MildDifficulty-1"/>
-      <CapacityQualifier rdf:about="http://who.int/whofic/ModerateDifficulty-2"/>
-      <CapacityQualifier rdf:about="http://who.int/whofic/SevereDifficulty-3"/>
-      <CapacityQualifier rdf:about="http://who.int/whofic/CompleteDifficulty-4"/>
-      <CapacityQualifier rdf:about="http://who.int/whofic/NotSpecified-8"/>
-      <CapacityQualifier rdf:about="http://who.int/whofic/NotApplicable-9"/>
-    </owl:distinctMembers>
-  </owl:AllDifferent>
   <TemporalPropertiesTerm rdf:about="http://who.int/whofic/neonatalTermTemplate">
     <rdf:type rdf:resource="http://who.int/whofic/InstanceTemplate"/>
     <temporalRange rdf:resource="http://who.int/whofic/neonatal"/>
@@ -8251,8 +8251,8 @@ Range is not correct, but we'll leave it this way in this version</rdfs:comment>
             <owl:intersectionOf rdf:parseType="Collection">
               <ICFPostcoordinationSection rdf:about="http://who.int/whofic/SingDomainFunctioningSituation"/>
               <owl:Restriction>
-                <owl:someValuesFrom rdf:resource="http://who.int/whofic/BodyStructure"/>
                 <owl:onProperty rdf:resource="http://who.int/whofic/hasDomain"/>
+                <owl:someValuesFrom rdf:resource="http://who.int/whofic/BodyStructure"/>
               </owl:Restriction>
               <owl:Restriction>
                 <owl:onProperty rdf:resource="http://who.int/whofic/hasImpairmentExtent"/>
