@@ -1,4 +1,4 @@
-; Mon Nov 11 21:40:20 PST 2019
+; Tue Apr 07 09:33:14 PDT 2020
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -6,13 +6,13 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[foundation_ProjectKB_Class356]
-		[foundation_ProjectKB_Class357]
-		[foundation_ProjectKB_Class358]
-		[foundation_ProjectKB_Class359]
-		[foundation_ProjectKB_Class360]
-		[foundation_ProjectKB_Class361]
-		[foundation_ProjectKB_Class362]))
+		[foundation_ProjectKB_Class6]
+		[foundation_ProjectKB_Class7]
+		[foundation_ProjectKB_Class8]
+		[foundation_ProjectKB_Class9]
+		[foundation_ProjectKB_Class10]
+		[foundation_ProjectKB_Class11]
+		[foundation_ProjectKB_Class12]))
 
 ([CLSES_TAB] of  Widget
 
@@ -38,56 +38,36 @@
 	(property_list [Instance_85])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab"))
 
-([foundation_ProjectKB_Class356] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([foundation_ProjectKB_Class357] of  String
-
-	(name "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property")
-	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([foundation_ProjectKB_Class358] of  String
-
-	(name "http://www.w3.org/2002/07/owl#Thing")
-	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([foundation_ProjectKB_Class359] of  String
-
-	(name "http://www.w3.org/2000/01/rdf-schema#Class")
-	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([foundation_ProjectKB_Class360] of  String
+([foundation_ProjectKB_Class10] of  String
 
 	(name "http://www.w3.org/2002/07/owl#Class")
 	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
 
-([foundation_ProjectKB_Class361] of  String
+([foundation_ProjectKB_Class11] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([foundation_ProjectKB_Class362] of  String
+([foundation_ProjectKB_Class12] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([foundation_ProjectKB_Class363] of  Map_Entry
+([foundation_ProjectKB_Class13] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([foundation_ProjectKB_Class364] of  Map_Entry
+([foundation_ProjectKB_Class14] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([foundation_ProjectKB_Class365] of  Map_Entry
+([foundation_ProjectKB_Class15] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
@@ -102,6 +82,26 @@
 
 ([foundation_ProjectKB_Class5] of  Property_List
 )
+
+([foundation_ProjectKB_Class6] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([foundation_ProjectKB_Class7] of  String
+
+	(name "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property")
+	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
+
+([foundation_ProjectKB_Class8] of  String
+
+	(name "http://www.w3.org/2002/07/owl#Thing")
+	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
+
+([foundation_ProjectKB_Class9] of  String
+
+	(name "http://www.w3.org/2000/01/rdf-schema#Class")
+	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
 
 ([icf_2011.04.22_merged_for_bp_v1.0.1_ProjectKB_Class1] of  Widget
 
@@ -1099,22 +1099,22 @@
 ([KB_325529_Class0] of  Map
 
 	(entries
-		[foundation_ProjectKB_Class363]
-		[foundation_ProjectKB_Class364]
-		[foundation_ProjectKB_Class365]))
+		[foundation_ProjectKB_Class13]
+		[foundation_ProjectKB_Class14]
+		[foundation_ProjectKB_Class15]))
 
 ([KB_325529_Class4] of  String
 
 	(name "owl_file_name")
 	(string_value "foundation.owl"))
 
-([KB_432841_Class3] of  Map
-)
-
 ([KB_444675_Instance_0] of  String
 
 	(name "SwitchableClassDefinitionType")
 	(string_value "edu.stanford.smi.protegex.owl.ui.cls.PropertiesClassDefinitionWidget"))
+
+([KB_462128_Class3] of  Map
+)
 
 ([KB_465546_Instance_567] of  Widget
 
