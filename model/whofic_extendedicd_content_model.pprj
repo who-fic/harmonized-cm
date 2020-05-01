@@ -1,4 +1,4 @@
-; Sun Apr 26 20:31:26 PDT 2020
+; Fri May 01 12:24:43 PDT 2020
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -6,13 +6,13 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[whofic_extendedicd_content_model_ProjectKB_Class21322]
-		[whofic_extendedicd_content_model_ProjectKB_Class21323]
-		[whofic_extendedicd_content_model_ProjectKB_Class21324]
-		[whofic_extendedicd_content_model_ProjectKB_Class21325]
-		[whofic_extendedicd_content_model_ProjectKB_Class21326]
-		[whofic_extendedicd_content_model_ProjectKB_Class21327]
-		[whofic_extendedicd_content_model_ProjectKB_Class21328]))
+		[whofic_extendedicd_content_model_ProjectKB_Class20347]
+		[whofic_extendedicd_content_model_ProjectKB_Class20348]
+		[whofic_extendedicd_content_model_ProjectKB_Class20349]
+		[whofic_extendedicd_content_model_ProjectKB_Class20350]
+		[whofic_extendedicd_content_model_ProjectKB_Class20351]
+		[whofic_extendedicd_content_model_ProjectKB_Class20352]
+		[whofic_extendedicd_content_model_ProjectKB_Class20353]))
 
 ([CLSES_TAB] of  Widget
 
@@ -750,9 +750,9 @@
 ([KB_325529_Class0] of  Map
 
 	(entries
-		[whofic_extendedicd_content_model_ProjectKB_Class21329]
-		[whofic_extendedicd_content_model_ProjectKB_Class21330]
-		[whofic_extendedicd_content_model_ProjectKB_Class21331]))
+		[whofic_extendedicd_content_model_ProjectKB_Class20354]
+		[whofic_extendedicd_content_model_ProjectKB_Class20355]
+		[whofic_extendedicd_content_model_ProjectKB_Class20356]))
 
 ([KB_325529_Class4] of  String
 
@@ -770,6 +770,9 @@
 	(name "http://protege.stanford.edu/plugins/owl/protege#ExternalResource")
 	(property_list [XY_Instance_890])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
+
+([KB_593716_Class3] of  Map
+)
 
 ([KB_632156_Instance_0] of  String
 
@@ -3019,9 +3022,6 @@
 	(name "http://www.w3.org/2002/07/owl#Ontology")
 	(property_list [XY_Instance_195])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([KB_844312_Class3] of  Map
-)
 
 ([KB_865583_Instance_10] of  Widget
 
@@ -5723,67 +5723,67 @@
 ([whofic_extendedicd_content_model_ProjectKB_Class20] of  Property_List
 )
 
-([whofic_extendedicd_content_model_ProjectKB_Class21] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class22])
-	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class21322] of  String
+([whofic_extendedicd_content_model_ProjectKB_Class20347] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([whofic_extendedicd_content_model_ProjectKB_Class21323] of  String
+([whofic_extendedicd_content_model_ProjectKB_Class20348] of  String
 
 	(name "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property")
 	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
 
-([whofic_extendedicd_content_model_ProjectKB_Class21324] of  String
+([whofic_extendedicd_content_model_ProjectKB_Class20349] of  String
 
 	(name "http://www.w3.org/2002/07/owl#Thing")
 	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
 
-([whofic_extendedicd_content_model_ProjectKB_Class21325] of  String
+([whofic_extendedicd_content_model_ProjectKB_Class20350] of  String
 
 	(name "http://www.w3.org/2000/01/rdf-schema#Class")
 	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
 
-([whofic_extendedicd_content_model_ProjectKB_Class21326] of  String
+([whofic_extendedicd_content_model_ProjectKB_Class20351] of  String
 
 	(name "http://www.w3.org/2002/07/owl#Class")
 	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
 
-([whofic_extendedicd_content_model_ProjectKB_Class21327] of  String
+([whofic_extendedicd_content_model_ProjectKB_Class20352] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([whofic_extendedicd_content_model_ProjectKB_Class21328] of  String
+([whofic_extendedicd_content_model_ProjectKB_Class20353] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([whofic_extendedicd_content_model_ProjectKB_Class21329] of  Map_Entry
+([whofic_extendedicd_content_model_ProjectKB_Class20354] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([whofic_extendedicd_content_model_ProjectKB_Class21330] of  Map_Entry
+([whofic_extendedicd_content_model_ProjectKB_Class20355] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([whofic_extendedicd_content_model_ProjectKB_Class21331] of  Map_Entry
+([whofic_extendedicd_content_model_ProjectKB_Class20356] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
+
+([whofic_extendedicd_content_model_ProjectKB_Class21] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [whofic_extendedicd_content_model_ProjectKB_Class22])
+	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
 
 ([whofic_extendedicd_content_model_ProjectKB_Class22] of  Property_List
 )

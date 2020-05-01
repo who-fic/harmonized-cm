@@ -1,4 +1,4 @@
-; Tue Apr 07 09:32:33 PDT 2020
+; Fri May 01 12:42:23 PDT 2020
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -6,14 +6,14 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[whofic-harmonized-cm_ProjectKB_Class4]
-		[whofic-harmonized-cm_ProjectKB_Class5]
-		[whofic-harmonized-cm_ProjectKB_Class6]
-		[whofic-harmonized-cm_ProjectKB_Class7]
-		[whofic-harmonized-cm_ProjectKB_Class8]
-		[whofic-harmonized-cm_ProjectKB_Class9]
-		[whofic-harmonized-cm_ProjectKB_Class10]
-		[whofic-harmonized-cm_ProjectKB_Class11]))
+		[whofic-harmonized-cm_ProjectKB_Class20082]
+		[whofic-harmonized-cm_ProjectKB_Class20083]
+		[whofic-harmonized-cm_ProjectKB_Class20084]
+		[whofic-harmonized-cm_ProjectKB_Class20085]
+		[whofic-harmonized-cm_ProjectKB_Class20086]
+		[whofic-harmonized-cm_ProjectKB_Class20087]
+		[whofic-harmonized-cm_ProjectKB_Class20088]
+		[whofic-harmonized-cm_ProjectKB_Class20089]))
 
 ([CLSES_TAB] of  Widget
 
@@ -751,17 +751,14 @@
 ([KB_325529_Class0] of  Map
 
 	(entries
-		[whofic-harmonized-cm_ProjectKB_Class12]
-		[whofic-harmonized-cm_ProjectKB_Class13]
-		[whofic-harmonized-cm_ProjectKB_Class14]))
+		[whofic-harmonized-cm_ProjectKB_Class20090]
+		[whofic-harmonized-cm_ProjectKB_Class20091]
+		[whofic-harmonized-cm_ProjectKB_Class20092]))
 
 ([KB_325529_Class4] of  String
 
 	(name "owl_file_name")
 	(string_value "whofic-harmonized-cm.owl"))
-
-([KB_350905_Class3] of  Map
-)
 
 ([KB_444675_Instance_0] of  String
 
@@ -3024,6 +3021,9 @@
 	(name "http://www.w3.org/2002/07/owl#Ontology")
 	(property_list [XY_Instance_195])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
+
+([KB_769229_Class3] of  Map
+)
 
 ([KB_865583_Instance_10] of  Widget
 
@@ -5671,11 +5671,6 @@
 	(property_list [XY_Instance_725])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
 
-([whofic-harmonized-cm_ProjectKB_Class10] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
 ([whofic-harmonized-cm_ProjectKB_Class10026] of  Widget
 
 	(height 60)
@@ -6179,11 +6174,6 @@
 
 ([whofic-harmonized-cm_ProjectKB_Class10774] of  Property_List
 )
-
-([whofic-harmonized-cm_ProjectKB_Class11] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
 
 ([whofic-harmonized-cm_ProjectKB_Class11156] of  Property_List
 
@@ -7487,21 +7477,61 @@
 	(boolean_value TRUE)
 	(name "DisabledByUser"))
 
-([whofic-harmonized-cm_ProjectKB_Class12] of  Map_Entry
+([whofic-harmonized-cm_ProjectKB_Class20082] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([whofic-harmonized-cm_ProjectKB_Class20083] of  String
+
+	(name "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property")
+	(string_value "%3ANAME"))
+
+([whofic-harmonized-cm_ProjectKB_Class20084] of  String
+
+	(name "http://www.w3.org/2002/07/owl#Thing")
+	(string_value "%3ANAME"))
+
+([whofic-harmonized-cm_ProjectKB_Class20085] of  String
+
+	(name "http://www.w3.org/2000/01/rdf-schema#Class")
+	(string_value "%3ANAME"))
+
+([whofic-harmonized-cm_ProjectKB_Class20086] of  String
+
+	(name "http://who.int/whofic/TitleTerm")
+	(string_value "http%3A%2F%2Fwho.int%2Fwhofic%2Flabel"))
+
+([whofic-harmonized-cm_ProjectKB_Class20087] of  String
+
+	(name "http://www.w3.org/2002/07/owl#Class")
+	(string_value "%3ANAME"))
+
+([whofic-harmonized-cm_ProjectKB_Class20088] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([whofic-harmonized-cm_ProjectKB_Class20089] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([whofic-harmonized-cm_ProjectKB_Class20090] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([whofic-harmonized-cm_ProjectKB_Class13] of  Map_Entry
+([whofic-harmonized-cm_ProjectKB_Class20091] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([whofic-harmonized-cm_ProjectKB_Class14] of  Map_Entry
+([whofic-harmonized-cm_ProjectKB_Class20092] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
@@ -7571,16 +7601,6 @@
 ([whofic-harmonized-cm_ProjectKB_Class33] of  Property_List
 )
 
-([whofic-harmonized-cm_ProjectKB_Class4] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([whofic-harmonized-cm_ProjectKB_Class5] of  String
-
-	(name "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property")
-	(string_value "%3ANAME"))
-
 ([whofic-harmonized-cm_ProjectKB_Class59] of  Widget
 
 	(height 120)
@@ -7592,28 +7612,8 @@
 	(x 0)
 	(y 340))
 
-([whofic-harmonized-cm_ProjectKB_Class6] of  String
-
-	(name "http://www.w3.org/2002/07/owl#Thing")
-	(string_value "%3ANAME"))
-
 ([whofic-harmonized-cm_ProjectKB_Class60] of  Property_List
 )
-
-([whofic-harmonized-cm_ProjectKB_Class7] of  String
-
-	(name "http://www.w3.org/2000/01/rdf-schema#Class")
-	(string_value "%3ANAME"))
-
-([whofic-harmonized-cm_ProjectKB_Class8] of  String
-
-	(name "http://who.int/whofic/TitleTerm")
-	(string_value "http%3A%2F%2Fwho.int%2Fwhofic%2Flabel"))
-
-([whofic-harmonized-cm_ProjectKB_Class9] of  String
-
-	(name "http://www.w3.org/2002/07/owl#Class")
-	(string_value "%3ANAME"))
 
 ([whofic_foundation_cm_ProjectKB_Class1] of  Widget
 

@@ -281,16 +281,6 @@
     <owl:disjointWith>
       <owl:Class rdf:about="#ConsciousnessMeasureReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:ID="SeverityMetaClass"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#CourseReferenceTerm"/>
     </owl:disjointWith>
@@ -331,6 +321,16 @@
     <owl:disjointWith>
       <owl:Class rdf:about="#GenomicAndChromosomeAnomalyReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:ID="SeverityMetaClass"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#TopologyReferenceTerm"/>
     </owl:disjointWith>
@@ -495,12 +495,12 @@
     </owl:disjointWith>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="#HistopathologyMetaClass"/>
-        </owl:allValuesFrom>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#referencedValue"/>
         </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#HistopathologyMetaClass"/>
+        </owl:allValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="#SeverityReferenceTerm"/>
@@ -635,16 +635,6 @@
     <owl:disjointWith>
       <owl:Class rdf:about="#LevelOfConsciousnessReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="#TemporalPatternAndOnsetMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#BurnQualifierReferenceTerm"/>
     </owl:disjointWith>
@@ -664,6 +654,16 @@
     <owl:disjointWith>
       <owl:Class rdf:about="#TypeOfInjuryReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#TemporalPatternAndOnsetMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#ConsciousnessMeasureReferenceTerm"/>
     </owl:disjointWith>
@@ -776,16 +776,6 @@
     <owl:disjointWith>
       <owl:Class rdf:about="#BurnQualifierReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="#TopologyMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="#SeverityReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#SpecificAnatomyReferenceTerm"/>
@@ -796,6 +786,16 @@
     <owl:disjointWith>
       <owl:Class rdf:about="#FractureSubtypeReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#TopologyMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#GenomicAndChromosomeAnomalyReferenceTerm"/>
     </owl:disjointWith>
@@ -872,16 +872,6 @@
     <owl:disjointWith>
       <owl:Class rdf:about="#ConsciousnessMeasureReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="#TimeInLifeMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#SerotypeReferenceTerm"/>
     </owl:disjointWith>
@@ -898,6 +888,16 @@
       <owl:Class rdf:about="#GenomicAndChromosomeAnomalyReferenceTerm"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#TemporalPatternAndOnsetReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#TimeInLifeMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#SpecificAnatomyReferenceTerm"/>
     </owl:disjointWith>
@@ -978,6 +978,16 @@
     <owl:disjointWith>
       <owl:Class rdf:about="#SerotypeReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#CourseMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="#HistopathologyReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#GenomicAndChromosomeAnomalyReferenceTerm"/>
@@ -991,16 +1001,6 @@
     <owl:disjointWith>
       <owl:Class rdf:about="#TypeOfInjuryReferenceTerm"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="#CourseMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#MedicationReferenceTerm"/>
     </owl:disjointWith>
@@ -1228,13 +1228,6 @@
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Previously called "PhaseOfActivityReferenceTerm".</rdfs:comment>
   </owl:Class>
-  <owl:Class>
-    <owl:unionOf rdf:parseType="Collection">
-      <owl:Class rdf:ID="PostcoordinationScaleTerm"/>
-      <owl:Class rdf:about="#PostcoordinationValueReferenceTerm"/>
-      <owl:Class rdf:about="#ValueMetaClass"/>
-    </owl:unionOf>
-  </owl:Class>
   <owl:Class rdf:ID="GenderOfPerpetratorReferenceTerm">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Previously called "SexOfPerpetratorReferenceTerm".</rdfs:comment>
@@ -1331,16 +1324,6 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="#SpecificAnatomyReferenceTerm">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#referencedValue"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="#SpecificAnatomyMetaClass"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="#ChemicalAgentReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#CausalityReferenceTerm"/>
@@ -1351,6 +1334,16 @@
     <owl:disjointWith>
       <owl:Class rdf:about="#MedicationReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#SpecificAnatomyMetaClass"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="#CourseReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#FractureSubtypeReferenceTerm"/>
@@ -1473,6 +1466,13 @@
     <rdfs:subClassOf>
       <owl:Class rdf:ID="InternalReferenceTerm"/>
     </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class>
+    <owl:unionOf rdf:parseType="Collection">
+      <owl:Class rdf:ID="PostcoordinationScaleTerm"/>
+      <owl:Class rdf:about="#PostcoordinationValueReferenceTerm"/>
+      <owl:Class rdf:about="#ValueMetaClass"/>
+    </owl:unionOf>
   </owl:Class>
   <owl:Class rdf:ID="ExternalReference">
     <rdfs:subClassOf>
@@ -1668,14 +1668,6 @@
     <owl:disjointWith rdf:resource="#HistopathologyReferenceTerm"/>
     <rdfs:subClassOf rdf:resource="#PostcoordinationValueReferenceTerm"/>
     <owl:disjointWith rdf:resource="#TemporalPatternAndOnsetReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#BurnQualifierMetaClass"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#CausalityReferenceTerm"/>
     </owl:disjointWith>
@@ -1694,6 +1686,14 @@
     <owl:disjointWith rdf:resource="#SpecificAnatomyReferenceTerm"/>
     <owl:disjointWith rdf:resource="#CourseReferenceTerm"/>
     <owl:disjointWith rdf:resource="#ChemicalAgentReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#BurnQualifierMetaClass"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#FractureSubtypeReferenceTerm"/>
     </owl:disjointWith>
@@ -1776,14 +1776,6 @@
     </owl:equivalentClass>
   </owl:Class>
   <owl:Class rdf:about="#CausalityReferenceTerm">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#CausalityMetaClass"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="#CourseReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#TypeOfInjuryReferenceTerm"/>
@@ -1800,6 +1792,14 @@
     <owl:disjointWith>
       <owl:Class rdf:about="#GenomicAndChromosomeAnomalyReferenceTerm"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#CausalityMetaClass"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#referencedValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#LevelOfConsciousnessReferenceTerm"/>
     </owl:disjointWith>
@@ -1832,10 +1832,10 @@
   <owl:Class rdf:about="#ExternalCauseDimensionReferenceTerm">
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#ICECIMetaClass"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#referencedValue"/>
         </owl:onProperty>
-        <owl:someValuesFrom rdf:resource="#ICECIMetaClass"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="#PostcoordinationValueReferenceTerm"/>
@@ -2464,11 +2464,11 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >false</owl:hasValue>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:ID="allowsCategorySpecificValueDefinition"/>
         </owl:onProperty>
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -2560,9 +2560,6 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith>
       <owl:Class rdf:about="#FractureQualifierReferenceTerm"/>
     </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#InfectiousAgentReferenceTerm"/>
-    </owl:disjointWith>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:allValuesFrom rdf:resource="#SerotypeMetaClass"/>
@@ -2571,6 +2568,9 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InfectiousAgentReferenceTerm"/>
+    </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#TypeOfInjuryReferenceTerm"/>
     </owl:disjointWith>
@@ -2597,6 +2597,14 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
       <owl:Class rdf:about="#TypeOfInjuryReferenceTerm"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#TopologyReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#GenomicAndChromosomeAnomalyMetaClass"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="#ChemicalAgentReferenceTerm"/>
     <owl:disjointWith rdf:resource="#HistopathologyReferenceTerm"/>
     <rdfs:subClassOf rdf:resource="#PostcoordinationValueReferenceTerm"/>
@@ -2615,14 +2623,6 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#TimeInLifeReferenceTerm"/>
     <owl:disjointWith rdf:resource="#CausalityReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#GenomicAndChromosomeAnomalyMetaClass"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="#LevelOfConsciousnessReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#MedicationReferenceTerm"/>
@@ -2707,18 +2707,18 @@ Notes on "Blue" vs. "Green": The HIM-TAG recommended to use "Blue" instead of "G
     <owl:disjointWith rdf:resource="#AssociatedWithReferenceTerm"/>
     <owl:disjointWith rdf:resource="#DiagnosisConfirmedByReferenceTerm"/>
     <owl:disjointWith rdf:resource="#TimeInLifeReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#InfectiousAgentMetaClass"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="#CausalityReferenceTerm"/>
     <owl:disjointWith rdf:resource="#SerotypeReferenceTerm"/>
     <owl:disjointWith rdf:resource="#SpecificAnatomyReferenceTerm"/>
     <owl:disjointWith rdf:resource="#CourseReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#InfectiousAgentMetaClass"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="#GenomicAndChromosomeAnomalyReferenceTerm"/>
   </owl:Class>
   <owl:Class rdf:ID="EndocrineSystem">
@@ -2747,6 +2747,14 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
   </owl:Class>
   <owl:Class rdf:about="#ConsciousnessMeasureReferenceTerm">
     <owl:disjointWith rdf:resource="#GenomicAndChromosomeAnomalyReferenceTerm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#referencedValue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#ConsciousnessMeasureMetaClass"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="#CourseReferenceTerm"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#TypeOfInjuryReferenceTerm"/>
@@ -2769,14 +2777,6 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
       <owl:Class rdf:about="#MedicationReferenceTerm"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#BurnQualifierReferenceTerm"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#ConsciousnessMeasureMetaClass"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#referencedValue"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="#SpecificAnatomyReferenceTerm"/>
     <owl:disjointWith rdf:resource="#CausalityReferenceTerm"/>
   </owl:Class>
@@ -2826,10 +2826,10 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
   <owl:Class rdf:about="#PostcoordinationSeverityScaleTerm">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="#SeverityReferenceTerm"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#hasScaleValue"/>
         </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="#SeverityReferenceTerm"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -2837,11 +2837,11 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</owl:hasValue>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#allowsCategorySpecificValueDefinition"/>
         </owl:onProperty>
-        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >true</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3095,10 +3095,10 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
     <owl:disjointWith rdf:resource="#CourseReferenceTerm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#TypeOfInjuryMetaClass"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#referencedValue"/>
         </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#TypeOfInjuryMetaClass"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="#SpecificAnatomyReferenceTerm"/>
@@ -3242,15 +3242,15 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
     <owl:disjointWith rdf:resource="#TypeOfInjuryReferenceTerm"/>
     <owl:disjointWith rdf:resource="#InfectiousAgentReferenceTerm"/>
     <owl:disjointWith rdf:resource="#SerotypeReferenceTerm"/>
-    <owl:disjointWith rdf:resource="#ConsciousnessMeasureReferenceTerm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#FractureQualifierMetaClass"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#referencedValue"/>
         </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#FractureQualifierMetaClass"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#ConsciousnessMeasureReferenceTerm"/>
     <rdfs:subClassOf rdf:resource="#PostcoordinationValueReferenceTerm"/>
     <owl:disjointWith rdf:resource="#CausalityReferenceTerm"/>
   </owl:Class>
@@ -3279,17 +3279,17 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
     <owl:disjointWith rdf:resource="#CausalityReferenceTerm"/>
     <owl:disjointWith rdf:resource="#ConsciousnessMeasureReferenceTerm"/>
     <owl:disjointWith rdf:resource="#TypeOfInjuryReferenceTerm"/>
+    <owl:disjointWith rdf:resource="#FractureQualifierReferenceTerm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#referencedValue"/>
-        </owl:onProperty>
         <owl:allValuesFrom>
           <owl:Class rdf:about="#MedicamentMetaClass"/>
         </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#referencedValue"/>
+        </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="#FractureQualifierReferenceTerm"/>
     <owl:disjointWith rdf:resource="#ChemicalAgentReferenceTerm"/>
     <owl:disjointWith rdf:resource="#SpecificAnatomyReferenceTerm"/>
     <rdfs:subClassOf rdf:resource="#PostcoordinationValueReferenceTerm"/>
@@ -3323,9 +3323,6 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
   <owl:Class rdf:about="#PostcoordinationScaleTerm">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#hasScaleValue"/>
-        </owl:onProperty>
         <owl:allValuesFrom>
           <owl:Class>
             <owl:unionOf rdf:parseType="Collection">
@@ -3335,6 +3332,9 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
             </owl:unionOf>
           </owl:Class>
         </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#hasScaleValue"/>
+        </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="#Term"/>
@@ -3348,10 +3348,10 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
     <rdfs:subClassOf rdf:resource="#BaseIndexTerm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue rdf:resource="#Synonym"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="indexTermType"/>
         </owl:onProperty>
-        <owl:hasValue rdf:resource="#Synonym"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3454,11 +3454,11 @@ Mapping relationship: Mappings of the concept to different coding systems (e.g. 
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</owl:hasValue>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#allowsCategorySpecificValueDefinition"/>
         </owl:onProperty>
-        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >false</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="#PostcoordinationScaleTerm"/>
@@ -4680,9 +4680,6 @@ things true of members of a broader class are also true of the narrower class.</
       <owl:ObjectProperty rdf:about="#postcoordinationAxis"/>
     </rdfs:subPropertyOf>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="remarks">
-    <rdfs:range rdf:resource="#RemarkTerm"/>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="childrenOrder">
     <rdfs:domain rdf:resource="#DefinitionSection"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -5280,7 +5277,7 @@ The postocoordination axis represented by the value of this property is an allow
     <rdfs:subPropertyOf rdf:resource="#externalCauseDimension"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="referencedCategory">
-    <rdfs:range rdf:resource="#ICDCategory"/>
+    <rdfs:range rdf:resource="#DefinitionSection"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Note: The range if this property should not be ICDCategory, but rather a metaclass of ICDCategory, such as ICDSection.</rdfs:comment>
     <rdfs:domain rdf:resource="#InternalReferenceTerm"/>
@@ -5447,6 +5444,10 @@ The postocoordination axis represented by the value of this property is an allow
     <rdfs:domain rdf:resource="#ExternalCauseSection"/>
     <rdfs:subPropertyOf rdf:resource="#externalCauseDimension"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="remark">
+    <rdfs:range rdf:resource="#RemarkTerm"/>
+    <rdfs:domain rdf:resource="#TermSection"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#interpersonalRelationsImpact">
     <rdfs:subPropertyOf rdf:resource="#functionalImpact"/>
   </owl:ObjectProperty>
@@ -5577,13 +5578,13 @@ The postocoordination axis represented by the value of this property is an allow
     <rdfs:range>
       <owl:DataRange>
         <owl:oneOf rdf:parseType="Resource">
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >subclass</rdf:first>
           <rdf:rest rdf:parseType="Resource">
             <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >synonym</rdf:first>
             <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
           </rdf:rest>
-          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-          >subclass</rdf:first>
         </owl:oneOf>
       </owl:DataRange>
     </rdfs:range>
@@ -5806,9 +5807,9 @@ For example, a Chinese title term having a label written with Chinese characters
     <rdfs:range>
       <owl:DataRange>
         <owl:oneOf rdf:parseType="Resource">
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
           <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
           >prefilled</rdf:first>
-          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
         </owl:oneOf>
       </owl:DataRange>
     </rdfs:range>
@@ -6163,6 +6164,13 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The standard ICD-10 linearization.</rdfs:comment>
   </ICD10LinearizationView>
+  <owl:DataRange>
+    <owl:oneOf rdf:parseType="Resource">
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+      >prefilled</rdf:first>
+    </owl:oneOf>
+  </owl:DataRange>
   <SelectedMobilityImpact rdf:ID="FunctionalImpactTerm_d4600">
     <bp:shortTermId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >d4600</bp:shortTermId>
@@ -6267,37 +6275,6 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     <bp:shortTermId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >d220</bp:shortTermId>
   </SelectedLifeManagementActivitiesImpact>
-  <ValueMetaClass rdf:ID="FacilitatorQualifier">
-    <rdfs:subClassOf>
-      <TermSection rdf:ID="Qualifier">
-        <rdf:type rdf:resource="#LinearizationSection"/>
-        <rdf:type rdf:resource="#DefinitionSection"/>
-        <rdfs:subClassOf>
-          <TermSection rdf:ID="ICFEntity">
-            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >ICF Entity</rdfs:label>
-            <rdf:type rdf:resource="#LinearizationSection"/>
-            <rdf:type rdf:resource="#DefinitionSection"/>
-            <rdfs:subClassOf rdf:resource="#ClassificationEntity"/>
-          </TermSection>
-        </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Qualifier</rdfs:label>
-      </TermSection>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <TermSection rdf:ID="DefiningQualifier">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Defining Qualifier</rdfs:label>
-        <rdf:type rdf:resource="#LinearizationSection"/>
-        <rdf:type rdf:resource="#DefinitionSection"/>
-        <rdfs:subClassOf rdf:resource="#ClassificationEntity"/>
-      </TermSection>
-    </rdfs:subClassOf>
-    <rdf:type rdf:resource="#TermSection"/>
-    <rdf:type rdf:resource="#LinearizationSection"/>
-    <rdf:type rdf:resource="#DefinitionSection"/>
-  </ValueMetaClass>
   <ExclusionTermType rdf:ID="do_not_code">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A type 3 excludes note represents "Do not code". An excludes3 note indicates that the condition excluded is not part of the condition it is excluded from but a patient may have both conditions at the same time. When an Excludes3 note appears under a code then either the code or the excluded code should be used.</rdfs:comment>
@@ -6312,6 +6289,7 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     <bp:shortTermId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >d550</bp:shortTermId>
   </SelectedSelfCareImpact>
+  <owl:AllDifferent/>
   <ICD11LinearizationView rdf:ID="PrimaryCare">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Primary Care</rdfs:label>
@@ -6343,7 +6321,15 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
                 >ICF Category</rdfs:label>
                 <rdf:type rdf:resource="#LinearizationSection"/>
                 <rdf:type rdf:resource="#DefinitionSection"/>
-                <rdfs:subClassOf rdf:resource="#ICFEntity"/>
+                <rdfs:subClassOf>
+                  <TermSection rdf:ID="ICFEntity">
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >ICF Entity</rdfs:label>
+                    <rdf:type rdf:resource="#LinearizationSection"/>
+                    <rdf:type rdf:resource="#DefinitionSection"/>
+                    <rdfs:subClassOf rdf:resource="#ClassificationEntity"/>
+                  </TermSection>
+                </rdfs:subClassOf>
                 <rdfs:subClassOf>
                   <TermSection rdf:ID="ICCategory">
                     <rdf:type rdf:resource="#LinearizationSection"/>
@@ -6827,6 +6813,29 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     >Genetic</rdfs:label>
   </EtiologyTypeTerm>
   <SeverityTerm rdf:ID="Severe"/>
+  <ValueMetaClass rdf:about="http://who.int/icf#Q-bf">
+    <rdf:type rdf:resource="#TermSection"/>
+    <rdf:type rdf:resource="#LinearizationSection"/>
+    <rdf:type rdf:resource="#DefinitionSection"/>
+    <rdfs:subClassOf>
+      <TermSection rdf:ID="Qualifier">
+        <rdf:type rdf:resource="#LinearizationSection"/>
+        <rdf:type rdf:resource="#DefinitionSection"/>
+        <rdfs:subClassOf rdf:resource="#ICFEntity"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Qualifier</rdfs:label>
+      </TermSection>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <TermSection rdf:ID="DefiningQualifier">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Defining Qualifier</rdfs:label>
+        <rdf:type rdf:resource="#LinearizationSection"/>
+        <rdf:type rdf:resource="#DefinitionSection"/>
+        <rdfs:subClassOf rdf:resource="#ClassificationEntity"/>
+      </TermSection>
+    </rdfs:subClassOf>
+  </ValueMetaClass>
   <TAG rdf:ID="TAG_Neoplasms">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >TAG Neoplasms</rdfs:label>
@@ -6893,71 +6902,71 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
         <owl:intersectionOf rdf:parseType="Collection">
           <LinearizationSection rdf:ID="FunctioningSituation">
             <rdfs:subClassOf rdf:resource="#ICFCategory"/>
-            <owl:disjointWith>
-              <ValueMetaClass rdf:ID="BodyStructure">
-                <owl:disjointWith>
-                  <ValueMetaClass rdf:ID="EnvironmentalFactor">
-                    <rdfs:subClassOf rdf:resource="#ICFCategory"/>
-                    <rdfs:subClassOf>
-                      <TermSection rdf:ID="StructuralComponent">
-                        <rdf:type rdf:resource="#LinearizationSection"/>
-                        <rdf:type rdf:resource="#DefinitionSection"/>
-                        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                        >Structural Component Entity</rdfs:label>
-                        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                        >These are categories that help to define codable categories</rdfs:comment>
-                        <rdfs:subClassOf rdf:resource="#ICCategory"/>
-                      </TermSection>
-                    </rdfs:subClassOf>
-                    <rdf:type rdf:resource="#LinearizationSection"/>
-                    <owl:disjointWith>
-                      <TermSection rdf:ID="BodyFunction">
-                        <owl:disjointWith rdf:resource="#BodyStructure"/>
-                        <owl:disjointWith rdf:resource="#FunctioningSituation"/>
-                        <rdfs:subClassOf rdf:resource="#ICFCategory"/>
-                        <owl:disjointWith>
-                          <ValueMetaClass rdf:ID="ActivityAndParticipation">
-                            <rdf:type rdf:resource="#DefinitionSection"/>
-                            <owl:disjointWith rdf:resource="#FunctioningSituation"/>
-                            <rdf:type rdf:resource="#TermSection"/>
-                            <owl:disjointWith rdf:resource="#BodyFunction"/>
-                            <owl:disjointWith rdf:resource="#BodyStructure"/>
-                            <owl:disjointWith rdf:resource="#EnvironmentalFactor"/>
-                            <rdf:type rdf:resource="#LinearizationSection"/>
-                            <rdfs:subClassOf rdf:resource="#StructuralComponent"/>
-                            <rdfs:subClassOf rdf:resource="#ICFCategory"/>
-                          </ValueMetaClass>
-                        </owl:disjointWith>
-                        <rdf:type rdf:resource="#ValueMetaClass"/>
-                        <rdfs:subClassOf rdf:resource="#StructuralComponent"/>
-                        <rdf:type rdf:resource="#LinearizationSection"/>
-                        <owl:disjointWith rdf:resource="#EnvironmentalFactor"/>
-                        <rdf:type rdf:resource="#DefinitionSection"/>
-                      </TermSection>
-                    </owl:disjointWith>
-                    <owl:disjointWith rdf:resource="#ActivityAndParticipation"/>
-                    <owl:disjointWith rdf:resource="#FunctioningSituation"/>
-                    <rdf:type rdf:resource="#DefinitionSection"/>
-                    <rdf:type rdf:resource="#TermSection"/>
-                    <owl:disjointWith rdf:resource="#BodyStructure"/>
-                  </ValueMetaClass>
-                </owl:disjointWith>
-                <owl:disjointWith rdf:resource="#FunctioningSituation"/>
-                <owl:disjointWith rdf:resource="#ActivityAndParticipation"/>
-                <owl:disjointWith rdf:resource="#BodyFunction"/>
-                <rdf:type rdf:resource="#LinearizationSection"/>
-                <rdf:type rdf:resource="#TermSection"/>
-                <rdfs:subClassOf rdf:resource="#ICFCategory"/>
-                <rdfs:subClassOf rdf:resource="#StructuralComponent"/>
-                <rdf:type rdf:resource="#DefinitionSection"/>
-              </ValueMetaClass>
-            </owl:disjointWith>
             <rdf:type rdf:resource="#ICFPostcoordinationSection"/>
             <rdfs:subClassOf rdf:resource="#CodableEntity"/>
-            <owl:disjointWith rdf:resource="#BodyFunction"/>
-            <owl:disjointWith rdf:resource="#EnvironmentalFactor"/>
+            <owl:disjointWith>
+              <ValueMetaClass rdf:about="http://who.int/icf#B">
+                <rdfs:subClassOf rdf:resource="#ICFCategory"/>
+                <rdf:type rdf:resource="#DefinitionSection"/>
+                <rdfs:subClassOf>
+                  <TermSection rdf:ID="StructuralComponent">
+                    <rdf:type rdf:resource="#LinearizationSection"/>
+                    <rdf:type rdf:resource="#DefinitionSection"/>
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >Structural Component Entity</rdfs:label>
+                    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >These are categories that help to define codable categories</rdfs:comment>
+                    <rdfs:subClassOf rdf:resource="#ICCategory"/>
+                  </TermSection>
+                </rdfs:subClassOf>
+                <owl:disjointWith>
+                  <TermSection rdf:about="http://who.int/icf#E">
+                    <owl:disjointWith>
+                      <ValueMetaClass rdf:about="http://who.int/icf#D">
+                        <rdf:type rdf:resource="#DefinitionSection"/>
+                        <rdfs:subClassOf rdf:resource="#ICFCategory"/>
+                        <owl:disjointWith>
+                          <DefinitionSection rdf:about="http://who.int/icf#S">
+                            <rdf:type rdf:resource="#LinearizationSection"/>
+                            <owl:disjointWith rdf:resource="http://who.int/icf#E"/>
+                            <owl:disjointWith rdf:resource="http://who.int/icf#B"/>
+                            <rdfs:subClassOf rdf:resource="#StructuralComponent"/>
+                            <rdf:type rdf:resource="#ValueMetaClass"/>
+                            <owl:disjointWith rdf:resource="http://who.int/icf#D"/>
+                            <owl:disjointWith rdf:resource="#FunctioningSituation"/>
+                            <rdfs:subClassOf rdf:resource="#ICFCategory"/>
+                            <rdf:type rdf:resource="#TermSection"/>
+                          </DefinitionSection>
+                        </owl:disjointWith>
+                        <owl:disjointWith rdf:resource="http://who.int/icf#B"/>
+                        <owl:disjointWith rdf:resource="http://who.int/icf#E"/>
+                        <rdf:type rdf:resource="#TermSection"/>
+                        <rdfs:subClassOf rdf:resource="#StructuralComponent"/>
+                        <rdf:type rdf:resource="#LinearizationSection"/>
+                        <owl:disjointWith rdf:resource="#FunctioningSituation"/>
+                      </ValueMetaClass>
+                    </owl:disjointWith>
+                    <rdfs:subClassOf rdf:resource="#StructuralComponent"/>
+                    <rdfs:subClassOf rdf:resource="#ICFCategory"/>
+                    <rdf:type rdf:resource="#DefinitionSection"/>
+                    <owl:disjointWith rdf:resource="http://who.int/icf#S"/>
+                    <rdf:type rdf:resource="#LinearizationSection"/>
+                    <owl:disjointWith rdf:resource="http://who.int/icf#B"/>
+                    <rdf:type rdf:resource="#ValueMetaClass"/>
+                    <owl:disjointWith rdf:resource="#FunctioningSituation"/>
+                  </TermSection>
+                </owl:disjointWith>
+                <rdf:type rdf:resource="#TermSection"/>
+                <owl:disjointWith rdf:resource="http://who.int/icf#S"/>
+                <rdf:type rdf:resource="#LinearizationSection"/>
+                <owl:disjointWith rdf:resource="#FunctioningSituation"/>
+                <owl:disjointWith rdf:resource="http://who.int/icf#D"/>
+              </ValueMetaClass>
+            </owl:disjointWith>
+            <owl:disjointWith rdf:resource="http://who.int/icf#E"/>
+            <owl:disjointWith rdf:resource="http://who.int/icf#S"/>
             <rdf:type rdf:resource="#TermSection"/>
-            <owl:disjointWith rdf:resource="#ActivityAndParticipation"/>
+            <owl:disjointWith rdf:resource="http://who.int/icf#D"/>
             <rdf:type rdf:resource="#DefinitionSection"/>
           </LinearizationSection>
           <owl:Restriction>
@@ -6968,7 +6977,26 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
                   <owl:Class>
                     <owl:intersectionOf rdf:parseType="Resource">
                       <rdf:rest rdf:parseType="Resource">
+                        <rdf:first>
+                          <owl:Restriction>
+                            <owl:onProperty rdf:resource="#hasQualifier"/>
+                            <owl:someValuesFrom rdf:resource="#DefiningQualifier"/>
+                          </owl:Restriction>
+                        </rdf:first>
                         <rdf:rest rdf:parseType="Resource">
+                          <rdf:first>
+                            <owl:Restriction>
+                              <owl:someValuesFrom>
+                                <owl:Class>
+                                  <owl:intersectionOf rdf:parseType="Collection">
+                                    <TermSection rdf:about="#ICFEntity"/>
+                                    <TermSection rdf:about="#StructuralComponent"/>
+                                  </owl:intersectionOf>
+                                </owl:Class>
+                              </owl:someValuesFrom>
+                              <owl:onProperty rdf:resource="#hasDomain"/>
+                            </owl:Restriction>
+                          </rdf:first>
                           <rdf:rest>
                             <rdf:List>
                               <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -6982,26 +7010,7 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
                               </rdf:first>
                             </rdf:List>
                           </rdf:rest>
-                          <rdf:first>
-                            <owl:Restriction>
-                              <owl:onProperty rdf:resource="#hasDomain"/>
-                              <owl:someValuesFrom>
-                                <owl:Class>
-                                  <owl:intersectionOf rdf:parseType="Collection">
-                                    <TermSection rdf:about="#ICFEntity"/>
-                                    <TermSection rdf:about="#StructuralComponent"/>
-                                  </owl:intersectionOf>
-                                </owl:Class>
-                              </owl:someValuesFrom>
-                            </owl:Restriction>
-                          </rdf:first>
                         </rdf:rest>
-                        <rdf:first>
-                          <owl:Restriction>
-                            <owl:onProperty rdf:resource="#hasQualifier"/>
-                            <owl:someValuesFrom rdf:resource="#DefiningQualifier"/>
-                          </owl:Restriction>
-                        </rdf:first>
                       </rdf:rest>
                       <rdf:first rdf:resource="#FunctioningSituation"/>
                     </owl:intersectionOf>
@@ -7014,9 +7023,9 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
             </owl:someValuesFrom>
           </owl:Restriction>
           <owl:Restriction>
-            <owl:onProperty rdf:resource="#hasComponent"/>
             <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
             >2</owl:minCardinality>
+            <owl:onProperty rdf:resource="#hasComponent"/>
           </owl:Restriction>
         </owl:intersectionOf>
       </owl:Class>
@@ -7046,13 +7055,17 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     <bp:ontologyId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >40865</bp:ontologyId>
   </SelectedSocialParticipationImpact>
-  <ValueMetaClass rdf:ID="BarrierQualifier">
-    <rdf:type rdf:resource="#TermSection"/>
-    <rdf:type rdf:resource="#LinearizationSection"/>
-    <rdf:type rdf:resource="#DefinitionSection"/>
-    <rdfs:subClassOf rdf:resource="#Qualifier"/>
-    <rdfs:subClassOf rdf:resource="#DefiningQualifier"/>
-  </ValueMetaClass>
+  <owl:DataRange>
+    <owl:oneOf rdf:parseType="Resource">
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >synonym</rdf:first>
+      </rdf:rest>
+      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+      >subclass</rdf:first>
+    </owl:oneOf>
+  </owl:DataRange>
   <TAG rdf:ID="TAG_IM_Gastroenterology">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >TAG IM Gastroenterology WG</rdfs:label>
@@ -7087,13 +7100,6 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Spec. Lin: Occupational Health</rdfs:label>
   </ICD11LinearizationView>
-  <ValueMetaClass rdf:ID="ImpairmentNatureQualifier">
-    <rdf:type rdf:resource="#TermSection"/>
-    <rdf:type rdf:resource="#LinearizationSection"/>
-    <rdf:type rdf:resource="#DefinitionSection"/>
-    <rdfs:subClassOf rdf:resource="#DefiningQualifier"/>
-    <rdfs:subClassOf rdf:resource="#Qualifier"/>
-  </ValueMetaClass>
   <SelectedUnderstandingImpact rdf:ID="FunctionalImpactTerm_d166">
     <bp:shortTermId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >d166</bp:shortTermId>
@@ -7138,19 +7144,6 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     <bp:ontologyId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >40865</bp:ontologyId>
   </SelectedMobilityImpact>
-  <ValueMetaClass rdf:ID="ImpairmentLocationQualifier">
-    <rdfs:subClassOf>
-      <TermSection rdf:ID="ICFExtensionCode">
-        <rdf:type rdf:resource="#LinearizationSection"/>
-        <rdf:type rdf:resource="#DefinitionSection"/>
-        <rdfs:subClassOf rdf:resource="#ExtensionEntity"/>
-      </TermSection>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#Qualifier"/>
-    <rdf:type rdf:resource="#TermSection"/>
-    <rdf:type rdf:resource="#LinearizationSection"/>
-    <rdf:type rdf:resource="#DefinitionSection"/>
-  </ValueMetaClass>
   <VersionNote rdf:ID="VersionNote2110-04-07">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Make TemporalPropertyTerm's age range, ageRangeIsDefinition, "ageRangeIsGenerallyTrue properties functional</rdfs:comment>
@@ -7201,13 +7194,6 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     <bp:shortTermId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >d230</bp:shortTermId>
   </SelectedLifeManagementActivitiesImpact>
-  <owl:DataRange>
-    <owl:oneOf rdf:parseType="Resource">
-      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-      >prefilled</rdf:first>
-      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    </owl:oneOf>
-  </owl:DataRange>
   <SelectedChildrenAndYouthImpact rdf:ID="FunctionalImpactTerm_d145">
     <bp:ontologyLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >International Classification of Functioning, Disability and Health (ICF)</bp:ontologyLabel>
@@ -7342,17 +7328,6 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     <bp:ontologyLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >International Classification of Functioning, Disability and Health (ICF)</bp:ontologyLabel>
   </SelectedSelfCareImpact>
-  <owl:DataRange>
-    <owl:oneOf rdf:parseType="Resource">
-      <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >synonym</rdf:first>
-        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-      </rdf:rest>
-      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-      >subclass</rdf:first>
-    </owl:oneOf>
-  </owl:DataRange>
   <VersionNote rdf:ID="VersionNote2010-02-10">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Systematically copied UML content model documentation to corresponding classes, properties, and individuals in the iCAT content model</rdfs:comment>
@@ -7409,17 +7384,6 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     <bp:ontologyId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >40865</bp:ontologyId>
   </SelectedSelfCareImpact>
-  <owl:AllDifferent>
-    <owl:distinctMembers rdf:parseType="Collection">
-      <CapacityQualifier rdf:ID="NoDifficulty-0"/>
-      <CapacityQualifier rdf:ID="MildDifficulty-1"/>
-      <CapacityQualifier rdf:ID="ModerateDifficulty-2"/>
-      <CapacityQualifier rdf:ID="SevereDifficulty-3"/>
-      <CapacityQualifier rdf:ID="CompleteDifficulty-4"/>
-      <CapacityQualifier rdf:ID="NotSpecified-8"/>
-      <CapacityQualifier rdf:ID="NotApplicable-9"/>
-    </owl:distinctMembers>
-  </owl:AllDifferent>
   <SelectedWorkAndEconomicLifeActivitiesImpact rdf:ID="FunctionalImpactTerm_d860">
     <bp:ontologyId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >40865</bp:ontologyId>
@@ -7440,6 +7404,19 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >TAG Musculoskeletal</rdfs:label>
   </TAG>
+  <ValueMetaClass rdf:about="http://who.int/icf#Q-al">
+    <rdf:type rdf:resource="#TermSection"/>
+    <rdf:type rdf:resource="#LinearizationSection"/>
+    <rdf:type rdf:resource="#DefinitionSection"/>
+    <rdfs:subClassOf>
+      <TermSection rdf:ID="ICFExtensionCode">
+        <rdf:type rdf:resource="#LinearizationSection"/>
+        <rdf:type rdf:resource="#DefinitionSection"/>
+        <rdfs:subClassOf rdf:resource="#ExtensionEntity"/>
+      </TermSection>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Qualifier"/>
+  </ValueMetaClass>
   <SeverityTerm rdf:ID="Mild"/>
   <SelectedInterpersonalRelationsImpact rdf:ID="FunctionalImpactTerm_d730">
     <bp:shortTermId rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -7517,6 +7494,13 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A component of Vigorous activity or d4303. Carrying on shoulders, hip and back</rdfs:comment>
   </SelectedMobilityImpact>
+  <ValueMetaClass rdf:about="http://who.int/icf#Q-ncbs">
+    <rdfs:subClassOf rdf:resource="#DefiningQualifier"/>
+    <rdfs:subClassOf rdf:resource="#Qualifier"/>
+    <rdf:type rdf:resource="#TermSection"/>
+    <rdf:type rdf:resource="#LinearizationSection"/>
+    <rdf:type rdf:resource="#DefinitionSection"/>
+  </ValueMetaClass>
   <TAG rdf:ID="TAG_WG_Environmental">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >TAG WG Environmental</rdfs:label>
@@ -7543,12 +7527,12 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
         <owl:intersectionOf rdf:parseType="Collection">
           <ICFPostcoordinationSection rdf:about="#SingleDomainFunctioningSituation"/>
           <owl:Restriction>
-            <owl:someValuesFrom rdf:resource="#BodyStructure"/>
+            <owl:someValuesFrom rdf:resource="http://who.int/icf#S"/>
             <owl:onProperty rdf:resource="#hasDomain"/>
           </owl:Restriction>
           <owl:Restriction>
             <owl:someValuesFrom>
-              <ValueMetaClass rdf:ID="ImpairmentExtentQualifier">
+              <ValueMetaClass rdf:about="http://who.int/icf#Q-emi">
                 <rdfs:subClassOf rdf:resource="#Qualifier"/>
                 <rdfs:subClassOf rdf:resource="#DefiningQualifier"/>
                 <rdf:type rdf:resource="#TermSection"/>
@@ -7569,21 +7553,20 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
               <ICFPostcoordinationSection rdf:about="#SingleDomainFunctioningSituation"/>
               <owl:Restriction>
                 <owl:onProperty rdf:resource="#hasDomain"/>
-                <owl:someValuesFrom rdf:resource="#ActivityAndParticipation"/>
+                <owl:someValuesFrom rdf:resource="http://who.int/icf#D"/>
               </owl:Restriction>
               <owl:Restriction>
-                <owl:onProperty rdf:resource="#hasQualifier"/>
                 <owl:someValuesFrom>
                   <owl:Class>
                     <owl:unionOf rdf:parseType="Collection">
-                      <ValueMetaClass rdf:ID="CapacityQualifier">
+                      <ValueMetaClass rdf:about="http://who.int/icf#Q-c">
                         <rdf:type rdf:resource="#TermSection"/>
                         <rdf:type rdf:resource="#LinearizationSection"/>
                         <rdf:type rdf:resource="#DefinitionSection"/>
                         <rdfs:subClassOf rdf:resource="#Qualifier"/>
                         <rdfs:subClassOf rdf:resource="#DefiningQualifier"/>
                       </ValueMetaClass>
-                      <ValueMetaClass rdf:ID="PerformanceQualifier">
+                      <ValueMetaClass rdf:about="http://who.int/icf#Q-p">
                         <rdf:type rdf:resource="#TermSection"/>
                         <rdf:type rdf:resource="#LinearizationSection"/>
                         <rdf:type rdf:resource="#DefinitionSection"/>
@@ -7592,6 +7575,7 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
                     </owl:unionOf>
                   </owl:Class>
                 </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="#hasQualifier"/>
               </owl:Restriction>
             </owl:intersectionOf>
           </owl:Class>
@@ -7606,11 +7590,11 @@ Note: For any given linearization of an ICD entity "isIncludedInLinearization" a
                 <owl:intersectionOf rdf:parseType="Collection">
                   <ICFPostcoordinationSection rdf:about="#SingleDomainFunctioningSituation"/>
                   <owl:Restriction>
-                    <owl:someValuesFrom rdf:resource="#BodyFunction"/>
                     <owl:onProperty rdf:resource="#hasDomain"/>
+                    <owl:someValuesFrom rdf:resource="http://who.int/icf#B"/>
                   </owl:Restriction>
                   <owl:Restriction>
-                    <owl:someValuesFrom rdf:resource="#ImpairmentExtentQualifier"/>
+                    <owl:someValuesFrom rdf:resource="http://who.int/icf#Q-emi"/>
                     <owl:onProperty rdf:resource="#hasImpairmentExtent"/>
                   </owl:Restriction>
                 </owl:intersectionOf>
