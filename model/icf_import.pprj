@@ -1,4 +1,4 @@
-; Wed May 06 14:23:08 PDT 2020
+; Wed Apr 29 10:36:59 EEST 2020
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -6,13 +6,17 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[whofic_extendedicd_content_model_ProjectKB_Class10154]
-		[whofic_extendedicd_content_model_ProjectKB_Class10155]
-		[whofic_extendedicd_content_model_ProjectKB_Class10156]
-		[whofic_extendedicd_content_model_ProjectKB_Class10157]
-		[whofic_extendedicd_content_model_ProjectKB_Class10158]
-		[whofic_extendedicd_content_model_ProjectKB_Class10159]
-		[whofic_extendedicd_content_model_ProjectKB_Class10160]))
+		[icf_imported_ProjectKB_Class10899]
+		[icf_imported_ProjectKB_Class10900]
+		[icf_imported_ProjectKB_Class10901]
+		[icf_imported_ProjectKB_Class10902]
+		[icf_imported_ProjectKB_Class10903]
+		[icf_imported_ProjectKB_Class10904]
+		[icf_imported_ProjectKB_Class10905]
+		[icf_imported_ProjectKB_Class10906]
+		[icf_imported_ProjectKB_Class10907]
+		[icf_imported_ProjectKB_Class10908]
+		[icf_imported_ProjectKB_Class10909]))
 
 ([CLSES_TAB] of  Widget
 
@@ -37,6 +41,322 @@
 	(label "Forms")
 	(property_list [Instance_85])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab"))
+
+([icf_imported_ProjectKB_Class1] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class2])
+	(widget_class_name "org.protege.owl.mm.portability.protege3.MappingMasterTab"))
+
+([icf_imported_ProjectKB_Class10] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class10899] of  String
+
+	(name "http://who.int/icd#TermSection")
+	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
+
+([icf_imported_ProjectKB_Class10900] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([icf_imported_ProjectKB_Class10901] of  String
+
+	(name "http://who.int/icd#DefinitionSection")
+	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
+
+([icf_imported_ProjectKB_Class10902] of  String
+
+	(name "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property")
+	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
+
+([icf_imported_ProjectKB_Class10903] of  String
+
+	(name "http://www.w3.org/2002/07/owl#Thing")
+	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
+
+([icf_imported_ProjectKB_Class10904] of  String
+
+	(name "http://www.w3.org/2000/01/rdf-schema#Class")
+	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
+
+([icf_imported_ProjectKB_Class10905] of  String
+
+	(name "http://www.w3.org/2002/07/owl#Class")
+	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
+
+([icf_imported_ProjectKB_Class10906] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([icf_imported_ProjectKB_Class10907] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([icf_imported_ProjectKB_Class10908] of  String
+
+	(name "http://who.int/icd#LinearizationSection")
+	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
+
+([icf_imported_ProjectKB_Class10909] of  String
+
+	(name "http://www.w3.org/2002/07/owl#DatatypeProperty")
+	(string_value "%3ANAME"))
+
+([icf_imported_ProjectKB_Class11] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class12])
+	(widget_class_name "edu.stanford.smi.protege.query.LuceneQueryPlugin"))
+
+([icf_imported_ProjectKB_Class12] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class13] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class14])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
+
+([icf_imported_ProjectKB_Class14] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class15] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class16])
+	(widget_class_name "edu.stanford.bmir.protegex.icd.diff.ICDDiff"))
+
+([icf_imported_ProjectKB_Class16] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class17] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class18])
+	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
+
+([icf_imported_ProjectKB_Class18] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class19] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class20])
+	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
+
+([icf_imported_ProjectKB_Class2] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class20] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class21] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class22])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+
+([icf_imported_ProjectKB_Class22] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class23] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class24])
+	(widget_class_name "edu.stanford.bmir.protegex.icd.ICDTab"))
+
+([icf_imported_ProjectKB_Class24] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class25] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class26])
+	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
+
+([icf_imported_ProjectKB_Class26] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class27] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class28])
+	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
+
+([icf_imported_ProjectKB_Class28] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class29] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class30])
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
+
+([icf_imported_ProjectKB_Class3] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class4])
+	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
+
+([icf_imported_ProjectKB_Class30] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class31] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class32])
+	(widget_class_name "TGViztab.TGVizTab"))
+
+([icf_imported_ProjectKB_Class32] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class33] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class34])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+
+([icf_imported_ProjectKB_Class34] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class35] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class36])
+	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
+
+([icf_imported_ProjectKB_Class36] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class37] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class38])
+	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
+
+([icf_imported_ProjectKB_Class38] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class39] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class40])
+	(widget_class_name "se.liu.ida.JessTab.JessTab"))
+
+([icf_imported_ProjectKB_Class4] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class40] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class41] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class42])
+	(widget_class_name "edu.stanford.smi.protegex.changeanalysis.ChangeAnalysisTab"))
+
+([icf_imported_ProjectKB_Class42] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class43] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class44])
+	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
+
+([icf_imported_ProjectKB_Class44] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class45] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class46])
+	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
+
+([icf_imported_ProjectKB_Class46] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class47] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class48])
+	(widget_class_name "script.ProtegeScriptTab"))
+
+([icf_imported_ProjectKB_Class48] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class49] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class50])
+	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
+
+([icf_imported_ProjectKB_Class5] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class6])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
+
+([icf_imported_ProjectKB_Class50] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class51] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class52])
+	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
+
+([icf_imported_ProjectKB_Class52] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class53] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class54])
+	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
+
+([icf_imported_ProjectKB_Class54] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class55] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class56])
+	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
+
+([icf_imported_ProjectKB_Class56] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class57] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class58])
+	(widget_class_name "ezpal.EZPalTab"))
+
+([icf_imported_ProjectKB_Class58] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class6] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class7] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class8])
+	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
+
+([icf_imported_ProjectKB_Class8] of  Property_List
+)
+
+([icf_imported_ProjectKB_Class9] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [icf_imported_ProjectKB_Class10])
+	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
 
 ([Instance_1005] of  Widget
 
@@ -165,7 +485,6 @@
 	(display_multi_parent_class_icon FALSE)
 	(is_readonly FALSE)
 	(tabbed_instance_form_layout TRUE)
-	(undo_enabled TRUE)
 	(update_modification_slots FALSE))
 
 ([Instance_581] of  Widget
@@ -270,20 +589,17 @@
 ([KB_024013_Instance_5] of  Property_List
 )
 
-([KB_067314_Class3] of  Map
-)
-
 ([KB_100699_Instance_0] of  Widget
 
-	(height 360)
+	(height 366)
 	(is_hidden FALSE)
 	(label "Class Annotations")
 	(name "http://www.w3.org/2002/07/owl#equivalentClass")
 	(property_list [KB_100699_Instance_1])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 650)
+	(width 660)
 	(x 0)
-	(y 130))
+	(y 134))
 
 ([KB_100699_Instance_1] of  Property_List
 
@@ -309,13 +625,13 @@
 
 ([KB_100699_Instance_2] of  Widget
 
-	(height 360)
+	(height 366)
 	(is_hidden FALSE)
 	(label "Logic View")
 	(name ":DIRECT-TEMPLATE-SLOTS")
 	(property_list [KB_100699_Instance_3])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 650)
+	(width 660)
 	(x 0)
 	(y 0))
 
@@ -327,37 +643,37 @@
 
 ([KB_100699_Instance_4] of  Widget
 
-	(height 211)
+	(height 213)
 	(is_hidden FALSE)
 	(label "Conditions")
 	(name ":DIRECT-SUPERCLASSES")
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 640)
+	(width 650)
 	(x 5)
 	(y 5))
 
 ([KB_100699_Instance_5] of  Widget
 
-	(height 137)
+	(height 141)
 	(is_hidden FALSE)
 	(label "Disjoints")
 	(name "http://www.w3.org/2002/07/owl#disjointWith")
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 650)
+	(width 660)
 	(x 0)
-	(y 223))
+	(y 225))
 
 ([KB_100699_Instance_6] of  Widget
 
-	(height -36)
+	(height -46)
 	(is_hidden FALSE)
 	(label "Properties View")
 	(name ":DIRECT-SUPERCLASSES")
 	(property_list [KB_100699_Instance_7])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width -14)
-	(x 7)
-	(y 28))
+	(width -21)
+	(x 11)
+	(y 33))
 
 ([KB_100699_Instance_7] of  Property_List
 
@@ -660,6 +976,9 @@
 	(property_list [XY_Instance_927])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
+([KB_301531_Class0] of  Map
+)
+
 ([KB_303942_Instance_68] of  Widget
 
 	(is_hidden FALSE)
@@ -751,21 +1070,17 @@
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
 ([KB_325529_Class0] of  Map
-
-	(entries
-		[whofic_extendedicd_content_model_ProjectKB_Class10161]
-		[whofic_extendedicd_content_model_ProjectKB_Class10162]
-		[whofic_extendedicd_content_model_ProjectKB_Class10163]))
+)
 
 ([KB_325529_Class4] of  String
 
 	(name "owl_file_name")
-	(string_value "whofic_extendedicd_content_model.owl"))
+	(string_value "icf_import.owl"))
 
 ([KB_444675_Instance_0] of  String
 
 	(name "SwitchableClassDefinitionType")
-	(string_value "edu.stanford.smi.protegex.owl.ui.cls.PropertiesClassDefinitionWidget"))
+	(string_value "edu.stanford.smi.protegex.owl.ui.cls.LogicClassDefinitionWidgetType"))
 
 ([KB_465546_Instance_567] of  Widget
 
@@ -5368,15 +5683,14 @@
 		[KB_713803_Instance_303]
 		[KB_713803_Instance_477]
 		[KB_691299_Instance_398]
-		[KB_303942_Instance_68]
 		[KB_764103_Instance_545]
+		[KB_303942_Instance_68]
 		[Instance_443]
 		[KB_938545_Instance_661]
 		[KB_465546_Instance_567]
 		[KB_713803_Instance_648]
 		[KB_713803_Instance_693]
 		[KB_301165_Instance_1013]
-		[whofic_extendedicd_content_model_ProjectKB_Class250968]
 		[Instance_581]
 		[KB_691299_Instance_537]
 		[STANDARD_FACET_FORM_WIDGET]
@@ -5439,8 +5753,8 @@
 		":SLOT-DEFAULTS"
 		":CREATION-TIMESTAMP"
 		"http://www.w3.org/2001/XMLSchema#byte"
-		":DOCUMENTATION-IN-FRAME"
 		"http://www.w3.org/2002/07/owl#sameAs"
+		":DOCUMENTATION-IN-FRAME"
 		":MODIFIER"
 		":DOCUMENTATION"
 		"http://www.w3.org/2002/07/owl#inverseOf"
@@ -5561,9 +5875,9 @@
 		"http://www.w3.org/2002/07/owl#DataRange"
 		"http://www.w3.org/2002/07/owl#DeprecatedProperty"
 		"http://www.w3.org/2003/11/swrl#dataRange"
+		"http://protege.stanford.edu/plugins/owl/protege#ExternalResource"
 		"http://www.w3.org/2003/11/swrl#body"
 		"http://protege.stanford.edu/plugins/owl/protege#DIRECTED-BINARY-RELATION"
-		"http://protege.stanford.edu/plugins/owl/protege#ExternalResource"
 		"http://www.w3.org/2002/07/owl#intersectionOf"
 		":OWL-ONTOLOGY-POINTER-CLASS"
 		"http://protege.stanford.edu/plugins/owl/protege#ExternalProperty"
@@ -5586,45 +5900,18 @@
 		[Instance_2534]
 		[Instance_86]
 		[Instance_2600]
+		[FORMS_TAB]
 		[Instance_3234]
-		[KB_865583_Instance_8]
-		[whofic_extendedicd_content_model_ProjectKB_Class21]
-		[whofic_extendedicd_content_model_ProjectKB_Class37]
-		[whofic_extendedicd_content_model_ProjectKB_Class23]
 		[Instance_43]
 		[CLSES_TAB]
-		[whofic_extendedicd_content_model_ProjectKB_Class51]
 		[KB_865583_Instance_6]
-		[whofic_extendedicd_content_model_ProjectKB_Class47]
-		[FORMS_TAB]
 		[INSTANCES_TAB]
-		[whofic_extendedicd_content_model_ProjectKB_Class29]
-		[whofic_extendedicd_content_model_ProjectKB_Class25]
-		[whofic_extendedicd_content_model_ProjectKB_Class35]
 		[Instance_45]
-		[whofic_extendedicd_content_model_ProjectKB_Class13]
-		[whofic_extendedicd_content_model_ProjectKB_Class11]
-		[whofic_extendedicd_content_model_ProjectKB_Class1]
-		[whofic_extendedicd_content_model_ProjectKB_Class31]
-		[whofic_extendedicd_content_model_ProjectKB_Class7]
 		[KB_865583_Instance_12]
-		[whofic_extendedicd_content_model_ProjectKB_Class39]
-		[whofic_extendedicd_content_model_ProjectKB_Class19]
-		[whofic_extendedicd_content_model_ProjectKB_Class17]
-		[whofic_extendedicd_content_model_ProjectKB_Class3]
-		[whofic_extendedicd_content_model_ProjectKB_Class43]
+		[KB_865583_Instance_8]
 		[KB_865583_Instance_4]
 		[SLOTS_TAB]
-		[whofic_extendedicd_content_model_ProjectKB_Class15]
-		[KB_865583_Instance_10]
-		[whofic_extendedicd_content_model_ProjectKB_Class27]
-		[whofic_extendedicd_content_model_ProjectKB_Class49]
-		[whofic_extendedicd_content_model_ProjectKB_Class33]
-		[whofic_extendedicd_content_model_ProjectKB_Class41]
-		[whofic_extendedicd_content_model_ProjectKB_Class45]
-		[whofic_extendedicd_content_model_ProjectKB_Class53]
-		[whofic_extendedicd_content_model_ProjectKB_Class5]
-		[whofic_extendedicd_content_model_ProjectKB_Class9]))
+		[KB_865583_Instance_10]))
 
 ([SLOTS_TAB] of  Widget
 
@@ -5665,942 +5952,6 @@
 	(name ":STANDARD-SLOT")
 	(property_list [XY_Instance_725])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class1] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class2])
-	(widget_class_name "org.protege.owl.mm.portability.protege3.MappingMasterTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class10154] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10155] of  String
-
-	(name "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property")
-	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10156] of  String
-
-	(name "http://www.w3.org/2002/07/owl#Thing")
-	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10157] of  String
-
-	(name "http://www.w3.org/2000/01/rdf-schema#Class")
-	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10158] of  String
-
-	(name "http://www.w3.org/2002/07/owl#Class")
-	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10159] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10160] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10161] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10162] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10163] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class11] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class12])
-	(widget_class_name "edu.stanford.smi.protege.query.LuceneQueryPlugin"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class12] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class13] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class14])
-	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class14] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class15] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class16])
-	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class16] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class17] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class18])
-	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class18] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class19] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class20])
-	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class2] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class20] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class21] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class22])
-	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class22] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class23] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class24])
-	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class24] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class25] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class26])
-	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250968] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://who.int/icd#DefinitionSection")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class250971])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250971] of  Property_List
-
-	(name "class widget properties")
-	(properties
-		[whofic_extendedicd_content_model_ProjectKB_Class250972]
-		[whofic_extendedicd_content_model_ProjectKB_Class250974]
-		[whofic_extendedicd_content_model_ProjectKB_Class250975]
-		[whofic_extendedicd_content_model_ProjectKB_Class250976]
-		[whofic_extendedicd_content_model_ProjectKB_Class250991]
-		[whofic_extendedicd_content_model_ProjectKB_Class250994]
-		[whofic_extendedicd_content_model_ProjectKB_Class250996]
-		[whofic_extendedicd_content_model_ProjectKB_Class250997]
-		[whofic_extendedicd_content_model_ProjectKB_Class250999]
-		[whofic_extendedicd_content_model_ProjectKB_Class251002]
-		[whofic_extendedicd_content_model_ProjectKB_Class251004]
-		[whofic_extendedicd_content_model_ProjectKB_Class251006]
-		[whofic_extendedicd_content_model_ProjectKB_Class251008]
-		[whofic_extendedicd_content_model_ProjectKB_Class251010]
-		[whofic_extendedicd_content_model_ProjectKB_Class251012]
-		[whofic_extendedicd_content_model_ProjectKB_Class251014]
-		[whofic_extendedicd_content_model_ProjectKB_Class251016]
-		[whofic_extendedicd_content_model_ProjectKB_Class251018]
-		[whofic_extendedicd_content_model_ProjectKB_Class251020]
-		[whofic_extendedicd_content_model_ProjectKB_Class251022]
-		[whofic_extendedicd_content_model_ProjectKB_Class251024]
-		[whofic_extendedicd_content_model_ProjectKB_Class251026]
-		[whofic_extendedicd_content_model_ProjectKB_Class251028]
-		[whofic_extendedicd_content_model_ProjectKB_Class251030]
-		[whofic_extendedicd_content_model_ProjectKB_Class251032]
-		[whofic_extendedicd_content_model_ProjectKB_Class251034]
-		[whofic_extendedicd_content_model_ProjectKB_Class251036]
-		[whofic_extendedicd_content_model_ProjectKB_Class251038]
-		[whofic_extendedicd_content_model_ProjectKB_Class251040]
-		[whofic_extendedicd_content_model_ProjectKB_Class251042]
-		[whofic_extendedicd_content_model_ProjectKB_Class251044]
-		[whofic_extendedicd_content_model_ProjectKB_Class251046]
-		[whofic_extendedicd_content_model_ProjectKB_Class251048]
-		[whofic_extendedicd_content_model_ProjectKB_Class251050]
-		[whofic_extendedicd_content_model_ProjectKB_Class251052]
-		[whofic_extendedicd_content_model_ProjectKB_Class251054]
-		[whofic_extendedicd_content_model_ProjectKB_Class251056]
-		[whofic_extendedicd_content_model_ProjectKB_Class251058]))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250972] of  Widget
-
-	(height 0)
-	(label "Constraints")
-	(name ":SLOT-CONSTRAINTS")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class250973])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250973] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class250974] of  Widget
-
-	(name ":DIRECT-INSTANCES"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250975] of  Widget
-
-	(name ":DIRECT-SUBCLASSES"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250976] of  Widget
-
-	(height 500)
-	(label "Definition")
-	(name ":DIRECT-SUPERCLASSES")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class250977])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.ClassAnnotationsAndDescriptionWidget")
-	(width 660)
-	(x 0)
-	(y 0))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250977] of  Property_List
-
-	(properties [whofic_extendedicd_content_model_ProjectKB_Class250978]))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250978] of  Widget
-
-	(height 366)
-	(is_hidden FALSE)
-	(label "Class Annotations")
-	(name "http://www.w3.org/2002/07/owl#equivalentClass")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class250979])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 660)
-	(x 0)
-	(y 134))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250979] of  Property_List
-
-	(properties
-		[whofic_extendedicd_content_model_ProjectKB_Class250980]
-		[whofic_extendedicd_content_model_ProjectKB_Class250984]))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250980] of  Widget
-
-	(height 366)
-	(is_hidden FALSE)
-	(label "Logic View")
-	(name ":DIRECT-TEMPLATE-SLOTS")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class250981])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 660)
-	(x 0)
-	(y 0))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250981] of  Property_List
-
-	(properties
-		[whofic_extendedicd_content_model_ProjectKB_Class250982]
-		[whofic_extendedicd_content_model_ProjectKB_Class250983]))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250982] of  Widget
-
-	(height 213)
-	(is_hidden FALSE)
-	(label "Conditions")
-	(name ":DIRECT-SUPERCLASSES")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 650)
-	(x 5)
-	(y 5))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250983] of  Widget
-
-	(height 141)
-	(is_hidden FALSE)
-	(label "Disjoints")
-	(name "http://www.w3.org/2002/07/owl#disjointWith")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 660)
-	(x 0)
-	(y 225))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250984] of  Widget
-
-	(height -46)
-	(is_hidden FALSE)
-	(label "Properties View")
-	(name ":DIRECT-SUPERCLASSES")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class250985])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width -21)
-	(x 11)
-	(y 33))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250985] of  Property_List
-
-	(properties
-		[whofic_extendedicd_content_model_ProjectKB_Class250986]
-		[whofic_extendedicd_content_model_ProjectKB_Class250987]
-		[whofic_extendedicd_content_model_ProjectKB_Class250990]))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250986] of  Widget
-
-	(is_hidden FALSE)
-	(label "Superclasses")
-	(name ":DIRECT-SUPERCLASSES")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250987] of  Widget
-
-	(is_hidden FALSE)
-	(label "Properties")
-	(name ":DIRECT-TEMPLATE-SLOTS")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class250988])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250988] of  Property_List
-
-	(properties [whofic_extendedicd_content_model_ProjectKB_Class250989]))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250989] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisplayRestrictions"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250990] of  Widget
-
-	(is_hidden FALSE)
-	(label "Disjoints")
-	(name "http://www.w3.org/2002/07/owl#disjointWith")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250991] of  Widget
-
-	(height 0)
-	(label "Name")
-	(name ":NAME")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class250992])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250992] of  Property_List
-
-	(properties [whofic_extendedicd_content_model_ProjectKB_Class250993]))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250993] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250994] of  Widget
-
-	(height 0)
-	(label "Role")
-	(name ":ROLE")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class250995])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250995] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class250996] of  Widget
-
-	(name ":DIRECT-TYPE"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250997] of  Widget
-
-	(height 0)
-	(label "OWL Properties")
-	(name ":DIRECT-TEMPLATE-SLOTS")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class250998])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic_extendedicd_content_model_ProjectKB_Class250998] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class250999] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[whofic_extendedicd_content_model_ProjectKB_Class251000]
-		[whofic_extendedicd_content_model_ProjectKB_Class251001]))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251000] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<all>>"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251001] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251002] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":DOCUMENTATION")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251003])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251003] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251004] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251005])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251005] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251006] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251007]))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251007] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251008] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251009]))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251009] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251010] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251011]))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251011] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251012] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251013]))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251013] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251014] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251015]))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251015] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251016] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#equivalentClass")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251017])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251017] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251018] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#subClassOf")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251019])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251019] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251020] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#hasType")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251021])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 200)
-	(y 680))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251021] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251022] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#definition")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251023])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 460)
-	(x 200)
-	(y 500))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251023] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251024] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#sortingLabel")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251025])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 200)
-	(x 0)
-	(y 740))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251025] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251026] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#assignedSecondaryTAG")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251027])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 200)
-	(y 860))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251027] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251028] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#fullySpecifiedName")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251029])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 200)
-	(y 620))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251029] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251030] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#id")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251031])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 200)
-	(x 0)
-	(y 680))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251031] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251032] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#definitionPrefilled")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251033])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 400)
-	(y 740))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251033] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251034] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#icdCode")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251035])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251035] of  Property_List
-
-	(properties [whofic_extendedicd_content_model_ProjectKB_Class251401]))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251036] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#editorialStatusDefinition")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251037])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 200)
-	(y 560))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251037] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251038] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#displayStatus")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251039])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 400)
-	(y 560))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251039] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251040] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://who.int/icd#versionNote")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251041]))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251041] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251042] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#assignedTAG")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251043])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 0)
-	(y 860))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251043] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251044] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#longDefinition")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251045])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 200)
-	(y 740))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251045] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251046] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#clamlKind")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251047])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 200)
-	(x 0)
-	(y 560))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251047] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251048] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#clamlUsage")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251049])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 200)
-	(x 0)
-	(y 620))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251049] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251050] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#unspecifiedTypeComment")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251051])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiLiteralWidget")
-	(width 200)
-	(x 400)
-	(y 860))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251051] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251052] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#isObsolete")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251053])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 200)
-	(x 200)
-	(y 800))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251053] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251054] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#assignedPrimaryTAG")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251055])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 0)
-	(y 800))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251055] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251056] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#childrenOrder")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251057])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 400)
-	(y 620))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251057] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251058] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://who.int/icd#icdTitle")
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class251059])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 0)
-	(y 500))
-
-([whofic_extendedicd_content_model_ProjectKB_Class251059] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class251401] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class26] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class27] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class28])
-	(widget_class_name "TGViztab.TGVizTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class28] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class29] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class30])
-	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class3] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class4])
-	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class30] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class31] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class32])
-	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class32] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class33] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class34])
-	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class34] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class35] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class36])
-	(widget_class_name "se.liu.ida.JessTab.JessTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class36] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class37] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class38])
-	(widget_class_name "edu.stanford.smi.protegex.changeanalysis.ChangeAnalysisTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class38] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class39] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class40])
-	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class4] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class40] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class41] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class42])
-	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class42] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class43] of  Widget
-
-	(is_hidden FALSE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class44])
-	(widget_class_name "script.ProtegeScriptTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class44] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class45] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class46])
-	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class46] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class47] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class48])
-	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class48] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class49] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class50])
-	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class5] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class6])
-	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class50] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class51] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class52])
-	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class52] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class53] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class54])
-	(widget_class_name "ezpal.EZPalTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class54] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class6] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class7] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class8])
-	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class8] of  Property_List
-)
-
-([whofic_extendedicd_content_model_ProjectKB_Class9] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [whofic_extendedicd_content_model_ProjectKB_Class10])
-	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
 
 ([XY_Instance_0] of  Property_List
 
