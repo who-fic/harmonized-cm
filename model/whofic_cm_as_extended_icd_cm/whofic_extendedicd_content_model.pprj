@@ -1,4 +1,4 @@
-; Wed May 06 14:23:08 PDT 2020
+; Thu Jun 04 15:25:09 PDT 2020
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -6,13 +6,13 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[whofic_extendedicd_content_model_ProjectKB_Class10154]
-		[whofic_extendedicd_content_model_ProjectKB_Class10155]
-		[whofic_extendedicd_content_model_ProjectKB_Class10156]
-		[whofic_extendedicd_content_model_ProjectKB_Class10157]
-		[whofic_extendedicd_content_model_ProjectKB_Class10158]
-		[whofic_extendedicd_content_model_ProjectKB_Class10159]
-		[whofic_extendedicd_content_model_ProjectKB_Class10160]))
+		[whofic_extendedicd_content_model_ProjectKB_Class20294]
+		[whofic_extendedicd_content_model_ProjectKB_Class20295]
+		[whofic_extendedicd_content_model_ProjectKB_Class20296]
+		[whofic_extendedicd_content_model_ProjectKB_Class20297]
+		[whofic_extendedicd_content_model_ProjectKB_Class20298]
+		[whofic_extendedicd_content_model_ProjectKB_Class20299]
+		[whofic_extendedicd_content_model_ProjectKB_Class20300]))
 
 ([CLSES_TAB] of  Widget
 
@@ -268,9 +268,6 @@
 	(y 0))
 
 ([KB_024013_Instance_5] of  Property_List
-)
-
-([KB_067314_Class3] of  Map
 )
 
 ([KB_100699_Instance_0] of  Widget
@@ -753,9 +750,9 @@
 ([KB_325529_Class0] of  Map
 
 	(entries
-		[whofic_extendedicd_content_model_ProjectKB_Class10161]
-		[whofic_extendedicd_content_model_ProjectKB_Class10162]
-		[whofic_extendedicd_content_model_ProjectKB_Class10163]))
+		[whofic_extendedicd_content_model_ProjectKB_Class20301]
+		[whofic_extendedicd_content_model_ProjectKB_Class20302]
+		[whofic_extendedicd_content_model_ProjectKB_Class20303]))
 
 ([KB_325529_Class4] of  String
 
@@ -969,6 +966,9 @@
 	(name "http://www.w3.org/2002/07/owl#ObjectProperty")
 	(property_list [XY_Instance_462])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
+
+([KB_693353_Class3] of  Map
+)
 
 ([KB_713803_Instance_10] of  Widget
 
@@ -5675,62 +5675,6 @@
 ([whofic_extendedicd_content_model_ProjectKB_Class10] of  Property_List
 )
 
-([whofic_extendedicd_content_model_ProjectKB_Class10154] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10155] of  String
-
-	(name "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property")
-	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10156] of  String
-
-	(name "http://www.w3.org/2002/07/owl#Thing")
-	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10157] of  String
-
-	(name "http://www.w3.org/2000/01/rdf-schema#Class")
-	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10158] of  String
-
-	(name "http://www.w3.org/2002/07/owl#Class")
-	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10159] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10160] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10161] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10162] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([whofic_extendedicd_content_model_ProjectKB_Class10163] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
 ([whofic_extendedicd_content_model_ProjectKB_Class11] of  Widget
 
 	(is_hidden TRUE)
@@ -5778,6 +5722,62 @@
 
 ([whofic_extendedicd_content_model_ProjectKB_Class20] of  Property_List
 )
+
+([whofic_extendedicd_content_model_ProjectKB_Class20294] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([whofic_extendedicd_content_model_ProjectKB_Class20295] of  String
+
+	(name "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property")
+	(string_value "%3ANAME"))
+
+([whofic_extendedicd_content_model_ProjectKB_Class20296] of  String
+
+	(name "http://www.w3.org/2002/07/owl#Thing")
+	(string_value "%3ANAME"))
+
+([whofic_extendedicd_content_model_ProjectKB_Class20297] of  String
+
+	(name "http://www.w3.org/2000/01/rdf-schema#Class")
+	(string_value "%3ANAME"))
+
+([whofic_extendedicd_content_model_ProjectKB_Class20298] of  String
+
+	(name "http://www.w3.org/2002/07/owl#Class")
+	(string_value "%3ANAME"))
+
+([whofic_extendedicd_content_model_ProjectKB_Class20299] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([whofic_extendedicd_content_model_ProjectKB_Class20300] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([whofic_extendedicd_content_model_ProjectKB_Class20301] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([whofic_extendedicd_content_model_ProjectKB_Class20302] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([whofic_extendedicd_content_model_ProjectKB_Class20303] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
 
 ([whofic_extendedicd_content_model_ProjectKB_Class21] of  Widget
 
